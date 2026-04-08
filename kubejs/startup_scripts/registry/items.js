@@ -72,7 +72,7 @@ StartupEvents.registry('item', event => {
 
     function register_bag(level, name)
     {
-        event.create(name + '_bag_' + level).texture('kubejs:item/' + name + '_bag_' + level).displayName(name.toUpperCase() + ' Bag ' + level);
+        event.create(name + '_bag_' + level).texture('kubejs:item/' + name + '_bag_' + level).displayName(name.toUpperCase() + ' Bag ' + level).tooltip("Not yet implemented");
     }
 
     register_bag(1, 'ars')

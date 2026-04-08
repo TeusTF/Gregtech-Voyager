@@ -23,6 +23,8 @@
   "cookingforblockheads:toaster": null,
   "corpse:corpse": null,
   "entangled:entangled_block_component": null,
+  "evilcraft:box_of_eternal_closure": null,
+  "evilcraft:broom": null,
   "expatternprovider:jade_chamber": null,
   "expatternprovider:jade_wireless": null,
   "expatternprovider:tile_data": null,
@@ -108,5 +110,6 @@
   "productivebees:jar": null,
   "productivebees:productive_bee": null,
   "productivebees:solitary_nest": null,
+  "theurgy:mercury_flux": null,
   "twilightforest:quest_ram_wool": null
 }

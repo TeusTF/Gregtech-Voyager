@@ -2346,6 +2346,14 @@
         "isSelected": false
       },
       {
+        "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\world_01d82a87-cd2f-439f-8ded-ff1bd78c7ded\\gtceu\\DIMminecraft=the_nether.nbt",
+        "isSelected": false
+      },
+      {
+        "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\world_01d82a87-cd2f-439f-8ded-ff1bd78c7ded\\gtceu\\DIMtwilightforest=twilight_forest.nbt",
+        "isSelected": false
+      },
+      {
         "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\world_01d82a87-cd2f-439f-8ded-ff1bd78c7ded\\gtceu\\fluids.nbt",
         "isSelected": false
       },
@@ -2532,6 +2540,10 @@
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\ars_bag_3.png",
         "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\bag_template.png",
+        "isSelected": false
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\ev_helper_computation_array.png",
@@ -2740,6 +2752,10 @@
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\uv_universal_circuit.png",
         "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\voucher_template.png",
+        "isSelected": false
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\zpm_helper_computation_array.png",
@@ -3046,8 +3062,8 @@
         "isSelected": true
       },
       {
-        "path": "kubejs\\startup_scripts\\registry\\multiblock_registry",
-        "isSelected": true
+        "path": "kubejs\\startup_scripts\\registry\\multiblocks.js",
+        "isSelected": false
       },
       {
         "path": "kubejs\\startup_scripts\\worldgen",
@@ -3062,12 +3078,8 @@
         "isSelected": true
       },
       {
-        "path": "kubejs\\startup_scripts\\test.js",
-        "isSelected": true
-      },
-      {
-        "path": "kubejs\\startup_scripts\\util.js",
-        "isSelected": true
+        "path": "kubejs\\startup_scripts\\info.js",
+        "isSelected": false
       },
       {
         "path": "kubejs\\README.txt",
@@ -3818,6 +3830,86 @@
         "isSelected": false
       },
       {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\0EA5F-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\0EA5F-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\0EA5F-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\0EA60-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\0EA60-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\0EA60-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\dimension.regions",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\minecraft_the_nether\\waypoints.json",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5C-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5C-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5D-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5D-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5D-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5E-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5E-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\0EA5E-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\dimension.regions",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\twilightforest_twilight_forest\\waypoints.json",
+        "isSelected": false
+      },
+      {
         "path": "local\\ftbchunks\\data\\a0f10b3d-2ad2-4b27-83d2-36031903c5b1\\biome_map.txt",
         "isSelected": false
       },
@@ -4278,226 +4370,6 @@
         "isSelected": false
       },
       {
-        "path": "logs\\telemetry\\20260329-1.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-10.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-11.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-12.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-13.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-14.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-15.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-16.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-17.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-18.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-19.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-2.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-20.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-21.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-22.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-23.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-24.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-25.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-3.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-4.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-5.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-6.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-7.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-8.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260329-9.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-1.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-10.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-11.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-12.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-13.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-14.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-15.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-16.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-17.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-18.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-19.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-2.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-20.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-21.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-22.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-3.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-4.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-5.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-6.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-7.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-8.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260330-9.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-1.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-2.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-3.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-4.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-5.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-6.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-7.json.gz",
-        "isSelected": false
-      },
-      {
-        "path": "logs\\telemetry\\20260331-8.json.gz",
-        "isSelected": false
-      },
-      {
         "path": "logs\\telemetry\\20260401-1.json.gz",
         "isSelected": false
       },
@@ -4755,6 +4627,30 @@
       },
       {
         "path": "logs\\2026-04-04-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-04-7.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-05-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-06-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-06-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-07-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-04-07-2.log.gz",
         "isSelected": false
       },
       {
@@ -13206,6 +13102,10 @@
         "isSelected": false
       },
       {
+        "path": "screenshots\\2026-04-04_23.44.51.png",
+        "isSelected": false
+      },
+      {
         "path": "shaderpacks",
         "isSelected": true
       },
@@ -13242,7 +13142,19 @@
         "isSelected": false
       },
       {
+        "path": "xaero\\minimap\\Multiplayer_2600.1700.e900.3b90..11\\dim%-1",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\minimap\\Multiplayer_2600.1700.e900.3b90..11\\dim%-1\\mw$-168370595_2.txt",
+        "isSelected": false
+      },
+      {
         "path": "xaero\\minimap\\Multiplayer_2600.1700.e900.3b90..11\\dim%0",
+        "isSelected": false
+      },
+      {
+        "path": "xaero\\minimap\\Multiplayer_2600.1700.e900.3b90..11\\dim%0\\mw$-168370595_2.txt",
         "isSelected": false
       },
       {
@@ -13362,6 +13274,10 @@
         "isSelected": false
       },
       {
+        "path": ".gitattributes",
+        "isSelected": false
+      },
+      {
         "path": ".gitignore",
         "isSelected": false
       },
@@ -13371,6 +13287,10 @@
       },
       {
         "path": "generateLang.js",
+        "isSelected": false
+      },
+      {
+        "path": "LICENSE",
         "isSelected": false
       },
       {

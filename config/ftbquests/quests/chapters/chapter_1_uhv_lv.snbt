@@ -1976,6 +1976,52 @@
 			x: 6.0d
 			y: 2.5d
 		}
+		{
+			dependencies: ["06AE6F8A4AF618B1"]
+			id: "67BD9CD8C79F2DEF"
+			tasks: [{
+				id: "2A6076158D00B458"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"67BD9CD8C79F2DEF"
+				"71B21735D9A0C40B"
+				"357EE9A028D0CFD1"
+				"3CBB59A9F365E9EB"
+			]
+			hide_dependency_lines: true
+			id: "7C67C0AB24203FD5"
+			tasks: [{
+				id: "65F4DF9873222E91"
+				item: "industrialforegoing:plant_gatherer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"67BD9CD8C79F2DEF"
+				"357EE9A028D0CFD1"
+				"71B21735D9A0C40B"
+			]
+			description: ["Industrial foregoing is a great option for automatic wood. Be weary you will need a farmer helper for the plant gatherer, but it is very strong early."]
+			hide_dependency_lines: true
+			id: "1CCBD7F50F1BED5C"
+			tasks: [{
+				id: "6705358AF28DA912"
+				item: "industrialforegoing:plant_sower"
+				type: "item"
+			}]
+			title: "Tree Farms"
+			x: -3.0d
+			y: 3.5d
+		}
 	]
 	title: "Chapter 1 (ULV, LV)"
 }

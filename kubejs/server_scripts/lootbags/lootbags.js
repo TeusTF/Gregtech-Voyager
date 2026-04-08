@@ -24,8 +24,8 @@ LootJS.modifiers(event => {
     event.addLootTableModifier('minecraft:chests/simple_dungeon')
         .addWeightedLoot([
             Item.of("kubejs:lv_loot_bag").withChance(25),
-            Item.of("kubejs:mv_loot_bag").withChance(15),
-            Item.of("kubejs:hv_loot_bag").withChance(5),
+            Item.of("kubejs:mv_loot_bag").withChance(1),
+            Item.of("kubejs:hv_loot_bag").withChance(.05),
             Item.of("kubejs:ars_bag_1").withChance(10),
             Item.of("kubejs:ars_bag_2").withChance(5),
             Item.of("3x gtceu:source_steel_ingot").withChance(12),
@@ -126,7 +126,7 @@ LootJS.modifiers(event => {
             Item.of("gtceu:lv_miner").withChance(1),
             Item.of("gtceu:lv_pump").withChance(1),
             Item.of("gtceu:lv_solar_panel").withChance(1),
-            Item.of("4x gtceu:polyethylene_large_fluid_pipe").withChance(3),
+            Item.of("1x gtceu:polyethylene_large_fluid_pipe").withChance(.05),
             Item.of("x artifacts:plastic_drinking_hat").withChance(1),
             Item.of("2x functionalstorage:copper_upgrade").withChance(3),
             Item.of("gtceu:machine_controller_cover").withChance(2),

@@ -18,7 +18,7 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_loot_bag(tier));
     tiers.forEach(tier => register_universal_circuit(tier));
 
-    const helpers = ['brick', 'track_runner', 'farmer']
+    const helpers = ['brick', 'track_runner', 'farmer', 'grandma']
 
     function register_helper_item(name)
     {
@@ -75,6 +75,8 @@ StartupEvents.registry('item', event => {
         event.create(name + '_bag_' + level).texture('kubejs:item/' + name + '_bag_' + level).displayName(name.toUpperCase() + ' Bag ' + level).tooltip("Not yet implemented");
     }
 
+    
+
     register_bag(1, 'ars')
     register_bag(2, 'ars')
     register_bag(3, 'ars')
@@ -87,4 +89,22 @@ StartupEvents.registry('item', event => {
 
     event.create('rocket_hull_plate').texture('kubejs:item/rocket_hull_plate').maxStackSize(16).displayName('Rocket Hull Plate');
 
+
+    // cookies
+
+    event.create('grandmas_baking_sheet').texture('kubejs:item/grandmas_baking_sheet').maxStackSize(1).displayName('Grandma\'s Super Durable Baking Sheet');
+
+    event.create('grandmas_cookie').texture('kubejs:item/grandmas_cookies').displayName('Grandma\'s cookies').food(food => {
+    food
+      .hunger(6)
+      .saturation(6) // This value does not directly translate to saturation points gained
+      // The real value can be assumed to be:
+      // min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
+      .effect('minecraft:speed', 600, 0, 1)
+      .alwaysEdible() // Like golden apples
+      .fastToEat() // Like dried kelp
+      .eaten(ctx => {
+        ctx.player.tell(Text.gold('Grandma thanks you for eating her cookies! She invites you over for more.'))
+      });
+    });
 })

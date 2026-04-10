@@ -45,5 +45,11 @@ ServerEvents.recipes(event => {
         .EUt(2)
         .itemOutputs('minecraft:bricks')
 
+    event.recipes.gtceu.macerator("kubejs:treated_wood_pulp")
+        .itemInputs('1x gtceu:treated_wood_planks')
+        .EUt(16)
+        .itemOutputs('2x gtceu:treated_wood_dust')
+        .duration(40)
+
 
 });

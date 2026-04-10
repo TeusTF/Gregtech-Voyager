@@ -946,6 +946,7 @@
 		{
 			description: ["You will need some form of oil in order to make &eMetallic Mica&r \\nThis is used to make numerous electronic parts, inclluding diodes.\\n\\nA good way of getting &0Heavy Oil&r is through Oilsands"]
 			id: "19FC73434CC6BAE0"
+			min_required_tasks: 1
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5281CAE96B1D3C46"
@@ -1119,6 +1120,7 @@
 				"4E1532CE541BE46E"
 				"7C836F67248E2C86"
 			]
+			description: ["The helper wheels are quite strong if you can automate cookies (use the micro farm, or IF), but they are more expensive than steam turbines."]
 			id: "6D3DFD8993872B7E"
 			rewards: [
 				{

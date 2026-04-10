@@ -82,8 +82,8 @@ GTCEuServerEvents.oreVeins(event => {
         })
 
 
-    event.add("twilight/chromite", vein => {
-        vein.weight(10)
+    event.add("twilight/nickel", vein => {
+        vein.weight(15)
         vein.density(0.5)
         vein.clusterSize(25)
         vein.layer("twilightforest")
@@ -91,7 +91,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(-45, 5)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:chromite_ore").defaultBlockState()).size(1, 3))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:nickel_ore").defaultBlockState()).size(1, 3))
                 .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:magnesite_ore").defaultBlockState()).size(2, 3))
                 .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:nickel_ore").defaultBlockState()).size(1, 2))
             )
@@ -100,25 +100,26 @@ GTCEuServerEvents.oreVeins(event => {
     
     })
 
-    event.add("twilight/dense/chromite", vein => {
+    event.add("twilight/dense/nickel", vein => {
         vein.weight(1)
-        vein.density(1)
+        vein.density(2)
         vein.clusterSize(30)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:chromite_ore").defaultBlockState()).size(3, 6))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:nickel_ore").defaultBlockState()).size(3, 6))
                 .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:magnesite_ore").defaultBlockState()).size(2, 3))
-                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:nickel_ore").defaultBlockState()).size(1, 2))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:nickel_ore").defaultBlockState()).size(2, 2))
+                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:chromite_ore").defaultBlockState()).size(1, 3))
             )
         )
 
-    
     })
 
-event.add("twilight/cobalt", vein => {
+
+    event.add("twilight/cobalt", vein => {
         vein.weight(25)
         vein.density(0.5)
         vein.clusterSize(25)
@@ -324,7 +325,7 @@ event.add("twilight/cobalt", vein => {
     event.add("twilight/dense/magnetite", vein => {
         vein.weight(3)
         vein.density(1)
-        vein.clusterSize(30)
+        vein.clusterSize(40)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -360,16 +361,16 @@ event.add("twilight/cobalt", vein => {
     event.add("twilight/dense/red", vein => {
         vein.weight(1)
         vein.density(1)
-        vein.clusterSize(25)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
-        vein.heightRangeUniform(-45, 5)
+        vein.heightRangeUniform(-64, 5)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
                 .layer(l => l.weight(12).state(() => Block.getBlock("gtceu:ruby_ore").defaultBlockState()).size(2, 3))
                 .layer(l => l.weight(12).state(() => Block.getBlock("gtceu:redstone_ore").defaultBlockState()).size(3, 6))
                 .layer(l => l.weight(8).state(() => Block.getBlock("gtceu:realgar_ore").defaultBlockState()).size(2, 2))
-                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:plutonium_ore").defaultBlockState()).size(1, 1))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:plutonium_ore").defaultBlockState()).size(1, 1))
             )
         )
     })
@@ -447,6 +448,42 @@ event.add("twilight/cobalt", vein => {
         )
     })
 
+
+    event.add("twilight/yellow", vein => {
+        vein.weight(25)
+        vein.density(0.5)
+        vein.clusterSize(25)
+        vein.layer("twilightforest")
+        vein.dimensions("twilightforest:twilight_forest")
+        vein.heightRangeUniform(-45, 5)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:yellow_limonite_ore").defaultBlockState()).size(1, 2))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:gold_ore").defaultBlockState()).size(2, 3))
+                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:topaz_ore").defaultBlockState()).size(1, 2))
+                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:sulfur_ore").defaultBlockState()).size(2, 3))
+            )
+        )
+
+    
+    })
+
+    event.add("twilight/dense/yellow", vein => {
+        vein.weight(3)
+        vein.density(1)
+        vein.clusterSize(30)
+        vein.layer("twilightforest")
+        vein.dimensions("twilightforest:twilight_forest")
+        vein.heightRangeUniform(-45, 5)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:yellow_limonite_ore").defaultBlockState()).size(2, 3))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:gold_ore").defaultBlockState()).size(3, 6))
+                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:topaz_ore").defaultBlockState()).size(2, 2))
+                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:sulfur_ore").defaultBlockState()).size(3, 6))
+            )
+        )
+    })
     
 
     
@@ -495,7 +532,7 @@ event.add("twilight/cobalt", vein => {
     // event.modify('gtceu:aluminium_vein', vein => {
     //     vein.dimensions(['ad_astra:moon']); // only spawns in moon now
     // });
-});    
+});  
 
 ServerEvents.tags('block', event => {
     event.add('minecraft:stone_ore_replaceables', 'ad_astra:moon_stone');

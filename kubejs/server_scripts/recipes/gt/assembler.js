@@ -447,6 +447,7 @@ event.recipes.gtceu.assembler('kubejs:lv_energy_hatch_helper')
         '16x gtceu:metallic_mica_foil',
         '1x gtceu:tin_silver_alloy_single_wire'
     )
+    .circuit(32)
     .notConsumable('kubejs:lv_technician_helper')
     .itemOutputs('1x gtceu:lv_energy_input_hatch')
     .duration(100)

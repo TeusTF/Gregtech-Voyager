@@ -395,7 +395,8 @@ event.recipes.gtceu.assembler('kubejs:mv_energy_hatch')
         '1x gtceu:mv_machine_hull',
         '1x gtceu:mv_voltage_coil',
         '32x gtceu:metallic_mica_foil',
-        '2x gtceu:fluxed_electrum_single_wire'
+        '2x gtceu:fluxed_electrum_single_wire',
+        '2x gtceu:ulpic_chip',
     )
     .itemOutputs('1x gtceu:mv_energy_input_hatch')
     .duration(200)
@@ -407,7 +408,7 @@ event.recipes.gtceu.assembler('kubejs:mv_dynamo_hatch')
         '1x gtceu:mv_voltage_coil',
         '32x gtceu:metallic_mica_foil',
         '2x gtceu:fluxed_electrum_single_wire',
-        '1x gtceu:ulpic_chip',
+        '2x gtceu:ulpic_chip',
         '2x gtceu:copper_spring'
     )
     .itemOutputs('1x gtceu:mv_energy_output_hatch')

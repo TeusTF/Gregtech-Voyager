@@ -102,7 +102,7 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/nickel", vein => {
         vein.weight(1)
-        vein.density(2)
+        vein.density(1)
         vein.clusterSize(30)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
@@ -458,7 +458,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(-45, 5)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:yellow_limonite_ore").defaultBlockState()).size(1, 2))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:sphalerite_ore").defaultBlockState()).size(1, 2))
                 .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:gold_ore").defaultBlockState()).size(2, 3))
                 .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:topaz_ore").defaultBlockState()).size(1, 2))
                 .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:sulfur_ore").defaultBlockState()).size(2, 3))
@@ -477,7 +477,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(-45, 5)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:yellow_limonite_ore").defaultBlockState()).size(2, 3))
+                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:sphalerite_ore").defaultBlockState()).size(2, 3))
                 .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:gold_ore").defaultBlockState()).size(3, 6))
                 .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:topaz_ore").defaultBlockState()).size(2, 2))
                 .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:sulfur_ore").defaultBlockState()).size(3, 6))

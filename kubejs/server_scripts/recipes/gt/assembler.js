@@ -463,7 +463,7 @@ event.remove({output: 'gtceu:phenolic_circuit_board'})
 event.recipes.gtceu.assembler('kubejs:phenolic_board')
     .itemInputs(
         '1x gtceu:treated_wood_plate',
-        '1x gtceu:metallic_mica_dust',
+        '2x minecraft:paper',
     )
     // .notConsumable('kubejs:lv_technician_helper')
     .inputFluids("gtceu:phenol 50")
@@ -487,7 +487,7 @@ event.recipes.gtceu.assembler('kubejs:cuprocoil')
     .itemInputs(
         '8x gtceu:cupronickel_double_wire',
         '8x gtceu:bronze_foil',
-        '4x gtceu:metallic_mica_foil',
+        '16x gtceu:metallic_mica_foil',
     )
     // .notConsumable('kubejs:lv_technician_helper')
     .itemOutputs('1x gtceu:cupronickel_coil_block')
@@ -499,7 +499,7 @@ event.recipes.gtceu.assembler('kubejs:kanthalcoil')
     .itemInputs(
         '8x gtceu:kanthal_double_wire',
         '8x gtceu:aluminium_foil',
-        '8x gtceu:metallic_mica_foil',
+        '16x gtceu:metallic_mica_foil',
     )
     // .notConsumable('kubejs:lv_technician_helper')
     .itemOutputs('1x gtceu:kanthal_coil_block')

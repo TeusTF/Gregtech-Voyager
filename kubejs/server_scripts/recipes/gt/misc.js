@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     event.recipes.gtceu.rock_breaker("kubejs:obisidan_redstone")
+        .notConsumable(Item.of("minecraft:redstone"))
         .itemInputs("minecraft:redstone")
         .itemOutputs("minecraft:obsidian")
         .duration(10*20) // 60 sec

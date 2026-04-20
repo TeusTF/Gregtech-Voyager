@@ -1,6 +1,7 @@
 ServerEvents.recipes(event => {
     // event.removeLoot(item => item.id.startsWith('artifacts:'));
     event.remove({output: 'forestry:foresters_manual'})
+    event.remove({output: 'forestry:ingot_bronze'})
 
     event.shapeless(
         Item.of('forestry:foresters_manual', 1), // arg 1: output

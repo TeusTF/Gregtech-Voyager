@@ -83,6 +83,8 @@ StartupEvents.registry('item', event => {
 
     
 
+    
+
     register_bag(1, 'ars')
     register_bag(2, 'ars')
     register_bag(3, 'ars')
@@ -94,8 +96,12 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_universal_coin(tier));
     tiers.forEach(tier => register_tech_coin(tier));
     tiers.forEach(tier => register_computation_array(tier));
+    tiers.forEach(tier => register_voucher(tier));
 
     event.create('rocket_hull_plate').texture('kubejs:item/rocket_hull_plate').maxStackSize(16).displayName('Rocket Hull Plate');
+
+
+    event.create('compressed_grout').texture('kubejs:item/compressed_grout').displayName('Compressed Grout');
 
 
     // cookies

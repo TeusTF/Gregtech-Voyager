@@ -5,7 +5,7 @@
 	group: "3E515D2B3A8DFC29"
 	icon: "gtceu:mv_robot_arm"
 	id: "523035BA16C7E1E0"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -1175,6 +1175,7 @@
 		}
 		{
 			dependencies: ["245AD5E4251E8B62"]
+			icon: "gtceu:pyrolyse_oven"
 			id: "6CBD01AF673CE03C"
 			rewards: [
 				{
@@ -1198,8 +1199,24 @@
 					type: "item"
 				}
 				{
-					id: "77AC45C46455B8FD"
-					item: "gtceu:charcoal_byproducts_bucket"
+					count: 16L
+					id: "30C44ACD532C8607"
+					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+				{
+					id: "042D8632AC864E34"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "4BFDD6C4552F37EF"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "2D35AE8E26C65088"
+					item: "gtceu:ulv_machine_casing"
 					type: "item"
 				}
 			]

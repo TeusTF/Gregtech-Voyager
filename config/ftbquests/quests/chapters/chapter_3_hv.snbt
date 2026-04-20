@@ -5,7 +5,7 @@
 	group: "3E515D2B3A8DFC29"
 	icon: "gtceu:hv_robot_arm"
 	id: "56DF01AB75C1C354"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -599,7 +599,7 @@
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			title: "Unlimited Obsidian"
+			title: "Redstone -> Obsidian"
 			x: 8.5d
 			y: 7.5d
 		}
@@ -788,7 +788,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3E3E32FBC8D75BAE"]
@@ -867,8 +867,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: 7.0d
+			x: 2.5d
+			y: 10.0d
 		}
 		{
 			id: "153DD87FF2F509EA"
@@ -928,7 +928,6 @@
 				"1B92369C06ADADA8"
 				"7808212E97996E9A"
 				"06E5CCF60085EBFE"
-				"666FFA22AA04D004"
 			]
 			id: "5386B5EE3CE885D3"
 			rewards: [{
@@ -1068,7 +1067,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4CA6790D96DC1D57"]
@@ -1085,7 +1084,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0EE0B23698A16163"]
@@ -1110,10 +1109,14 @@
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 9.0d
+			x: -7.0d
+			y: 8.0d
 		}
 		{
+			dependencies: [
+				"50E4D37EDD155CFE"
+				"6EA158145968E811"
+			]
 			id: "25C355BC07428D81"
 			rewards: [
 				{
@@ -1222,6 +1225,7 @@
 			dependencies: [
 				"0F6BB4ACCE711A16"
 				"666FFA22AA04D004"
+				"452AD22969F3C993"
 			]
 			id: "4AB3DCDAD9146A14"
 			rewards: [
@@ -2026,6 +2030,60 @@
 			}]
 			x: 7.5d
 			y: -3.5d
+		}
+		{
+			description: [
+				"There are multiple ways of getting &4Plutonium&r. One of which is through &2Uranium&r."
+				""
+				"You will need a &6HV&r Centrifuge, and a some fluorine."
+				""
+				"One thing to note is that &lall&r of the fluorine used in this process is recycled."
+			]
+			id: "2DF28C2FE21AF5D7"
+			tasks: [{
+				id: "7896EBB2AA6AEE2C"
+				item: "gtceu:uraninite_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5FC52AE8F8378647"
+				"2DF28C2FE21AF5D7"
+			]
+			icon: "gtceu:plutonium_241_ingot"
+			id: "50E4D37EDD155CFE"
+			min_required_dependencies: 1
+			subtitle: "You only need to complete 1 dependency to unlock this quest"
+			tasks: [
+				{
+					id: "5AA7A0EDC0686D1E"
+					item: "gtceu:uranium_dust"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "362C1FD61EA5D881"
+					item: "gtceu:plutonium_ingot"
+					type: "item"
+				}
+			]
+			title: "Plutonium and Uranium"
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			description: ["An &ookay&r way of getting &4Plutonium&r is by finding a &ldense &4red vein&r in the Twilight Forest. They are quite rare, but do exist."]
+			id: "5FC52AE8F8378647"
+			tasks: [{
+				id: "438176C5B0E36858"
+				item: "gtceu:raw_plutonium"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
 		}
 	]
 	title: "Chapter 3 (HV)"

@@ -5,7 +5,7 @@
 	group: "3E515D2B3A8DFC29"
 	icon: "tconstruct:crafting_station"
 	id: "67DB5F70C70DC0BC"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -32,8 +32,8 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7F23975179B70629"]
@@ -44,8 +44,8 @@
 				item: "crafting_on_a_stick:crafting_table"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7F23975179B70629"]
@@ -61,8 +61,8 @@
 				item: "tconstruct:crafting_station"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.0d
+			x: 0.75d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7C46710EF18B9648"]
@@ -72,22 +72,23 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"79F5C09B1B3DFCC1"
 				"7F23975179B70629"
 			]
+			hide_dependency_lines: true
 			id: "4AA0AEEC31BD3EDA"
 			tasks: [{
 				id: "21847638489A7A8E"
 				item: "tconstruct:tinker_station"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["79F5C09B1B3DFCC1"]
@@ -97,11 +98,11 @@
 				item: "tconstruct:part_builder"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["7C46710EF18B9648"]
+			dependencies: ["7F23975179B70629"]
 			id: "24AE545643722390"
 			tasks: [{
 				id: "75014E02D516529D"
@@ -109,8 +110,8 @@
 				tags: ["chests"]
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.0d
+			x: -1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -123,8 +124,8 @@
 				item: "tconstruct:part_chest"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.0d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -196,44 +197,22 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 4.0d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
+			dependencies: ["1A807CCA515A0B94"]
 			id: "437D1FF759A7E40C"
 			tasks: [{
 				id: "647B9EFD0E1B4E4C"
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 5.0d
+			y: 7.0d
 		}
 		{
-			id: "6308FC66E5634361"
-			tasks: [{
-				id: "222DDA238DAD2944"
-				item: "gtceu:tin_ingot"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			id: "204626D919EB46C0"
-			tasks: [{
-				id: "3F94D21E7848A43E"
-				item: "minecraft:copper_ingot"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"204626D919EB46C0"
-				"6308FC66E5634361"
-			]
+			dependencies: ["171628CDF529A4DB"]
 			id: "3A557C43CE0F534F"
 			rewards: [{
 				id: "00831A7E71B386AA"
@@ -245,11 +224,11 @@
 				item: "gtceu:bronze_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.5d
+			x: 5.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["437D1FF759A7E40C"]
+			dependencies: ["1FC60FD20FF11A9F"]
 			id: "3AD0418241AEA8AA"
 			rewards: [{
 				id: "227F49BAF65F6BC0"
@@ -258,11 +237,11 @@
 			}]
 			tasks: [{
 				id: "6C96C9C00F65B5F7"
-				item: "tconstruct:seared_bricks"
+				item: "tconstruct:seared_brick"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -307,18 +286,19 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: 4.5d
+			x: 6.5d
+			y: 5.0d
 		}
 		{
+			dependencies: ["1A807CCA515A0B94"]
 			id: "26A6C0E4B38F51B3"
 			tasks: [{
 				id: "02531C812AA9F65F"
 				item: "gtceu:coke_oven_brick"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 7.0d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["26A6C0E4B38F51B3"]
@@ -341,8 +321,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 7.0d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3ABEDA348136284C"]
@@ -359,8 +339,8 @@
 				item: "tconstruct:smeltery_controller"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 7.0d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["22A38B844EA1BE5B"]
@@ -377,7 +357,7 @@
 			}]
 			title: "Creosote"
 			x: 2.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["51EBA3EE740C75FB"]
@@ -387,19 +367,8 @@
 				item: "gtceu:treated_wood_planks"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["2F4B6CBA03B8301B"]
-			id: "1A621A8431041B6B"
-			tasks: [{
-				id: "5DF028CD934C99C0"
-				item: "paraglider:paraglider"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 9.0d
+			x: 0.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["21517C495219BC6F"]
@@ -470,8 +439,8 @@
 				}
 			]
 			title: "Tinkers Anvil"
-			x: 9.5d
-			y: 9.0d
+			x: 7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["559EBC87398D8C8D"]
@@ -653,19 +622,329 @@
 				}
 			]
 			title: "The \"Slimer\""
-			x: 10.5d
-			y: 9.0d
+			x: 8.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3A557C43CE0F534F"]
+			description: ["You will need 2 bronze drums to make the entire smeltery"]
 			id: "2977381A674780EF"
 			tasks: [{
+				count: 2L
 				id: "266EFB11B60C83E4"
 				item: "gtceu:bronze_drum"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3EC37E139DFA0443"]
+			description: ["Using the mortar, you can make dusts a lot easier. You can also crush down gravel into flint."]
+			id: "5C8EE868D8D19826"
+			tasks: [{
+				id: "48E032979BF52B2D"
+				item: {
+					Count: 1
+					id: "gtceu:flint_mortar"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							DefaultEnchantments: [ ]
+							Enchantability: 5
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5C8EE868D8D19826"]
+			description: ["Using your new mortar, in a crafting table: combine a mortar with a copper or tin ingot to get it's dust"]
+			id: "51B224E5DE4919CD"
+			tasks: [
+				{
+					id: "0C795A84AAF91188"
+					item: "gtceu:copper_dust"
+					type: "item"
+				}
+				{
+					id: "70C9D2B9373BB18D"
+					item: "gtceu:tin_dust"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51B224E5DE4919CD"]
+			description: ["3 copper + 1 tin dust = bronze dust!"]
+			id: "171628CDF529A4DB"
+			tasks: [{
+				id: "4F85905FE11CA088"
+				item: "gtceu:bronze_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7C46710EF18B9648"]
+			id: "3EC37E139DFA0443"
+			tasks: [{
+				id: "4B3BB6268500AA7F"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["21517C495219BC6F"]
+			description: ["Now that you have a smeltery, some alloys no longer need a mortar to craft - Bronze being a great example."]
+			id: "434B8B61662C96C1"
+			tasks: [{
+				id: "3E486B0EA597851C"
+				title: "Easier Bronze"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2F4B6CBA03B8301B"]
+			id: "1282177A7209F2D6"
+			tasks: [{
+				id: "0E2D5AD3530CEF29"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7F23975179B70629"]
+			description: ["If you were expecting a chill and easy night, I have bad news for you. Mobs are not only a lot stronger, they are often spawned in with weapons, and other items. Be weary of the ender pearling creeper."]
+			id: "008A757AD8AEB6E7"
+			subtitle: "Speedrun this"
+			tasks: [{
+				id: "2FA8299AE752ACB0"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			x: 1.5d
 			y: 3.5d
+		}
+		{
+			id: "1A807CCA515A0B94"
+			tasks: [
+				{
+					id: "3E73BCF78C9943DE"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "2F56C9454A287B52"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "76D5033C668C2257"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["437D1FF759A7E40C"]
+			id: "1FC60FD20FF11A9F"
+			tasks: [{
+				id: "285C37C7F360B1D6"
+				item: "kubejs:compressed_grout"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3EC37E139DFA0443"]
+			description: [
+				"In a lot of early game, you will need a set of tools for crafting many different components."
+				""
+				"Remember, ALWAYS batch craft. You will save many headaches."
+				""
+				"You will also need a set of tools for maintenance later on."
+			]
+			hide_dependency_lines: true
+			id: "373A1AFF7B07272C"
+			rewards: [{
+				id: "61ABF2AE6F841A9F"
+				item: "travelertoolbelt:belt"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6F187B5F2E798AEA"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wrench"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								Mode: 2b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23FCD50346F97528"
+					item: {
+						Count: 1
+						id: "gtceu:iron_wire_cutter"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38BC485E5E04EF5F"
+					item: {
+						Count: 1
+						id: "gtceu:iron_screwdriver"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "077F2709F6C16A28"
+					item: {
+						Count: 1
+						id: "gtceu:iron_hammer"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C2B3F5F026028DB"
+					item: {
+						Count: 1
+						id: "gtceu:iron_crowbar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47FAA867F731B4FA"
+					item: {
+						Count: 1
+						id: "gtceu:wood_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 10
+								MaxDamage: 127
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BDAC1E3D48603CB"
+					item: {
+						Count: 1
+						id: "gtceu:iron_file"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								Enchantability: 14
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Gregtech Tools"
+			x: 4.0d
+			y: 1.0d
 		}
 	]
 	title: "Chapter 0: Stone Age"

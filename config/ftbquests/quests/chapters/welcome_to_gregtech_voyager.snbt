@@ -1,0 +1,98 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_gregtech_voyager"
+	group: "3E515D2B3A8DFC29"
+	icon: "kubejs:max_universal_circuit"
+	id: "1ADC33F1B138784E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to GregTech: Voyager!"
+				""
+				"This pack aims to provide the player (you) with a more challenging, but also more rewarding and immersive GregTech + Modded Minecraft experience."
+				""
+				"Complete with post &2UV+&r progression, more mods, more mechanics, more mod to mod interactions, etc."
+				""
+				"If you are new to GregTech, I recommend reading some of the other information provided on this quest chapter."
+			]
+			icon: "kubejs:mv_ebf_helper"
+			id: "2BFDEF40D7FE786D"
+			size: 2.0d
+			tasks: [{
+				id: "52F9DCCC457D3F47"
+				title: "Welcome to GregTech: Voyager!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Ore veins in GregTech are NOT like in vanilla Minecraft."
+				""
+				"Ores spawn in giant veins across the world (and dimensions). Each vein has a different material(s)."
+				""
+				"This means you must explore and prospect to find materials."
+				""
+				"But don't worry, exploring isn't useless."
+			]
+			icon: "gtceu:raw_plutonium"
+			id: "273CA551E25F6B88"
+			subtitle: "Click to read about GT ore veins"
+			tasks: [{
+				id: "01751DEDBB8B94A0"
+				type: "checkmark"
+			}]
+			title: "Ore Generation"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Energy in GregTech isn't like other mods."
+				""
+				"In GregTech, there are different voltage tiers, with each having their own unique challenges."
+				""
+				"Voltage tiers are directly responsible for your progression, and you will soon be familiar with them."
+				""
+				"Electricity is also &oslightly&o&r more realistic. For example, you cannot plug in an &8LV&r machine into a wire containing &bMV&r power. It will explode."
+				""
+				"Wires can also burn up if given more power than it can handle. These are called amps."
+				""
+				"Under each wire type in JEI you can see the voltage tier, and how many amps it can hold."
+				""
+				"1 Amp = 1x EU of the energy tier."
+				""
+				"So, a 1 amp LV wire can distrubute 32EU, and no more. A 2 amp LV wire can distribute 64EU."
+				"{@pagebreak}"
+				"That being said, you can send a 64A wire to a machine who only requests one amp. As long as it is sending the same voltage tier of power, you are all good!"
+			]
+			icon: "gtceu:europium_single_wire"
+			id: "54C71B9156199E99"
+			subtitle: "Click to read about GT Energy tiers"
+			tasks: [{
+				id: "3D2610D275D43FD8"
+				type: "checkmark"
+			}]
+			title: "GT Energy Tiers"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			icon: "gtceu:uhv_energy_input_hatch_16a"
+			id: "5D0F64EA88D63B1B"
+			subtitle: "Click to read about overclocking"
+			tasks: [{
+				id: "3054069CD6568CB9"
+				type: "checkmark"
+			}]
+			title: "Overclocking"
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+	title: "Welcome to GregTech: Voyager"
+}

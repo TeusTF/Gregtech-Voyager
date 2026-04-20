@@ -5,12 +5,13 @@
 	group: "3E515D2B3A8DFC29"
 	icon: "gtceu:lv_robot_arm"
 	id: "0A5B9618E3794CA4"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
 			dependency_requirement: "one_completed"
 			id: "3E9637EB1EDEE1CF"
+			min_required_tasks: 1
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "19DF2026D86048CC"

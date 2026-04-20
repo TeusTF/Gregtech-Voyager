@@ -14,6 +14,7 @@ event.remove({output: 'gtceu:nichrome_coil_block'})
 event.remove({output: 'gtceu:transistor'})
 event.remove({type: 'gtceu:assembler',output: 'gtceu:diode'})
 event.remove({output: 'gtceu:micro_processor_computer'})
+
 event.remove({type: 'minecraft:crafting_shaped' ,output: 'gtceu:phenolic_printed_circuit_board'})
 event.remove({type: 'gtceu:rock_breaker' ,output: 'minecraft:obsidian'})
 
@@ -38,4 +39,6 @@ event.replaceInput(
   'gtceu:fluxed_electrum_bolt'         // Arg 3: the item to replace it with
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
+
+
 })

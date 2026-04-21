@@ -112,7 +112,7 @@ function register_superconductor(name, ingredients, ebf, color, volts, amp, blas
             .color(color)
             .iconSet('shiny')
             .cableProperties(volts, amp, 0, true)
-            .flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, fine_wire, no_decomp);
+            .flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, fine_wire, no_decomp, no_smelt);
 
         if (ebf) {
             mat.blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
@@ -139,6 +139,41 @@ function register_metal(name, ingredients, ebf, color, blasting)
     });
 }
 
+function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genrotor)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .ingot()
+            .dust()
+            .components(ingredients)
+            .color(color)
+            .iconSet('metallic')
+            .flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, fine_wire, no_smelt);
+
+        if (ebf) {
+            mat.blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+        }
+        if(rotor)
+        {
+            // power, efficiency, damage, durability
+            mat.rotorStats(genrotor[0], genrotor[1], genrotor[2], genrotor[3])
+        }
+
+    });
+}
+
+function register_dust(name, ingredients, color)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .dust()
+            .components(ingredients)
+            .color(color)
+            .iconSet('shiny')
+            .flags(electrolyze)
+    });
+}
+
 function register_gem(name, color, ingredients) 
 {
         GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -153,6 +188,17 @@ function register_gem(name, color, ingredients)
     });
 }
 
+function register_fluid(name, color, ingredients)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .fluid()
+            .components(ingredients)
+            .color(color)
+            .flags()
+    });
+}
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('aluminium_lithium_compound')
         .ingot()
@@ -164,17 +210,30 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 });
 
+
+
 register_gem("source", '0xd745ff', [])
 
+register_fluid('acetylene','0xfff2f2', ['2x carbon', '2x hydrogen'])
+register_fluid('ilmenite_slurry','0x1a1818', [])
+register_fluid('ilmenite_residue','0x1a1616', [])
+
+register_dust('calcium_carbide', ['calcium', '2x carbon'], '0xffcfff')
+
 register_metal('metallic_mica', ['3x mica', '1x silver'], false, '0xaba376', [0, null, voltTier('lv'), 0]);
+
+register_nosmelt_metal('desh', [], false, '0xd44e06', [0, null, voltTier('lv'), 0], [300, 150, 1, 100000]);
+register_dust('desh_dioxide', '', '0xff4000'); // to be inserted into platline!
 
 register_metal('source_steel', [], false, '0xd745ff', [0, null, voltTier('lv'), 0])
 register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'), 1800])
 
+register_dust('fluxed_titanium_electrum_compound', '', '0x2c2e16');
+
 register_superconductor('tin_silver_alloy',['3x silver ', '4x tin'], false, '0xbfcdd6', 32, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_electrum',[], true, '0xfcad03', 128, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_cobalt_electrum', [], true, '0x006387', 512, 1, [0, null, voltTier('lv'), 0]);
-// register_superconductor('refined_fluxed_electrum', true, '0xff9d00', 2048, 4, [3600, 'mid', voltTier('ev'), 600]);
+register_superconductor('refined_fluxed_electrum', [], true, '0xdbff66', 2048, 4, [3600, 'mid', voltTier('ev'), 20*64]);
 // register_superconductor('desh_infused_refined_electrum', true, '0xcf1fc0', 8192, 8, [4500, 'mid', voltTier('iv'), 1]);
 // register_superconductor('desh_rhodium_infused_refined_electrum', true, '0xf57040', 32768, 8, [7200, 'high', voltTier('luv'), 1]);
 // register_superconductor('perfected_electrum', true, '0xfffef7', 131072, 64, [9001, 'high', voltTier('zpm'), 1]);

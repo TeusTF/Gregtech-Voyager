@@ -1000,7 +1000,13 @@
 		{
 			dependencies: [
 				"6598C333C23E5ED0"
-				"5A480BDC52785CF6"
+				"03BF4D37CBD358AE"
+				"55B9E1206C6F262C"
+			]
+			description: [
+				"SMDs will &lmassively&r increase the yield of circuits per resource. Batch craft TONS of these and watch your early circuit problems go away!"
+				""
+				"If you want to further increase your yield, consider making an HV Technician Helper"
 			]
 			id: "535CAE475ABF877F"
 			rewards: [
@@ -1050,7 +1056,7 @@
 			]
 			title: "SMDs"
 			x: 4.0d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["58D4915E122C733E"]
@@ -1677,29 +1683,6 @@
 			y: 6.0d
 		}
 		{
-			id: "5A480BDC52785CF6"
-			rewards: [
-				{
-					id: "333986739B2C4094"
-					item: "kubejs:hv_tech_coin"
-					type: "item"
-				}
-				{
-					id: "157D28A9927D923F"
-					item: "kubejs:hv_loot_bag"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "5434B936583122D9"
-				item: "gtceu:polyvinyl_chloride_bucket"
-				type: "item"
-			}]
-			title: "PVC"
-			x: 4.0d
-			y: 10.5d
-		}
-		{
 			dependencies: ["00C65B2F04610920"]
 			id: "1A410F31A03BC182"
 			tasks: [{
@@ -1968,7 +1951,11 @@
 				"666FFA22AA04D004"
 				"7B853D6D4BC03B8C"
 			]
-			description: ["The LHW (Large helper wheel) is a superb option for power while in &6HV&r. It generates 1.5 Amps of HV Power using Grandma's Cookies and an LCPTR Helper. A few of these will get your power needs up until &dEV&r with ease."]
+			description: [
+				"The LHW (Large helper wheel) is a superb option for power while in &6HV&r. It generates 1.5 Amps of HV Power using Grandma's Cookies and an LCPTR Helper. A few of these will get your power needs up until &dEV&r with ease."
+				""
+				"It is also easily upgraded when in &dEV&r."
+			]
 			hide_dependency_lines: true
 			id: "5DFC5C683D8CDCE2"
 			rewards: [
@@ -2084,6 +2071,57 @@
 			}]
 			x: -8.0d
 			y: 3.0d
+		}
+		{
+			id: "4195856209D1BEF9"
+			rewards: [{
+				count: 2
+				id: "4D80DC0B6DFDE30E"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0AED02A0BB801F33"
+				item: "gtceu:hv_electrolyzer"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.5d
+		}
+		{
+			id: "1D2393C7C14341D5"
+			tasks: [{
+				id: "6B2C5A6A24C727B5"
+				item: "gtceu:silicon_dioxide_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"4195856209D1BEF9"
+				"1D2393C7C14341D5"
+			]
+			description: [
+				"Now that you have an &6HV&r electrolyzer, you can completely automate &3Oxygen&r"
+				""
+				"No more electrolyzing ores super slowly!"
+			]
+			id: "18C49071DABC5CD6"
+			rewards: [{
+				count: 2
+				id: "11AAE780D05E7D97"
+				item: "kubejs:hv_tech_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47C268F4D3C8BF31"
+				item: "gtceu:oxygen_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 10.5d
 		}
 	]
 	title: "Chapter 3 (HV)"

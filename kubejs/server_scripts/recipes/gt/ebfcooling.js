@@ -56,5 +56,37 @@ ServerEvents.recipes(event => {
         .duration(20 * 6) 
         .EUt(120)
 
+    event.recipes.gtceu.electric_blast_furnace("kubejs:refined_fluxed_electrum")
+        .itemInputs("2x kubejs:refined_fluxed_electrum_crystal")
+        .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
+        .inputFluids("kubejs:blasting_gas 1000")
+        .circuit(1)
+        .duration(20 * 64) 
+        .EUt(1925)
+        .blastFurnaceTemp(3600);
+
+    event.recipes.gtceu.electric_blast_furnace("kubejs:refined_fluxed_electrum_dust")
+        .itemInputs("1x gtceu:refined_fluxed_electrum_dust")
+        .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
+        .circuit(1)
+        .duration(20 * 64) 
+        .EUt(1925)
+        .blastFurnaceTemp(3600);
+
+    event.recipes.gtceu.electric_blast_furnace("kubejs:refined_fluxed_electrumdust_c2")
+        .itemInputs("1x gtceu:refined_fluxed_electrum_dust")
+        .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
+        .inputFluids("kubejs:blasting_gas 1000")
+        .circuit(2)
+        .duration(20 * 54) 
+        .EUt(1925)
+        .blastFurnaceTemp(3600);
+
+    event.recipes.gtceu.vacuum_freezer("kubejs:refined_fluxed_electrum_cooling")
+        .itemInputs("gtceu:hot_refined_fluxed_electrum_ingot")
+        .itemOutputs("gtceu:refined_fluxed_electrum_ingot")
+        .duration(20 * 6) 
+        .EUt(120)
+
 
 });

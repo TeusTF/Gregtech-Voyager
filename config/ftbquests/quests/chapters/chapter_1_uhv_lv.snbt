@@ -981,7 +981,7 @@
 			y: 3.5d
 		}
 		{
-			description: ["You will need some form of oil in order to make &eMetallic Mica&r \\nThis is used to make numerous electronic parts, inclluding diodes.\\n\\nA good way of getting &0Heavy Oil&r is through Oilsands, and a good way of getting &2seed oil&r is with the micro farm with wheat"]
+			description: ["You will need some form of oil in order to make &eMetallic Mica&r \\nThis is used to make numerous electronic parts, including diodes.\\n\\nA good way of getting &0Heavy Oil&r is through Oilsands, and a good way of getting &2seed oil&r is with the micro farm with wheat"]
 			id: "19FC73434CC6BAE0"
 			min_required_tasks: 1
 			rewards: [{
@@ -1520,24 +1520,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["06AE6F8A4AF618B1"]
-			hide_dependency_lines: true
-			id: "36DC7380E4AFD689"
-			rewards: [{
-				count: 8
-				id: "6795B760E5D802CD"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "02A37795351C9701"
-				item: "gtceu:lv_centrifuge"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 7.5d
-		}
-		{
 			id: "7E19CBFEE37769B8"
 			rewards: [{
 				count: 8
@@ -1616,8 +1598,8 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.0d
+			x: 10.0d
+			y: 9.5d
 		}
 		{
 			id: "3E4416A49D1E8C7A"
@@ -1734,24 +1716,6 @@
 		{
 			dependencies: ["06AE6F8A4AF618B1"]
 			hide_dependency_lines: true
-			id: "07E1E80997831AC8"
-			rewards: [{
-				count: 8
-				id: "1FBF606F3AB947DF"
-				item: "kubejs:lv_tech_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4192AE01DA004961"
-				item: "gtceu:lv_macerator"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["06AE6F8A4AF618B1"]
-			hide_dependency_lines: true
 			id: "644D74D96E6F82A9"
 			rewards: [{
 				count: 8
@@ -1764,8 +1728,8 @@
 				item: "gtceu:lv_rock_crusher"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 4.5d
+			x: 11.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["33FBFD1A3B3D8CE4"]
@@ -2133,99 +2097,6 @@
 			title: "Tree Farms"
 			x: -3.0d
 			y: 3.5d
-		}
-		{
-			dependencies: ["644D74D96E6F82A9"]
-			id: "3E918E6AA934C32A"
-			subtitle: "You want a reward for this one?"
-			tasks: [{
-				id: "1BDDDE5CDD8A4842"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"7950E263199E3E7A"
-				"3E918E6AA934C32A"
-			]
-			id: "367202509EC4C7C0"
-			subtitle: "cobble -> gravel -> sand -> glass"
-			tasks: [{
-				id: "07D1792841E7158B"
-				item: "minecraft:glass"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"07E1E80997831AC8"
-				"367202509EC4C7C0"
-			]
-			id: "2599AA7F5442303C"
-			tasks: [{
-				id: "1D6143383E5A526E"
-				item: "gtceu:glass_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"2599AA7F5442303C"
-				"36DC7380E4AFD689"
-			]
-			id: "1D63780F416777CE"
-			tasks: [{
-				id: "1C5182716517EB97"
-				item: "gtceu:silicon_dioxide_dust"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"1D63780F416777CE"
-				"73DD00B62EC30664"
-			]
-			id: "68D3B5E66CDC47DB"
-			rewards: [{
-				id: "1957AE1517938545"
-				item: "kubejs:lv_loot_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2C4AD3E217EEFBA5"
-				item: "gtceu:silicon_dust"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 7.5d
-		}
-		{
-			dependencies: [
-				"1D63780F416777CE"
-				"73DD00B62EC30664"
-			]
-			id: "6AE4EA9911416C6F"
-			rewards: [{
-				id: "036E049AB90A99B3"
-				item: "kubejs:lv_loot_bag"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2F7B9C97E4486EA3"
-				item: "gtceu:oxygen_bucket"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 6.5d
 		}
 	]
 	title: "Chapter 1 (ULV, LV)"

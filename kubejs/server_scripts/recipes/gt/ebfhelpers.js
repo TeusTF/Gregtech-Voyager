@@ -77,6 +77,16 @@ ServerEvents.recipes(event => {
         .EUt(480)
         .blastFurnaceTemp(2000);
 
+    event.recipes.gtceu.electric_blast_furnace("kubejs:refined_fluxed_electrum_helper")
+        .itemInputs("2x kubejs:refined_fluxed_electrum_crystal")
+        .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
+        .notConsumable('kubejs:hv_ebf_helper')
+        .circuit(2)
+        .inputFluids("kubejs:blasting_gas 850")
+        .duration(20 * 64 * .85) 
+        .EUt(1925 * .85)
+        .blastFurnaceTemp(3600);
+
 
 
 

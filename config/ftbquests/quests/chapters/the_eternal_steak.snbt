@@ -205,6 +205,7 @@
 			y: 2.5d
 		}
 		{
+			can_repeat: true
 			dependencies: [
 				"1FC69E550854D0DD"
 				"4697CA73E10008F7"

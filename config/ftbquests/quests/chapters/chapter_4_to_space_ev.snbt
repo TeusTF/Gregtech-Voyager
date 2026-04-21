@@ -11,6 +11,25 @@
 	id: "4F26DE9498F90D58"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		description: ["You will need &4rutile&r to start your journey into &dEV&r"]
+		id: "084337D3DABDD960"
+		min_required_tasks: 1
+		tasks: [
+			{
+				id: "69B84F5EF9FD72DE"
+				item: "gtceu:raw_bauxite"
+				type: "item"
+			}
+			{
+				id: "47A7892A75FB1DA9"
+				item: "gtceu:raw_ilmenite"
+				type: "item"
+			}
+		]
+		title: "Rutile"
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "Chapter 4: To Space! (EV)"
 }

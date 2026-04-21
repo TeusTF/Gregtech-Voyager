@@ -14,8 +14,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("overworld/mica", vein => {
         vein.weight(15)
-        vein.density(1.0)
-        vein.clusterSize(30)
+        vein.density(.3)
+        vein.clusterSize(45)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
         vein.heightRangeUniform(20, 90)
@@ -33,8 +33,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("overworld/dense/mica", vein => {
         vein.weight(2)
-        vein.density(1)
-        vein.clusterSize(35)
+        vein.density(.8)
+        vein.clusterSize(45)
         vein.layer("stone")
         vein.dimensions("minecraft:overworld")
         vein.heightRangeUniform(-45, 5)
@@ -52,7 +52,7 @@ GTCEuServerEvents.oreVeins(event => {
     event.add("twilight/source", vein => {
         vein.weight(5)
         vein.density(0.3)
-        vein.clusterSize(20)
+        vein.clusterSize(40)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -67,8 +67,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/source", vein => {
         vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(.7)
+        vein.clusterSize(40)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -84,8 +84,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/nickel", vein => {
         vein.weight(15)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.3)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -102,8 +102,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/nickel", vein => {
         vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(.8)
+        vein.clusterSize(40)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -121,8 +121,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/cobalt", vein => {
         vein.weight(25)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.3)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -140,8 +140,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/cobalt", vein => {
         vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(.7)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -159,8 +159,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/silver", vein => {
         vein.weight(30)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.3)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -177,9 +177,9 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     event.add("twilight/dense/silver", vein => {
-        vein.weight(3)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.weight(2)
+        vein.density(.7)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -195,7 +195,7 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/gem", vein => {
         vein.weight(15)
-        vein.density(0.5)
+        vein.density(0.3)
         vein.clusterSize(25)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
@@ -215,8 +215,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/gem", vein => {
         vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(.7)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -233,8 +233,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/pitchblende", vein => {
         vein.weight(15)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.2)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -252,8 +252,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/pitchblende", vein => {
         vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(.8)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -267,46 +267,46 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("twilight/neodymium", vein => {
-        vein.weight(15)
-        vein.density(0.5)
-        vein.clusterSize(25)
-        vein.layer("twilightforest")
-        vein.dimensions("twilightforest:twilight_forest")
-        vein.heightRangeUniform(-45, 5)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(1, 2))
-                .layer(l => l.weight(3).state(() => Block.getBlock("gtceu:monazite_ore").defaultBlockState()).size(1, 2))
-                .layer(l => l.weight(3).state(() => Block.getBlock("gtceu:bastnasite_ore").defaultBlockState()).size(1, 2))
-                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(1, 2))
-            )
-        )
+    // event.add("twilight/neodymium", vein => {
+    //     vein.weight(15)
+    //     vein.density(0.5)
+    //     vein.clusterSize(25)
+    //     vein.layer("twilightforest")
+    //     vein.dimensions("twilightforest:twilight_forest")
+    //     vein.heightRangeUniform(-45, 5)
+    //     vein.layeredVeinGenerator(generator => generator
+    //         .buildLayerPattern(pattern => pattern
+    //             .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(1, 2))
+    //             .layer(l => l.weight(3).state(() => Block.getBlock("gtceu:monazite_ore").defaultBlockState()).size(1, 2))
+    //             .layer(l => l.weight(3).state(() => Block.getBlock("gtceu:bastnasite_ore").defaultBlockState()).size(1, 2))
+    //             .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(1, 2))
+    //         )
+    //     )
 
     
-    })
+    // })
 
-    event.add("twilight/dense/neodymium", vein => {
-        vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
-        vein.layer("twilightforest")
-        vein.dimensions("twilightforest:twilight_forest")
-        vein.heightRangeUniform(-45, 5)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(3, 6))
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:monazite_ore").defaultBlockState()).size(2, 2))
-                .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:bastnasite_ore").defaultBlockState()).size(2, 2))
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(3, 6))
-            )
-        )
-    })
+    // event.add("twilight/dense/neodymium", vein => {
+    //     vein.weight(1)
+    //     vein.density(.7)
+    //     vein.clusterSize(30)
+    //     vein.layer("twilightforest")
+    //     vein.dimensions("twilightforest:twilight_forest")
+    //     vein.heightRangeUniform(-45, 5)
+    //     vein.layeredVeinGenerator(generator => generator
+    //         .buildLayerPattern(pattern => pattern
+    //             .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(3, 6))
+    //             .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:monazite_ore").defaultBlockState()).size(2, 2))
+    //             .layer(l => l.weight(1).state(() => Block.getBlock("gtceu:bastnasite_ore").defaultBlockState()).size(2, 2))
+    //             .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:neodymium_ore").defaultBlockState()).size(3, 6))
+    //         )
+    //     )
+    // })
 
     event.add("twilight/magnetite", vein => {
-        vein.weight(30)
-        vein.density(0.9)
-        vein.clusterSize(25)
+        vein.weight(40)
+        vein.density(0.4)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -341,8 +341,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/red", vein => {
         vein.weight(25)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.3)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -360,7 +360,7 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/red", vein => {
         vein.weight(1)
-        vein.density(1)
+        vein.density(.9)
         vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
@@ -370,15 +370,15 @@ GTCEuServerEvents.oreVeins(event => {
                 .layer(l => l.weight(12).state(() => Block.getBlock("gtceu:ruby_ore").defaultBlockState()).size(2, 3))
                 .layer(l => l.weight(12).state(() => Block.getBlock("gtceu:redstone_ore").defaultBlockState()).size(3, 6))
                 .layer(l => l.weight(8).state(() => Block.getBlock("gtceu:realgar_ore").defaultBlockState()).size(2, 2))
-                .layer(l => l.weight(2).state(() => Block.getBlock("gtceu:plutonium_ore").defaultBlockState()).size(1, 1))
+                .layer(l => l.weight(4).state(() => Block.getBlock("gtceu:plutonium_ore").defaultBlockState()).size(1, 1))
             )
         )
     })
 
     event.add("twilight/blue", vein => {
         vein.weight(25)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.3)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -396,8 +396,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/blue", vein => {
         vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(.9)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -414,8 +414,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/green", vein => {
         vein.weight(25)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.3)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -433,8 +433,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/green", vein => {
         vein.weight(1)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(0.9)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -451,8 +451,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/yellow", vein => {
         vein.weight(25)
-        vein.density(0.5)
-        vein.clusterSize(25)
+        vein.density(0.3)
+        vein.clusterSize(45)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)
@@ -470,8 +470,8 @@ GTCEuServerEvents.oreVeins(event => {
 
     event.add("twilight/dense/yellow", vein => {
         vein.weight(3)
-        vein.density(1)
-        vein.clusterSize(30)
+        vein.density(0.9)
+        vein.clusterSize(40)
         vein.layer("twilightforest")
         vein.dimensions("twilightforest:twilight_forest")
         vein.heightRangeUniform(-45, 5)

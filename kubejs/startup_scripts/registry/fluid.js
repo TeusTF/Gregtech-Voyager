@@ -34,6 +34,12 @@ StartupEvents.registry('fluid', event => {
     .thickTexture(0xffec60)
     .bucketColor(0xffec60)
     .displayName('Melted Butter')
+
+  event.create('blasting_gas')
+    .thinTexture(0xfdff9e)
+    .bucketColor(0xfdff9e)
+    .displayName('Blasting Gas')
+    .noBlock() 
     
 //   // Fluid with custom textures
 //   event.create('strawberry_cream')

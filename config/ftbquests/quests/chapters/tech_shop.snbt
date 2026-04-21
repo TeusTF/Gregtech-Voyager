@@ -57,7 +57,7 @@
 			}]
 			tasks: [
 				{
-					count: 16L
+					count: 32L
 					id: "01D10F39FFD65E09"
 					item: "kubejs:lv_tech_coin"
 					type: "item"
@@ -153,7 +153,7 @@
 			}]
 			tasks: [
 				{
-					count: 24L
+					count: 32L
 					id: "6ABF8D4754933EE1"
 					item: "kubejs:mv_tech_coin"
 					type: "item"
@@ -180,7 +180,7 @@
 			}]
 			tasks: [
 				{
-					count: 8L
+					count: 24L
 					id: "5EE61F02D7EF877E"
 					item: "kubejs:mv_tech_coin"
 					type: "item"
@@ -207,7 +207,7 @@
 			}]
 			tasks: [
 				{
-					count: 8L
+					count: 16L
 					id: "4157A85023407AF1"
 					item: "kubejs:mv_tech_coin"
 					type: "item"
@@ -287,7 +287,7 @@
 			}]
 			tasks: [
 				{
-					count: 8L
+					count: 32L
 					id: "5EE5453040EBC3BD"
 					item: "kubejs:mv_tech_coin"
 					type: "item"
@@ -314,7 +314,7 @@
 			}]
 			tasks: [
 				{
-					count: 48L
+					count: 64L
 					id: "768A121CAA417D53"
 					item: "kubejs:mv_tech_coin"
 					type: "item"
@@ -421,7 +421,7 @@
 			}]
 			tasks: [
 				{
-					count: 24L
+					count: 32L
 					id: "7041B1F7133953DF"
 					item: "kubejs:lv_tech_coin"
 					type: "item"
@@ -466,9 +466,9 @@
 			}]
 			tasks: [
 				{
-					count: 16L
+					count: 48L
 					id: "67DECD13C7938E91"
-					item: { Count: 16, id: "kubejs:mv_tech_coin" }
+					item: "kubejs:mv_tech_coin"
 					type: "item"
 				}
 				{
@@ -529,9 +529,9 @@
 			}]
 			tasks: [
 				{
-					count: 4L
+					count: 16L
 					id: "0D7C46AA101491EC"
-					item: { Count: 4, id: "kubejs:ulv_tech_coin" }
+					item: "kubejs:ulv_tech_coin"
 					type: "item"
 				}
 				{
@@ -584,9 +584,9 @@
 			}]
 			tasks: [
 				{
-					count: 8L
+					count: 64L
 					id: "26F7E8E31C04139E"
-					item: { Count: 8, id: "kubejs:ulv_tech_coin" }
+					item: "kubejs:ulv_tech_coin"
 					type: "item"
 				}
 				{

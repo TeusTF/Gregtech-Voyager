@@ -93,6 +93,67 @@
 			x: 2.0d
 			y: 1.5d
 		}
+		{
+			icon: "gtceu:luv_parallel_hatch"
+			id: "2FA2F949FD5C12B7"
+			subtitle: "Click to read about parallels in GT"
+			tasks: [{
+				id: "4CB3506FC3D4718C"
+				type: "checkmark"
+			}]
+			title: "Parallels"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			icon: "kubejs:uev_loot_bag"
+			id: "0047F80617F6146B"
+			subtitle: "Click to read about Loot in GT Voyager"
+			tasks: [{
+				id: "1C3E3FAA6D225370"
+				type: "checkmark"
+			}]
+			title: "Loot, and Loot Bags"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Circuits in GregTech run parallel with your current energy tier. Each energy tier has it's own set of circuits (ranging around it)."
+				""
+				"Go to the \"Progression Sheet\" tab to see more about circuits."
+			]
+			icon: "kubejs:hv_universal_circuit"
+			id: "4EFB4AD5EC98A0A2"
+			size: 0.5d
+			subtitle: "Click to read about GT circuits"
+			tasks: [{
+				id: "32D1E8FB2F541306"
+				type: "checkmark"
+			}]
+			title: "Circuits"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Mobs in GregTech: Voyager are... a bit harder."
+				""
+				"Difficulty will increase slightly over time (ranging from 50-100), and mobs will start to have more attributes, items, health, damage, etc."
+				""
+				"I suggest finding ways to make yourself stronger in the early game, as you may need it."
+			]
+			icon: "minecraft:creeper_head"
+			id: "04CCA80F2B059E10"
+			subtitle: "Click to read about Mobs in GT Voyager"
+			tasks: [{
+				id: "1DB725CA729727B6"
+				title: "Mobs"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
 	]
 	title: "Welcome to GregTech: Voyager"
 }

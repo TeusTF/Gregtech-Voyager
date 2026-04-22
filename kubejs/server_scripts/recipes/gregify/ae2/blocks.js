@@ -125,11 +125,33 @@ ServerEvents.recipes(event => {
         {
             A: 'gtceu:titanium_frame',
             B: 'ae2:formation_core',
-            C: 'ae2:annihilation_core ',
+            C: 'ae2:annihilation_core',
             D: 'gtceu:ev_electric_pump',
             E: 'gtceu:ev_electric_piston'
         }
     )
+
+    event.shaped(
+        Item.of('ae2:me_p2p_tunnel', 2), 
+        [
+            ' A ',
+            'ABA', 
+            'CCC'
+        ],
+        {
+            A: 'gtceu:titanium_plate',
+            B: 'ae2:engineering_processor',
+            C: 'ae2:fluix_crystal',
+        }
+    )
+
+
+    event.recipes.gtceu
+        .assembler('kubejs:storage_bus') 
+        .itemInputs('ae2:interface', 'gtceu:ev_conveyor_module', 'minecraft:chest')
+        .itemOutputs('ae2:storage_bus')
+        .duration(100)                                 
+        .EUt(30)
 
     event.shaped(
         Item.of('ae2:energy_acceptor', 1), 
@@ -145,11 +167,70 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shaped(
+        Item.of('ae2:import_bus', 1), 
+        [
+            ' B ',
+            ' A ', 
+            ' E '
+        ],
+        {
+            A: 'ae2:annihilation_core',
+            B: 'gtceu:ev_electric_piston',
+            E: 'gtceu:ev_electric_pump'
+        }
+    )
+
+    event.shaped(
+        Item.of('ae2:export_bus', 1), 
+        [
+            ' B ',
+            ' A ', 
+            ' E '
+        ],
+        {
+            A: 'ae2:formation_core',
+            B: 'gtceu:ev_electric_piston',
+            E: 'gtceu:ev_electric_pump'
+        }
+    )
+
     event.shapeless(
         Item.of('ae2:cable_interface', 1),
         [
             'ae2:interface',
             'ae2:cable_anchor'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:toggle_bus', 1),
+        [
+            'ae2:cable_anchor',
+            'ae2:level_emitter',
+            'ae2:calculation_processor'
+        ]
+    )
+    event.shapeless(
+        Item.of('ae2:inverted_toggle_bus', 1),
+        [
+            'ae2:toggle_bus',
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:level_emitter', 1),
+        [
+            'minecraft:redstone_torch',
+            'ae2:calculation_processor'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:energy_level_emitter', 1),
+        [
+            'ae2:fluix_crystal',
+            'ae2:level_emitter'
         ]
     )
 

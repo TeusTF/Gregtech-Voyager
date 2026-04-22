@@ -135,5 +135,252 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shaped(
+        Item.of('ae2:item_cell_housing', 1), 
+        [
+            'CDC',
+            'DAD', 
+            '   '
+        ],
+        {
+            A: 'ae2:fluix_crystal',
+            C: 'ae2:quartz_glass',
+            D: 'gtceu:titanium_plate'
+        }
+    )
+
+    event.shaped(
+        Item.of('ae2:fluid_cell_housing', 1), 
+        [
+            'CDC',
+            'DAD', 
+            '   '
+        ],
+        {
+            A: 'ae2:fluix_crystal',
+            C: 'ae2:quartz_glass',
+            D: 'gtceu:polyvinyl_chloride_plate'
+        }
+    )
+
+    event.shaped(
+        Item.of('ae2:basic_card', 1), 
+        [
+            'CD ',
+            'BAD', 
+            'CD '
+        ],
+        {
+            A: 'ae2:calculation_processor',
+            B: 'gtceu:fine_red_alloy_wire',
+            C: 'gtceu:fine_gold_wire',
+            D: 'gtceu:aluminium_plate'
+        }
+    )
+
+    event.shapeless(
+        Item.of('ae2:redstone_card', 1),
+        [
+            'ae2:basic_card',
+            'gtceu:redstone_plate'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:capacity_card', 1),
+        [
+            'ae2:basic_card',
+            'gtceu:ram_chip'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:void_card', 1),
+        [
+            'ae2:basic_card',
+            'gtceu:obsidian_plate',
+            'ae2:calculation_processor'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:fuzzy_card', 1),
+        [
+            'ae2:advanced_card',
+            'gtceu:lv_robot_arm',
+        ]
+    )
+
+    event.shapeless(
+        Item.of('ae2:inverter_card', 1),
+        [
+            'ae2:advanced_card',
+            'minecraft:redstone_torch',
+        ]
+    )
+
+    event.recipes.gtceu
+        .assembler('kubejs:acceleration_card')  
+        .itemInputs('2x ae2:advanced_card', 'ae2:calculation_processor', 'ae2:fluix_crystal')
+        .itemOutputs('2x ae2:speed_card')
+        .duration(40)                                 
+        .EUt(1925)
+
+    event.recipes.gtceu
+        .assembler('kubejs:crafting_card')  
+        .itemInputs('2x ae2:advanced_card', '2x ae2:engineering_processor', 'ae2:fluix_crystal', '4x gtceu:ram_chip')
+        .itemOutputs('ae2:crafting_card')
+        .duration(200)                                 
+        .EUt(8192)
+
+    event.recipes.gtceu
+        .assembler('kubejs:equal_distribution_card')  
+        .itemInputs('1x ae2:advanced_card', '1x ae2:logic_processor')
+        .itemOutputs('ae2:equal_distribution_card')
+        .duration(40)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .assembler('kubejs:energy_card')  
+        .itemInputs('1x ae2:advanced_card', '1x ae2:dense_energy_cell')
+        .itemOutputs('ae2:energy_card')
+        .duration(40)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .assembler('kubejs:energy_cell')  
+        .itemInputs('1x ae2:calculation_processor', '8x ae2:fluix_dust', 'gtceu:ev_machine_casing')
+        .itemOutputs('ae2:energy_cell')
+        .duration(40)                                 
+        .EUt(1920)
+
+    event.recipes.gtceu
+        .assembler('kubejs:dense_energy_cell')  
+        .itemInputs('1x ae2:engineering_processor', '8x ae2:energy_cell', 'gtceu:iv_machine_casing')
+        .itemOutputs('ae2:dense_energy_cell')
+        .duration(40)                                 
+        .EUt(1920)
+
+    event.shaped(
+        Item.of('ae2:advanced_card', 1), 
+        [
+            'CD ',
+            'BAD', 
+            'CD '
+        ],
+        {
+            A: 'ae2:calculation_processor',
+            B: 'gtceu:fine_red_alloy_wire',
+            C: 'gtceu:fine_fluxed_cobalt_electrum_wire',
+            D: 'gtceu:aluminium_plate'
+        }
+    )
+
+
+    event.recipes.gtceu
+        .assembler('kubejs:1k_component')  
+        .itemInputs('ae2:calculation_processor', '8x gtceu:fine_tin_silver_alloy_wire', '3x ae2:quartz_glass', '2x #gtceu:circuits/lv')
+        .itemOutputs('1x ae2:cell_component_1k')
+        .duration(100)                                 
+        .EUt(30)
+
+    event.recipes.gtceu
+        .assembler('kubejs:4k_component')  
+        .itemInputs('ae2:logic_processor', '8x gtceu:fine_fluxed_electrum_wire', '3x ae2:cell_component_1k', '2x #gtceu:circuits/mv')
+        .itemOutputs('1x ae2:cell_component_4k')
+        .duration(300)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .assembler('kubejs:16k_component')  
+        .itemInputs('ae2:engineering_processor', '8x gtceu:fine_fluxed_cobalt_electrum_wire', '3x ae2:cell_component_4k', '2x #gtceu:circuits/hv')
+        .itemOutputs('1x ae2:cell_component_16k')
+        .duration(300)                                 
+        .EUt(480)
+
+    event.recipes.gtceu
+        .assembler('kubejs:64k_component')  
+        .itemInputs('ae2:engineering_processor', '8x gtceu:fine_refined_fluxed_electrum_wire', '3x ae2:cell_component_16k', '2x #gtceu:circuits/ev')
+        .itemOutputs('1x ae2:cell_component_64k')
+        .duration(300)                                 
+        .EUt(480)
+
+    event.recipes.gtceu
+        .assembler('kubejs:256k_component')  
+        .itemInputs('ae2:engineering_processor', '8x gtceu:fine_refined_fluxed_electrum_wire', '3x ae2:cell_component_64k', '2x #gtceu:circuits/iv')
+        .itemOutputs('1x ae2:cell_component_64k')
+        .duration(800)                                 
+        .EUt(8000)
+
+    event.recipes.gtceu
+        .canner('kubejs:1k_cell')  
+        .itemInputs('ae2:cell_component_1k', 'ae2:item_cell_housing')
+        .itemOutputs('1x ae2:item_storage_cell_1k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:4k_cell')  
+        .itemInputs('ae2:cell_component_4k', 'ae2:item_cell_housing')
+        .itemOutputs('1x ae2:item_storage_cell_4k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:16k_cell')  
+        .itemInputs('ae2:cell_component_16k', 'ae2:item_cell_housing')
+        .itemOutputs('1x ae2:item_storage_cell_16k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:64k_cell')  
+        .itemInputs('ae2:cell_component_64k', 'ae2:item_cell_housing')
+        .itemOutputs('1x ae2:item_storage_cell_64k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:256k_cell')  
+        .itemInputs('ae2:cell_component_256k', 'ae2:item_cell_housing')
+        .itemOutputs('1x ae2:item_storage_cell_256k')
+        .duration(100)                                 
+        .EUt(120)
+
+     event.recipes.gtceu
+        .canner('kubejs:1k_cell_fluid')  
+        .itemInputs('ae2:cell_component_1k', 'ae2:fluid_cell_housing')
+        .itemOutputs('1x ae2:fluid_storage_cell_1k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:4k_cell_fluid')  
+        .itemInputs('ae2:cell_component_4k', 'ae2:fluid_cell_housing')
+        .itemOutputs('1x ae2:fluid_storage_cell_4k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:16k_cell_fluid')  
+        .itemInputs('ae2:cell_component_16k', 'ae2:fluid_cell_housing')
+        .itemOutputs('1x ae2:fluid_storage_cell_16k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:64k_cell_fluid')  
+        .itemInputs('ae2:cell_component_64k', 'ae2:fluid_cell_housing')
+        .itemOutputs('1x ae2:fluid_storage_cell_64k')
+        .duration(100)                                 
+        .EUt(120)
+
+    event.recipes.gtceu
+        .canner('kubejs:256k_cell_fluid')  
+        .itemInputs('ae2:cell_component_256k', 'ae2:fluid_cell_housing')
+        .itemOutputs('1x ae2:fluid_storage_cell_256k')
+        .duration(100)                                 
+        .EUt(120)
+
 
 });

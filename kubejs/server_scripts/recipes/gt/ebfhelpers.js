@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
         .notConsumable('kubejs:hv_ebf_helper')
         .circuit(2)
         .inputFluids("kubejs:blasting_gas 850")
-        .duration(20 * 64 * .85) 
+        .duration(20 * 50 * .85) 
         .EUt(1925 * .85)
         .blastFurnaceTemp(3600);
 

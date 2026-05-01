@@ -19,13 +19,12 @@ ServerEvents.recipes(event => {
     //     .EUt(32)
     //     .blastFurnaceTemp(1800);
 
-   event.recipes.gtceu.electric_blast_furnace("kubejs:calcium_carbide")
+   event.recipes.gtceu.large_chemical_reactor("kubejs:calcium_carbide")
         .itemInputs("2x gtceu:quicklime_dust", '6x gtceu:carbon_dust')
         .itemOutputs("2x gtceu:calcium_carbide_dust")
         .outputFluids("gtceu:carbon_dioxide 2000")
         .duration(20 * 5) 
         .EUt(120)
-        .blastFurnaceTemp(3600);
 
     event.recipes.gtceu
         .large_chemical_reactor('kubejs:acetylene')   // recipe ID

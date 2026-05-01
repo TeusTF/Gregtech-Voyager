@@ -20,6 +20,7 @@
 			]
 			id: "084337D3DABDD960"
 			min_required_tasks: 1
+			size: 1.5d
 			tasks: [
 				{
 					id: "69B84F5EF9FD72DE"
@@ -42,24 +43,441 @@
 			y: 0.0d
 		}
 		{
-			id: "4F055147E759F7BD"
-			tasks: [{
-				id: "7446CC45A8747A7C"
-				item: "gtceu:refined_fluxed_electrum_ingot"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 1.5d
-		}
-		{
+			dependencies: ["37CD9E855B60C87D"]
 			id: "307B3D1F044D7B30"
+			size: 2.0d
 			tasks: [{
 				id: "5569D0326F0EF715"
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["084337D3DABDD960"]
+			id: "37CD9E855B60C87D"
+			tasks: [{
+				id: "3A078B02F41405A5"
+				item: "gtceu:titanium_tetrachloride_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["326C8D8399063A93"]
+			id: "6ACFB73F20BF2828"
+			subtitle: "Better than nitrogen"
+			tasks: [{
+				id: "50C1AB2A376BEBE4"
+				item: "kubejs:blasting_gas_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"6ACFB73F20BF2828"
+				"4B16F35B8A109539"
+			]
+			id: "6EB67BA7F00DC419"
+			size: 1.5d
+			tasks: [{
+				id: "4FE2969202BEB308"
+				item: "gtceu:refined_fluxed_electrum_ingot"
+				type: "item"
+			}]
+			title: "EV Superconductor"
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"244F259B3F4613E1"
+				"34ED22791B767607"
+			]
+			id: "4B16F35B8A109539"
+			tasks: [{
+				id: "68E72576F73A6982"
+				item: "kubejs:refined_fluxed_electrum_crystal"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["50EE25EAC7C546FC"]
+			id: "244F259B3F4613E1"
+			tasks: [{
+				id: "7708B016E5C0CEEC"
+				item: "kubejs:crystalline_titanium_electrum"
+				type: "item"
+			}]
+			x: 7.0d
 			y: 1.5d
+		}
+		{
+			dependencies: [
+				"307B3D1F044D7B30"
+				"6C021E9E2CDE5EFF"
+			]
+			id: "50EE25EAC7C546FC"
+			tasks: [{
+				id: "70C5217881700D86"
+				item: "gtceu:fluxed_titanium_electrum_compound_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			id: "6C021E9E2CDE5EFF"
+			subtitle: "Not a bad idea to get a lot of this"
+			tasks: [{
+				id: "7322AB6D8F3CD3A9"
+				item: "gtceu:mercury_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			id: "34ED22791B767607"
+			subtitle: "Petrochem can help a lot with this"
+			tasks: [{
+				id: "151447FA86736D1B"
+				item: "gtceu:acetone_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Neodymium"
+				"Ilmenite"
+				"Bauxite"
+				"Tungstate"
+				"Bornite"
+			]
+			icon: "gtceu:raw_ilmenite"
+			id: "1DB10F87357C83A2"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "5030A2C47A82C849"
+				type: "checkmark"
+			}]
+			title: "Moon Ores"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: ["Acetylene is pretty much *just another hydrocarbon*. You can either get it through petrochem, or a 3/4-step processing line."]
+			id: "326C8D8399063A93"
+			subtitle: "Check processing lines chapter to see more"
+			tasks: [{
+				id: "76C8FF9E1678E019"
+				item: "gtceu:acetylene_bucket"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["307B3D1F044D7B30"]
+			id: "591742EF37E96F38"
+			size: 1.5d
+			tasks: [{
+				id: "1D1DFE37C273C2EB"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6EB67BA7F00DC419"
+				"591742EF37E96F38"
+			]
+			description: ["Now that you've entered &dEV&r, you have access to AE2. An extremely powerful logistics mod. I like to describe it as the \"Microsoft Excel of Minecraft\". Get good at it. You will need to."]
+			hide_dependency_lines: true
+			icon: "ae2:controller"
+			id: "3FD72AF426DE5A39"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Take a look at this chapter."
+			tasks: [{
+				id: "19413466CAF8FB4C"
+				title: "Applied Energistics"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["307B3D1F044D7B30"]
+			id: "4DEE1F3E73302493"
+			tasks: [{
+				id: "17F60803FC379F03"
+				item: "gtceu:ev_electric_motor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DEE1F3E73302493"]
+			id: "4B732822A3B224E7"
+			tasks: [{
+				id: "194CC653899D6B24"
+				item: "gtceu:ev_electric_piston"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4DEE1F3E73302493"
+				"4B732822A3B224E7"
+			]
+			hide_dependent_lines: true
+			id: "5943DC5F54ED9F40"
+			size: 1.5d
+			tasks: [{
+				id: "0D97E85C02CEA132"
+				item: "gtceu:ev_robot_arm"
+				type: "item"
+			}]
+			title: "Robot Arms IV"
+			x: 0.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["4DEE1F3E73302493"]
+			hide_dependent_lines: true
+			id: "1CA9601A2A5F56A4"
+			tasks: [{
+				id: "33421A7579FD27CA"
+				item: "gtceu:ev_conveyor_module"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DEE1F3E73302493"]
+			hide_dependent_lines: true
+			id: "0F995931300B2323"
+			tasks: [{
+				id: "62B0A76C139FA992"
+				item: "gtceu:ev_electric_pump"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F995931300B2323"]
+			id: "4C8F0DE2550B5EFC"
+			tasks: [{
+				id: "0182E9F3001C264B"
+				item: "gtceu:ev_fluid_regulator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"307B3D1F044D7B30"
+				"54AFAD9BA7314100"
+			]
+			hide_dependency_lines: true
+			id: "1D18348492546BAE"
+			tasks: [{
+				id: "355C6F37464B0550"
+				item: "gtceu:ev_sensor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"54AFAD9BA7314100"
+				"307B3D1F044D7B30"
+			]
+			hide_dependency_lines: true
+			id: "28DAF2CF9571AF5A"
+			tasks: [{
+				id: "409AA7F5361E16BE"
+				item: "gtceu:ev_emitter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"591742EF37E96F38"
+				"1CA9601A2A5F56A4"
+				"0F995931300B2323"
+			]
+			id: "51FA7C2C0374BDAB"
+			subtitle: "Better rutile processing"
+			tasks: [{
+				id: "4FB1450B2F9E9363"
+				item: "gtceu:ev_chemical_bath"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51FA7C2C0374BDAB"]
+			description: ["Now that you have an &dEV&r chemical bath, you can get WAAAY more titanium from your ilmenite. You can also get some useful biproducts like tantalum."]
+			id: "32F8AB8BF51222B5"
+			subtitle: "Do this."
+			tasks: [{
+				id: "6D199EFBF313D7DC"
+				item: "gtceu:ilmenite_slurry_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["32F8AB8BF51222B5"]
+			description: ["Desh-line is it's own thing, but for now you can get some of it as a byproduct from ilmenite processing."]
+			id: "766A7AFB2AE2F098"
+			tasks: [{
+				id: "343961AA8AB9B90C"
+				item: "gtceu:desh_dioxide_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"591742EF37E96F38"
+				"5943DC5F54ED9F40"
+			]
+			id: "7BD63E2D4B804A69"
+			tasks: [{
+				id: "3B6009F4C61E4886"
+				item: "gtceu:ev_assembler"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			id: "3D1665D6742E7DDC"
+			tasks: [{
+				id: "6DF341BD7E76DAAF"
+				item: "gtceu:ultimet_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3D1665D6742E7DDC"]
+			id: "139CE36CAFC02F4F"
+			tasks: [{
+				id: "418DF5B6F31426B5"
+				item: "gtceu:ev_cutter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["139CE36CAFC02F4F"]
+			id: "38EFAAD003E697C7"
+			tasks: [
+				{
+					id: "08570EA92C5A4F68"
+					item: "gtceu:mpic_wafer"
+					type: "item"
+				}
+				{
+					id: "18F6F562853B213E"
+					item: "gtceu:mpic_chip"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7BD63E2D4B804A69"]
+			id: "71436BF1CBD569ED"
+			tasks: [{
+				id: "3B588B60D6ABEB52"
+				item: "gtceu:ev_voltage_coil"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"71436BF1CBD569ED"
+				"38EFAAD003E697C7"
+			]
+			id: "6D599070FCBCD71C"
+			size: 1.5d
+			tasks: [{
+				id: "7FFFE276707FDE34"
+				item: "gtceu:ev_energy_input_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6D599070FCBCD71C"]
+			id: "6154764CC312BD4E"
+			tasks: [{
+				id: "31D3CF5F051A8E1E"
+				item: "gtceu:desh_ingot"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"7BD63E2D4B804A69"
+				"6154764CC312BD4E"
+				"6EB67BA7F00DC419"
+			]
+			id: "1E76B42857AC04C9"
+			tasks: [{
+				count: 16L
+				id: "0E2BA59A4321FB4F"
+				item: { Count: 16, id: "kubejs:desh_coil_block" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			id: "310532CFE6FBAACA"
+			tasks: [{
+				id: "1A616615D58CC053"
+				title: "upgraded mica"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 6.0d
 		}
 	]
 	title: "Chapter 4: To Space! (EV)"

@@ -519,6 +519,18 @@ event.recipes.gtceu.assembler('kubejs:nichromecoil')
     .duration(30*20)
     .EUt(480);
 
+event.recipes.gtceu.assembler('kubejs:deshcoil')
+    .itemInputs(
+        '8x gtceu:desh_double_wire',
+        '8x gtceu:vanadium_steel_foil',
+        '16x gtceu:metallic_mica_foil',
+    )
+    // .notConsumable('kubejs:lv_technician_helper')
+    .itemOutputs('1x kubejs:desh_coil_block')
+    .inputFluids('gtceu:nichrome 144')
+    .duration(40*20)
+    .EUt(1980);
+
 // misc
 
 event.recipes.gtceu.assembler('kubejs:bricks')

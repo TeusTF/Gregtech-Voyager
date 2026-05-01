@@ -139,7 +139,7 @@ function register_metal(name, ingredients, ebf, color, blasting)
     });
 }
 
-function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genrotor)
+function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genrotor, tier)
 {
     GTCEuStartupEvents.registry('gtceu:material', event => {
         const mat = event.create(name)
@@ -148,6 +148,7 @@ function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genroto
             .components(ingredients)
             .color(color)
             .iconSet('metallic')
+            .cableProperties(tier, 1, 4, false)
             .flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, fine_wire, no_smelt);
 
         if (ebf) {
@@ -222,8 +223,8 @@ register_dust('calcium_carbide', ['calcium', '2x carbon'], '0xffcfff')
 
 register_metal('metallic_mica', ['3x mica', '1x silver'], false, '0xaba376', [0, null, voltTier('lv'), 0]);
 
-register_nosmelt_metal('desh', [], false, '0xd44e06', [0, null, voltTier('lv'), 0], [300, 150, 1, 100000]);
-register_dust('desh_dioxide', '', '0xff4000'); // to be inserted into platline!
+register_nosmelt_metal('desh', [], true, '0xd44e06', [3600, 'mid', voltTier('ev'), 20*64], [300, 150, 1, 100000], voltTier('iv'));
+register_dust('desh_dioxide', '', '0xff4000'); // to be inserted into desh line!
 
 register_metal('source_steel', [], false, '0xd745ff', [0, null, voltTier('lv'), 0])
 register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'), 1800])

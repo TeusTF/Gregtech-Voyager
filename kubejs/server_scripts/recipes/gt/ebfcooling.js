@@ -5,6 +5,59 @@ ServerEvents.recipes(event => {
 
     event.remove({type: 'minecraft:smelting', output: 'gtceu:fluxed_electrum_ingot'})
     event.remove({type: 'minecraft:smelting', output: 'gtceu:fluxed_cobalt_electrum_ingot'})
+    event.remove({output: 'gtceu:hot_tungsten_steel_ingot'})
+
+    function ebf_recipe(input, ebfduration, ebfeut, ebftemp, blastfluid, helpertier, do_helium_cooling)
+    {
+        event.recipes.gtceu.electric_blast_furnace("kubejs:hot_" + input)
+            .itemInputs("gtceu:" + input + '_dust')
+            .itemOutputs("gtceu:hot_" + input + '_ingot')
+            .circuit(1)
+            .duration(ebfduration) 
+            .EUt(ebfeut)
+            .blastFurnaceTemp(ebftemp);
+
+        event.recipes.gtceu.electric_blast_furnace("kubejs:hot_" + input + '_fluid')
+            .itemInputs("gtceu:" + input + '_dust')
+            .inputFluids(blastfluid + ' 100')
+            .itemOutputs("gtceu:hot_" + input + '_ingot')
+            .circuit(2)
+            .duration(ebfduration * .67)
+            .EUt(ebfeut)
+            .blastFurnaceTemp(ebftemp);
+
+        event.recipes.gtceu.electric_blast_furnace("kubejs:hot_" + input + '_helper')
+            .itemInputs("gtceu:" + input + '_dust')
+            .notConsumable('kubejs:' + helpertier +'_ebf_helper')
+            .inputFluids(blastfluid + ' 85')
+            .itemOutputs("gtceu:hot_" + input + '_ingot')
+            .circuit(2)
+            .duration(ebfduration * .67 * .85) 
+            .EUt(ebfeut)
+            .blastFurnaceTemp(ebftemp);
+
+        if(!do_helium_cooling)
+        {
+            event.recipes.gtceu.vacuum_freezer("kubejs:"+ input +"_cooling")
+                .itemInputs("gtceu:hot_"+ input +"_ingot")
+                .itemOutputs("gtceu:" + input + "_ingot")
+                .duration(20 * 6) 
+                .EUt(ebfeut / 4) 
+        }
+        else
+        {
+            event.recipes.gtceu.vacuum_freezer("kubejs:"+ input +"_cooling")
+                .itemInputs("gtceu:hot_"+ input +"_ingot")
+                .itemOutputs("gtceu:" + input + "_ingot")
+                .inputFluids('gtceu:liquid_helium 500')
+                .outputFluids('gtceu:helium 250')
+                .duration((ebfduration) / 10) 
+                .EUt(ebfeut / 4) 
+        }
+        
+
+
+    }
 
 
     event.recipes.gtceu.electric_blast_furnace("kubejs:everlasting_steak_ebf")
@@ -61,7 +114,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
         .inputFluids("kubejs:blasting_gas 1000")
         .circuit(1)
-        .duration(20 * 64) 
+        .duration(20 * 50) 
         .EUt(1925)
         .blastFurnaceTemp(3600);
 
@@ -69,7 +122,7 @@ ServerEvents.recipes(event => {
         .itemInputs("1x gtceu:refined_fluxed_electrum_dust")
         .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
         .circuit(1)
-        .duration(20 * 64) 
+        .duration(20 * 50) 
         .EUt(1925)
         .blastFurnaceTemp(3600);
 
@@ -78,7 +131,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("1x gtceu:hot_refined_fluxed_electrum_ingot")
         .inputFluids("kubejs:blasting_gas 1000")
         .circuit(2)
-        .duration(20 * 54) 
+        .duration(20 * 44) 
         .EUt(1925)
         .blastFurnaceTemp(3600);
 
@@ -87,6 +140,9 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:refined_fluxed_electrum_ingot")
         .duration(20 * 6) 
         .EUt(120)
+
+    ebf_recipe('tungsten_steel', 50*20, 1920, 4500, 'gtceu:helium', 'ev')
+    ebf_recipe('desh', 64*20, 7680, 3600, 'kubejs:blasting_gas', 'hv')
 
 
 });

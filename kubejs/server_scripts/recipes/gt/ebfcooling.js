@@ -31,9 +31,9 @@ ServerEvents.recipes(event => {
             .notConsumable('kubejs:' + helpertier +'_ebf_helper')
             .inputFluids(blastfluid + ' 85')
             .itemOutputs("gtceu:hot_" + input + '_ingot')
-            .circuit(2)
+            .circuit(3)
             .duration(ebfduration * .67 * .85) 
-            .EUt(ebfeut)
+            .EUt(ebfeut * .85)
             .blastFurnaceTemp(ebftemp);
 
         if(!do_helium_cooling)
@@ -141,8 +141,8 @@ ServerEvents.recipes(event => {
         .duration(20 * 6) 
         .EUt(120)
 
-    ebf_recipe('tungsten_steel', 50*20, 1920, 4500, 'gtceu:helium', 'ev')
-    ebf_recipe('desh', 64*20, 7680, 3600, 'kubejs:blasting_gas', 'hv')
+    ebf_recipe('tungsten_steel', 50*20, 1920, 4500, 'gtceu:helium', 'ev', false)
+    ebf_recipe('desh', 64*20, 7680, 3600, 'kubejs:blasting_gas', 'hv', false)
 
 
 });

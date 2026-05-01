@@ -340,7 +340,7 @@
 		}
 		{
 			dependencies: ["51FA7C2C0374BDAB"]
-			description: ["Now that you have an &dEV&r chemical bath, you can get WAAAY more titanium from your ilmenite. You can also get some useful biproducts like tantalum."]
+			description: ["Now that you have an &dEV&r chemical bath, you can get WAAAY more titanium from your ilmenite. You can also get some useful biproducts like tantalum, and Desh"]
 			id: "32F8AB8BF51222B5"
 			subtitle: "Do this."
 			tasks: [{
@@ -356,8 +356,8 @@
 			description: ["Desh-line is it's own thing, but for now you can get some of it as a byproduct from ilmenite processing."]
 			id: "766A7AFB2AE2F098"
 			tasks: [{
-				id: "343961AA8AB9B90C"
-				item: "gtceu:desh_dioxide_dust"
+				id: "3AB53C314B849474"
+				item: "gtceu:desh_dust"
 				type: "item"
 			}]
 			x: 5.5d

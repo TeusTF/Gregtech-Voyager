@@ -37,9 +37,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu
         .large_chemical_reactor('kubejs:blasting_gas')   // recipe ID
-        .inputFluids("gtceu:acetylene 1000", 'gtceu:nitrogen 1000')
+        .inputFluids("gtceu:acetylene 1000", 'gtceu:nitrogen 1000', 'gtceu:lpg 750')
         .outputFluids('kubejs:blasting_gas 1000')
-        .duration(100)                                 // in ticks
+        .duration(300)                                 // in ticks
         .EUt(1920) 
     
 

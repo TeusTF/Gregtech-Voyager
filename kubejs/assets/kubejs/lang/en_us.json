@@ -4,14 +4,14 @@
   "material.gtceu.refined_fluxed_electrum": "Refined Fluxed Electrum",
   "material.gtceu.source": "Source",
   "material.gtceu.source_steel": "Source Steel",
-    "material.gtceu.shadow_steel": "Shadow Steel",
+  "material.gtceu.shadow_steel": "Shadow Steel",
   "material.gtceu.fluxed_cobalt_electrum": "Fluxed Cobalt Electrum",
   "material.gtceu.aluminium_lithium_compound": "Aluminium-Lithium Compound",
   "material.gtceu.fluxed_titanium_electrum_compound": "Fluxed Titanium Electrum Compound",
 
   "material.gtceu.acetylene": "Acetylene",
   "material.gtceu.calcium_carbide": "Calcium Carbide",
-    "material.gtceu.desh": "Desh",
+  "material.gtceu.desh": "Desh",
   "material.gtceu.ilmenite_slurry": "Ilmenite Slurry",
   "material.gtceu.desh_oxide": "Desh Oxide",
 
@@ -21,38 +21,21 @@
 
   "gtceu.helper_wheel": "Helper Wheel",
 
+  "material.gtceu.metallic_mica":"Metallic Mica",
   
-  "item.gtceu.metallic_mica_ingot": "Metallic Mica Ingot",
-  "item.gtceu.metallic_mica_nugget": "Metallic Mica Nugget",
-  "item.gtceu.metallic_mica_plate": "Metallic Mica Plate",
-  "item.gtceu.double.metallic_mica_plate": "Metallic Mica Plate",
-  "item.gtceu.metallic_mica_foil": "Metallic Mica Foil",
-  "item.gtceu.metallic_mica_dust": "Metallic Mica Dust",
-  "item.gtceu.small_metallic_mica_dust": "Small Metallic Mica Dust",
-  "item.gtceu.tiny_metallic_mica_dust": "Tiny Metallic Mica Dust",
-
-  "item.gtceu.metallic_mica_rod": "Metallic Mica Rod",
-  "item.gtceu.long_metallic_mica_rod": "Long Metallic Mica Rod",
-
-  "item.gtceu.metallic_mica_bolt": "Metallic Mica Bolt",
-  "item.gtceu.metallic_mica_screw": "Metallic Mica Screw",
-  "item.gtceu.metallic_mica_ring": "Metallic Mica Ring",
-
-  "item.gtceu.metallic_mica_wire": "Metallic Mica Wire",
-  "item.gtceu.fine_metallic_mica_wire": "Fine Metallic Mica Wire",
-
-  "item.gtceu.metallic_mica_gear": "Metallic Mica Gear",
-  "item.gtceu.small_metallic_mica_gear": "Small Metallic Mica Gear",
-
-  "item.gtceu.metallic_mica_frame": "Metallic Mica Frame",
   "block.gtceu.large_helper_wheel": "Large Helper Wheel",
   "block.gtceu.micro_farm": "Micro Farm",
 
   "gtceu.large_helper_wheel": "Large Helper Wheel",
   "gtceu.micro_farm": "Micro Farm",
   "gtceu.helper_assembler": "Helper Assembler",
-  "gtceu.oven": "Oven"
+  "gtceu.oven": "Oven",
 
+  "material.gtceu.dewatered_iridium_metal_residue":"Dewatered Iridium Metal Residue",
+  "material.gtceu.impure_iridium_metal":"Impure Iridium Metal",
+  "material.gtceu.shiny_metallic_residue":"Shiny Metallic Residue",
+  "material.gtceu.impure_rhodium_sludge":"Impure Rhodium Sludge",
+  "material.gtceu.plat_palladium_metal_residue":"Platinum-Palladium Metal Residue"
 
 
 }

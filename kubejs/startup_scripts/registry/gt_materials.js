@@ -200,6 +200,16 @@ function register_fluid(name, color, ingredients)
     });
 }
 
+function register_byproduct(name, color)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .dust()
+            .color(color)
+            .iconSet('shiny')
+    });
+}
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('aluminium_lithium_compound')
         .ingot()
@@ -246,18 +256,18 @@ register_superconductor('refined_fluxed_electrum', [], true, '0xdbff66', 2048, 4
 // register_superconductor('exposed_metallic_dark_royal_honey', true, '0xff6a00', 134217728, 8192, [11880, 'highest', voltTier('uxv'), 1]);
 
 // platline
-register_dust('dewatered_iridium_metal_residue', '', '0x094235');
-register_dust('impure_iridium_metal', '', '0x094235');
+register_byproduct('dewatered_iridium_metal_residue', '0x094235');
+register_byproduct('impure_iridium_metal', '0x094235');
 
 register_fluid('acidic_shiny_metal_mixture','0x4f6cab', [])
 register_fluid('impure_shiny_metal_mixture','0x3f6cbc', [])
-register_dust('shiny_metallic_residue', '', '0x3b4724');
+register_byproduct('shiny_metallic_residue', '0x3b4724');
 
 register_fluid('sulfuric_rhodium_sludge','0x6c367a', [])
 register_fluid('acidic_ruthenium_solution','0x3a333d', [])
-register_dust('impure_rhodium_sludge','0x3a333d', [])
+register_byproduct('impure_rhodium_sludge','0x3a333d')
 
-register_dust('plat_palladium_metal_residue','0x1f333c', [])
+register_byproduct('plat_palladium_metal_residue','0x1f333c')
 register_fluid('sulfuric_plat-palladium_metal_solution','0x3a333d', [])
 
 register_fluid('sulfuric_kerosene','0xaaa22f', [])

@@ -47,3 +47,6 @@ usernamecache.json
 *.zip
 config/oculus.properties
 /journeymap
+config/embeddium-fingerprint.json
+config/embeddium-options.json
+config/fml.toml

@@ -294,15 +294,266 @@ ServerEvents.recipes(event => {
             .EUt(8)
 
         event.recipes.gtceu
-            .chemical_bath('kubejs:cable_smart_dense' + color) 
+            .chemical_bath('kubejs:cable_smart_dense' + color)
             .itemInputs('ae2:fluix_smart_dense_cable')
             .inputFluids('gtceu:' + color + '_dye 18')
             .itemOutputs('ae2:' + color + '_smart_dense_cable')
-            .duration(10)                                 
+            .duration(10)
             .EUt(8)
         }
 
-        
+
     )
+
+    // ================================================================
+    // AE2 TIER 1 — EV / TITANIUM: CRAFTING NETWORK MACHINES
+    // ================================================================
+
+    // --- Charger (MV tier — needed early to charge certus quartz) ---
+    event.shaped(
+        Item.of('ae2:charger', 1),
+        [
+            'ACA',
+            'CBC',
+            'ACA'
+        ],
+        {
+            A: 'ae2:certus_quartz_crystal',
+            B: 'gtceu:mv_machine_hull',
+            C: 'gtceu:aluminium_plate'
+        }
+    )
+
+    // --- Inscriber (EV tier — presses printed circuits/processors) ---
+    event.shaped(
+        Item.of('ae2:inscriber', 1),
+        [
+            'ABA',
+            'CDC',
+            'ABA'
+        ],
+        {
+            A: 'gtceu:titanium_plate',
+            B: 'ae2:engineering_processor',
+            C: 'gtceu:ev_machine_hull',
+            D: 'gtceu:ev_electric_piston'
+        }
+    )
+
+    // --- ME Terminal ---
+    event.shaped(
+        Item.of('ae2:terminal', 1),
+        [
+            'ABA',
+            'CDC',
+            ' E '
+        ],
+        {
+            A: 'ae2:quartz_glass',
+            B: 'ae2:logic_processor',
+            C: 'gtceu:aluminium_plate',
+            D: 'ae2:calculation_processor',
+            E: 'ae2:fluix_glass_cable'
+        }
+    )
+
+    // --- Crafting Terminal (upgrade from ME Terminal) ---
+    event.shapeless(
+        Item.of('ae2:crafting_terminal', 1),
+        [
+            'ae2:terminal',
+            'ae2:engineering_processor',
+            '#gtceu:circuits/ev'
+        ]
+    )
+
+    // --- Pattern Encoding Terminal (upgrade from ME Terminal) ---
+    event.shapeless(
+        Item.of('ae2:pattern_encoding_terminal', 1),
+        [
+            'ae2:terminal',
+            'ae2:engineering_processor',
+            'ae2:formation_core'
+        ]
+    )
+
+    // --- Wireless Access Point ---
+    event.shaped(
+        Item.of('ae2:wireless_access_point', 1),
+        [
+            'DAD',
+            'BCB',
+            'DAD'
+        ],
+        {
+            A: 'ae2:fluix_glass_cable',
+            B: 'ae2:engineering_processor',
+            C: 'gtceu:ev_machine_hull',
+            D: 'gtceu:titanium_plate'
+        }
+    )
+
+    // --- Wireless Receiver (GT assembler — intermediate for wireless terminal) ---
+    event.recipes.gtceu
+        .assembler('kubejs:wireless_receiver')
+        .itemInputs(
+            'ae2:engineering_processor',
+            '2x ae2:fluix_crystal',
+            '4x gtceu:titanium_plate',
+            '#gtceu:circuits/ev'
+        )
+        .itemOutputs('ae2:wireless_receiver')
+        .duration(200)
+        .EUt(1980)
+
+    // --- Wireless Terminal (vanilla pattern: receiver → terminal → dense_energy_cell) ---
+    event.shaped(
+        Item.of('ae2:wireless_terminal', 1),
+        [
+            ' A ',
+            ' B ',
+            ' C '
+        ],
+        {
+            A: 'ae2:wireless_receiver',
+            B: 'ae2:terminal',
+            C: 'ae2:dense_energy_cell'
+        }
+    )
+
+    // --- Pattern Provider ---
+    event.shaped(
+        Item.of('ae2:pattern_provider', 1),
+        [
+            ' E ',
+            'BAC',
+            ' D '
+        ],
+        {
+            A: 'gtceu:titanium_frame',
+            B: 'ae2:formation_core',
+            C: 'ae2:engineering_processor',
+            D: 'gtceu:ev_conveyor_module',
+            E: 'gtceu:ev_robot_arm'
+        }
+    )
+
+    // --- Molecular Assembler ---
+    event.recipes.gtceu
+        .assembler('kubejs:molecular_assembler')
+        .itemInputs(
+            'gtceu:ev_machine_hull',
+            '2x ae2:engineering_processor',
+            'ae2:formation_core',
+            'ae2:annihilation_core',
+            '4x gtceu:titanium_plate',
+            '2x #gtceu:circuits/ev'
+        )
+        .itemOutputs('ae2:molecular_assembler')
+        .duration(300)
+        .EUt(1980)
+
+    // --- Crafting CPU: Unit (base multiblock component) ---
+    event.shaped(
+        Item.of('ae2:crafting_unit', 1),
+        [
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            A: 'gtceu:titanium_plate',
+            B: 'ae2:fluix_glass_cable',
+            C: 'gtceu:ev_machine_casing'
+        }
+    )
+
+    // --- Crafting CPU: Storage (assembler tier scales with storage size) ---
+    event.recipes.gtceu
+        .assembler('kubejs:1k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_1k')
+        .itemOutputs('ae2:1k_crafting_storage')
+        .duration(200)
+        .EUt(480)   // HV
+
+    event.recipes.gtceu
+        .assembler('kubejs:4k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_4k')
+        .itemOutputs('ae2:4k_crafting_storage')
+        .duration(200)
+        .EUt(1920)  // EV
+
+    event.recipes.gtceu
+        .assembler('kubejs:16k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_16k')
+        .itemOutputs('ae2:16k_crafting_storage')
+        .duration(200)
+        .EUt(7680)  // IV
+
+    event.recipes.gtceu
+        .assembler('kubejs:64k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_64k')
+        .itemOutputs('ae2:64k_crafting_storage')
+        .duration(200)
+        .EUt(30720) // LuV
+
+    event.recipes.gtceu
+        .assembler('kubejs:256k_crafting_storage')
+        .itemInputs('ae2:crafting_unit', 'ae2:cell_component_256k')
+        .itemOutputs('ae2:256k_crafting_storage')
+        .duration(200)
+        .EUt(30720) // LuV
+
+    // --- Crafting CPU: Monitor (assembler — depth 2, uses crafting_unit) ---
+    event.recipes.gtceu
+        .assembler('kubejs:crafting_monitor')
+        .itemInputs(
+            'ae2:crafting_unit',
+            'ae2:logic_processor',
+            'ae2:quartz_glass',
+            '2x gtceu:aluminium_plate'
+        )
+        .itemOutputs('ae2:crafting_monitor')
+        .duration(200)
+        .EUt(480)
+
+    // --- Crafting CPU: Accelerator (2x output — more speed per CPU) ---
+    event.recipes.gtceu
+        .assembler('kubejs:crafting_accelerator')
+        .itemInputs(
+            '2x ae2:crafting_unit',
+            'ae2:engineering_processor',
+            '2x #gtceu:circuits/ev'
+        )
+        .itemOutputs('2x ae2:crafting_accelerator')
+        .duration(200)
+        .EUt(1980)
+
+    // --- ME Chest ---
+    event.recipes.gtceu
+        .assembler('kubejs:me_chest')
+        .itemInputs(
+            'gtceu:ev_machine_hull',
+            'ae2:calculation_processor',
+            '4x gtceu:titanium_plate',
+            'minecraft:chest',
+            '#gtceu:circuits/ev'
+        )
+        .itemOutputs('ae2:chest')
+        .duration(200)
+        .EUt(480)
+
+    // --- IO Port ---
+    event.recipes.gtceu
+        .assembler('kubejs:io_port')
+        .itemInputs(
+            'ae2:import_bus',
+            'ae2:export_bus',
+            'ae2:engineering_processor',
+            'gtceu:titanium_frame'
+        )
+        .itemOutputs('ae2:io_port')
+        .duration(200)
+        .EUt(1980)
 
 });

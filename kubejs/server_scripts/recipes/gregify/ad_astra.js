@@ -49,6 +49,56 @@ ServerEvents.recipes(event => {
         id: "ad_astra:tier_1_rocket"
     }})
 
+    event.custom({type: "ad_astra:nasa_workbench",
+        ingredients: [
+        {
+        item: "kubejs:desh_rocket_nose_cone"
+        },
+        {
+        item: "kubejs:desh_rocket_hull_plate"
+        },
+        {
+        item: "kubejs:desh_rocket_hull_plate"
+        },
+        {
+        item: "kubejs:desh_rocket_hull_plate"
+        },
+        {
+        item: "kubejs:desh_rocket_hull_plate"
+        },
+        {
+        item: "kubejs:desh_rocket_hull_plate"
+        },
+        {
+        item: "kubejs:desh_rocket_hull_plate"
+        },
+        {
+        item: "kubejs:desh_rocket_fin"
+        },
+        {
+        item: "ad_astra:desh_tank"
+        },
+        {
+        item: "ad_astra:desh_tank"
+        },
+        {
+        item: "kubejs:desh_rocket_fin"
+        },
+        {
+        item: "kubejs:desh_rocket_fin"
+        },
+        {
+        item: "ad_astra:desh_engine"
+        },
+        {
+        item: "kubejs:desh_rocket_fin"
+        }
+    ],
+    result: {
+        count: 1,
+        id: "ad_astra:tier_2_rocket"
+    }})
+
     event.recipes.gtceu.assembler('kubejs:rocket_fin')
         .itemInputs(
             '2x kubejs:rocket_hull_plate',

@@ -1278,6 +1278,10 @@
         "isSelected": true
       },
       {
+        "path": "config\\jade\\server-plugin-overrides.json",
+        "isSelected": true
+      },
+      {
         "path": "config\\jade\\sort-order.json",
         "isSelected": true
       },
@@ -1411,6 +1415,22 @@
       },
       {
         "path": "config\\spark",
+        "isSelected": true
+      },
+      {
+        "path": "config\\spark\\tmp",
+        "isSelected": true
+      },
+      {
+        "path": "config\\spark\\tmp\\about.txt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\spark\\tmp\\spark-46362b4e34d08-libasyncProfiler.so.tmp",
+        "isSelected": true
+      },
+      {
+        "path": "config\\spark\\tmp\\spark-465d766881dee-profile-data.jfr.tmp",
         "isSelected": true
       },
       {
@@ -1787,6 +1807,10 @@
       },
       {
         "path": "config\\configured-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "config\\configured-developer.toml",
         "isSelected": true
       },
       {
@@ -2438,6 +2462,14 @@
         "isSelected": false
       },
       {
+        "path": "crash-reports\\crash-2026-05-04_00.45.25-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_00.49.15-client.txt",
+        "isSelected": false
+      },
+      {
         "path": "datapacks",
         "isSelected": true
       },
@@ -2894,7 +2926,15 @@
         "isSelected": false
       },
       {
+        "path": "journeymap\\data\\mp\\~6Gregtech~r~dVoyager~v0~1~0a~Playtest\\overworld\\-15",
+        "isSelected": false
+      },
+      {
         "path": "journeymap\\data\\mp\\~6Gregtech~r~dVoyager~v0~1~0a~Playtest\\overworld\\-16",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\mp\\~6Gregtech~r~dVoyager~v0~1~0a~Playtest\\overworld\\-28",
         "isSelected": false
       },
       {
@@ -4344,6 +4384,18 @@
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\crystalline_titanium_electrum.png",
         "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\desh_rocket_fin.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\desh_rocket_hull_plate.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\desh_rocket_nose_cone.png",
+        "isSelected": false
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\ev_helper_computation_array.png",
@@ -7702,6 +7754,18 @@
         "isSelected": false
       },
       {
+        "path": "logs\\2026-05-04-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-04-2.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-04-3.log.gz",
+        "isSelected": false
+      },
+      {
         "path": "logs\\latest.log",
         "isSelected": false
       },
@@ -8335,10 +8399,6 @@
       },
       {
         "path": "mods\\oceansdelight-1.0.2-1.20.jar",
-        "isSelected": true
-      },
-      {
-        "path": "mods\\oculus-mc1.20.1-1.8.0.jar",
         "isSelected": true
       },
       {
@@ -20479,6 +20539,10 @@
       },
       {
         "path": "kubejs (3).zip",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs (4).zip",
         "isSelected": false
       },
       {

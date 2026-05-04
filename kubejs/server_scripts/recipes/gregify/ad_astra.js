@@ -115,7 +115,7 @@ ServerEvents.recipes(event => {
             '3x kubejs:rocket_hull_plate',
             '2x gtceu:hv_sensor',
             '2x gtceu:hv_field_generator',
-            '16x #gtceu:circuits/ev',
+            '16x #gtceu:circuits/iv',
             '24x gtceu:aluminium_lithium_compound_foil'
         )
         .itemOutputs('ad_astra:rocket_nose_cone')
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:hv_robot_arm',
             '4x gtceu:hv_sensor',
             '4x gtceu:hv_field_generator',
-            '8x #gtceu:circuits/ev',
+            '8x #gtceu:circuits/iv',
             '8x gtceu:steel_frame',
             '64x gtceu:fine_fluxed_cobalt_electrum_wire',
             '16x gtceu:double_black_steel_plate',
@@ -233,6 +233,19 @@ ServerEvents.recipes(event => {
     .duration(20 * 90)
     .EUt(496);
 
+    event.recipes.gtceu.assembler('kubejs:desh_rocket_hull')
+    .itemInputs(
+        '36x gtceu:double_desh_plate',
+        '32x gtceu:lunarium_foil',
+        '32x gtceu:carbon_fiber_mesh',
+        '24x gtceu:steel_bolt'
+    )
+    // .notConsumable('kubejs:lv_technician_helper')
+    .itemOutputs('kubejs:desh_rocket_hull_plate')
+    .inputFluids('gtceu:soldering_alloy 4000')
+    .duration(20 * 90)
+    .EUt(1980);
+
     event.recipes.gtceu.assembler('kubejs:rover')
     .itemInputs(
         '4x kubejs:rocket_hull_plate',
@@ -261,4 +274,41 @@ ServerEvents.recipes(event => {
     .inputFluids('gtceu:polytetrafluoroethylene 8000')
     .duration(20 * 180)
     .EUt(496);
+
+     event.recipes.gtceu.assembler('kubejs:desh_rocket_steel_engine')
+    .itemInputs(
+        '6x kubejs:desh_rocket_hull_plate',
+        '32x gtceu:tungsten_carbide_frame',
+        '24x gtceu:lunarium_foil',
+        '4x gtceu:titanium_fluid_cell',
+        'gtceu:large_combustion_engine'
+    )
+    .itemOutputs('ad_astra:desh_engine')
+    .inputFluids("gtceu:polybenzimidazol 1000")
+    .duration(20*60*3)
+    .EUt(1980);
+
+    event.recipes.gtceu.assembler('kubejs:rocket_nose')
+    .itemInputs(
+        '6x kubejs:desh_rocket_hull_plate',
+        '2x gtceu:iv_sensor',
+        '2x gtceu:iv_field_generator',
+        '16x #gtceu:circuits/luv',
+        '24x gtceu:lunarium_foil'
+    )
+    .itemOutputs('kubejs:desh_rocket_nose_cone')
+    .inputFluids("gtceu:polybenzimidazol 1000")
+    .duration(20*60*5)
+    .EUt(1980);
+
+    event.recipes.gtceu.assembler('kubejs:desh_rocket_fin')
+    .itemInputs(
+        '4x kubejs:desh_rocket_hull_plate',
+        '32x gtceu:double_titanium_plate',
+        '32x gtceu:lunarium_foil'
+    )
+    .itemOutputs('kubejs:desh_rocket_fin')
+    .inputFluids("gtceu:polybenzimidazol 1000")
+    .duration(20*60*5)
+    .EUt(1980);
 });

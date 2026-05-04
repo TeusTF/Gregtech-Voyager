@@ -288,7 +288,7 @@ ServerEvents.recipes(event => {
     .duration(20*60*3)
     .EUt(1980);
 
-    event.recipes.gtceu.assembler('kubejs:rocket_nose')
+    event.recipes.gtceu.assembler('kubejs:desh_rocket_nose')
     .itemInputs(
         '6x kubejs:desh_rocket_hull_plate',
         '2x gtceu:iv_sensor',

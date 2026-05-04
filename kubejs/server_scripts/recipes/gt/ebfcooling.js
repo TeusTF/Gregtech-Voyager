@@ -145,6 +145,7 @@ ServerEvents.recipes(event => {
 
     ebf_recipe('tungsten_steel', 50*20, 1920, 4500, 'gtceu:helium', 'ev', false)
     ebf_recipe('desh', 64*20, 7680, 3600, 'kubejs:blasting_gas', 'hv', false)
+    ebf_recipe('lunarium', 64*20, 7860, 4500, 'kubejs:blasting_gas', 'hv', false)
 
 
 });

@@ -31,6 +31,7 @@ ServerEvents.recipes(event => {
           .notConsumable('kubejs:' + helper)
           .itemOutputs(outputItems)
           .inputFluids(inputFluids)
+          .circuit(3)
           .outputFluids(outputFluids)
           .duration(duration * 20) 
           .EUt(eut) 
@@ -38,17 +39,17 @@ ServerEvents.recipes(event => {
        
     }
 
-    create_recipe_lcr('plastic_boards_sodium_persulfate', ['3x gtceu:plastic_circuit_board', '12x gtceu:copper_foil'], ['gtceu:sodium_persulfate 300'], ['2x gtceu:plastic_printed_circuit_board'],
+    create_recipe_lcr('plastic_boards_sodium_persulfate', ['2x gtceu:plastic_circuit_board', '12x gtceu:copper_foil'], ['gtceu:sodium_persulfate 300'], ['3x gtceu:plastic_printed_circuit_board'],
         [], 20, 30, 'ev_technician_helper'
     )
-    create_recipe_lcr('plastic_boards_iron_iii', ['3x gtceu:plastic_circuit_board', '12x gtceu:copper_foil'], ['gtceu:iron_iii_chloride 150'], ['2x gtceu:plastic_printed_circuit_board'],
+    create_recipe_lcr('plastic_boards_iron_iii', ['2x gtceu:plastic_circuit_board', '12x gtceu:copper_foil'], ['gtceu:iron_iii_chloride 150'], ['3x gtceu:plastic_printed_circuit_board'],
         [], 20, 30, 'ev_technician_helper'
     )
 
-    create_recipe_lcr('epoxy_boards_sodium_persulfate', ['3x gtceu:epoxy_circuit_board', '16x gtceu:electrum_foil'], ['gtceu:sodium_persulfate 750'], ['2x gtceu:epoxy_printed_circuit_board'],
+    create_recipe_lcr('epoxy_boards_sodium_persulfate', ['2x gtceu:epoxy_circuit_board', '16x gtceu:electrum_foil'], ['gtceu:sodium_persulfate 750'], ['3x gtceu:epoxy_printed_circuit_board'],
         [], 35, 30, 'ev_technician_helper'
     )
-    create_recipe_lcr('epoxy_boards_iron_iii', ['3x gtceu:epoxy_circuit_board', '16x gtceu:electrum_foil'], ['gtceu:iron_iii_chloride 250'], ['2x gtceu:epoxy_printed_circuit_board'],
+    create_recipe_lcr('epoxy_boards_iron_iii', ['2x gtceu:epoxy_circuit_board', '16x gtceu:electrum_foil'], ['gtceu:iron_iii_chloride 250'], ['3x gtceu:epoxy_printed_circuit_board'],
         [], 35, 30, 'ev_technician_helper'
     )
 

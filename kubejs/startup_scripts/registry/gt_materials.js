@@ -80,6 +80,16 @@ const not_alloy = GTMaterialFlags.DISABLE_ALLOY_PROPERTY;
 
 // super conductor
 
+GTCEuStartupEvents.materialModification(event => {
+
+    GTMaterials.get('desh').setFormula('Ds');
+    GTMaterials.get('lunite').setFormula('(Ds)2W(Si)2O4');
+    GTMaterials.get('glowstone').setFormula('(Si(FeS2)5(CrAl2O3)Hg3)Au');
+    GTMaterials.get('lunarium').setFormula('Lt');
+
+
+});
+
 
 const voltageTable = {
     lv: 32,
@@ -139,6 +149,37 @@ function register_metal(name, ingredients, ebf, color, blasting)
     });
 }
 
+function register_ore_metal(name, ingredients, color, flags, byproducts)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .dust()
+            .ore()
+            .components(ingredients)
+            .color(color)
+            .iconSet('metallic')
+            .flags(flags);
+
+
+    });
+}
+
+function register_ore_gem(name, ingredients, color, flags, byproducts)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .gem()
+            .dust()
+            .ore()
+            .components(ingredients)
+            .color(color)
+            .iconSet('shiny')
+            .flags(flags);
+
+
+    });
+}
+
 function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genrotor, tier)
 {
     GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -163,15 +204,39 @@ function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genroto
     });
 }
 
-function register_dust(name, ingredients, color)
+function register_nosmelt_elem_metal(name, ingredients, ebf, color, blasting, genrotor, tier)
+{
+    GTCEuStartupEvents.registry('gtceu:material', event => {
+        const mat = event.create(name)
+            .ingot()
+            .dust()
+            .element(GTElements.get(name))
+            .color(color)
+            .iconSet('metallic')
+            .cableProperties(tier, 1, 4, false)
+            .flags(foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame, fine_wire, no_smelt);
+
+        if (ebf) {
+            mat.blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
+        }
+        if(rotor)
+        {
+            // power, efficiency, damage, durability
+            mat.rotorStats(genrotor[0], genrotor[1], genrotor[2], genrotor[3])
+        }
+
+    });
+}
+
+function register_dust(name, ingredients, color, flags)
 {
     GTCEuStartupEvents.registry('gtceu:material', event => {
         const mat = event.create(name)
             .dust()
             .components(ingredients)
             .color(color)
-            .iconSet('shiny')
-            .flags(electrolyze)
+            .iconSet('dull')
+            .flags(flags)
     });
 }
 
@@ -189,14 +254,14 @@ function register_gem(name, color, ingredients)
     });
 }
 
-function register_fluid(name, color, ingredients)
+function register_fluid(name, color, ingredients, flags)
 {
     GTCEuStartupEvents.registry('gtceu:material', event => {
         const mat = event.create(name)
             .fluid()
             .components(ingredients)
             .color(color)
-            .flags()
+            .flags(flags)
     });
 }
 
@@ -213,23 +278,23 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
 
 
-register_gem("source", '0xd745ff', [])
+register_gem("source", '0xd745ff', [], )
 
-register_fluid('acetylene','0xfff2f2', ['2x carbon', '2x hydrogen'])
-register_fluid('ilmenite_slurry','0x1a1818', [])
-register_fluid('ilmenite_residue','0x1a1616', [])
+register_fluid('acetylene','0xfff2f2', ['2x carbon', '2x hydrogen'], electrolyze)
+register_fluid('ilmenite_slurry','0x1a1818', [], no_decomp)
+register_fluid('ilmenite_residue','0x1a1616', [], no_decomp)
 
-register_dust('calcium_carbide', ['calcium', '2x carbon'], '0xffcfff')
+register_dust('calcium_carbide', ['calcium', '2x carbon'], '0xffcfff', electrolyze)
 
 register_metal('metallic_mica', ['3x mica', '1x silver'], false, '0xaba376', [0, null, voltTier('lv'), 0]);
 
-register_nosmelt_metal('desh', [], true, '0xd44e06', [3600, 'mid', voltTier('ev'), 20*64], [300, 150, 1, 100000], voltTier('iv'));
-register_dust('desh_dioxide', '', '0xff4000'); // to be inserted into desh line!
+register_nosmelt_elem_metal('desh', [], true, '0xd44e06', [3600, 'mid', voltTier('ev'), 20*64], [300, 150, 1, 100000], voltTier('iv'));
+register_dust('desh_dioxide', ['desh', '2x oxygen'], '0xff4000', electrolyze); // to be inserted into desh line!
 
 register_metal('source_steel', [], false, '0xd745ff', [0, null, voltTier('lv'), 0])
 register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'), 1800])
 
-register_dust('fluxed_titanium_electrum_compound', '', '0x2c2e16');
+register_dust('fluxed_titanium_electrum_compound', [], '0x2c2e16', no_decomp);
 
 
 register_superconductor('tin_silver_alloy',['3x silver ', '4x tin'], false, '0xbfcdd6', 32, 1, [0, null, voltTier('lv'), 0]);
@@ -246,25 +311,41 @@ register_superconductor('refined_fluxed_electrum', [], true, '0xdbff66', 2048, 4
 // register_superconductor('exposed_metallic_dark_royal_honey', true, '0xff6a00', 134217728, 8192, [11880, 'highest', voltTier('uxv'), 1]);
 
 // platline
-register_dust('dewatered_iridium_metal_residue', '', '0x094235');
-register_dust('impure_iridium_metal', '', '0x094235');
+register_dust('dewatered_iridium_metal_residue', [], '0x094235', no_decomp);
+register_dust('impure_iridium_metal', [], '0x094235', no_decomp);
 
-register_fluid('acidic_shiny_metal_mixture','0x4f6cab', [])
-register_fluid('impure_shiny_metal_mixture','0x3f6faf', [])
-register_dust('shiny_metallic_residue', '', '0x3b4724');
+register_fluid('acidic_shiny_metal_mixture','0x4f6cab', [], no_decomp)
+register_fluid('impure_shiny_metal_mixture','0x152536', [], no_decomp)
+register_dust('shiny_metallic_residue', [], '0x3b4724', no_decomp);
 
-register_fluid('sulfuric_rhodium_solution','0x6c367a', [])
-register_fluid('sulfuric_inert_metal_solution','0x1d367a', [])
-register_fluid('acidic_ruthenium_solution','0x3a333d', [])
-register_dust('impure_rhodium_sludge','0x3a111a', [])
+register_fluid('sulfuric_rhodium_solution','0x6c367a', [], no_decomp)
+register_fluid('sulfuric_inert_metal_solution','0x2b1221', [], no_decomp)
+register_fluid('acidic_ruthenium_solution','0x3a333d', [], no_decomp)
+register_dust('impure_rhodium_sludge','0x3a111a', [], no_decomp)
 
-register_dust('plat_palladium_metal_residue','0xabad74', [])
-register_fluid('sulfuric_plat-palladium_metal_solution','0x3a333d', [])
+register_dust('plat_palladium_metal_residue','0x44374a', [], no_decomp)
+register_fluid('sulfuric_plat-palladium_metal_solution','0x512e52', [], no_decomp)
 
-register_fluid('sulfuric_kerosene','0xaaa22f', [])
-register_fluid('kerosene','0x00000f', ['12x carbon 26x hydrogen'])
+register_fluid('sulfuric_kerosene','0xaaa22f', [], no_decomp)
+register_fluid('kerosene','0x00000f', ['12x carbon', '26x hydrogen'], electrolyze)
+
+// moon ores
+register_ore_metal('lunite', ['2x desh','1x tungsten', '2x silicon','4x oxygen'], '0x5c4e3c', [no_decomp], [])
+register_ore_gem('socochalamite', ['2x amethyst', '1x rutile', '4x glowstone', '6x fluorine', '2x mercury'], '0x7764b0', [electrolyze], [])
+register_ore_gem('glunite', ['1x amethyst', '5x glowstone', '1x hydrogen'], '0xffbf00', [electrolyze], [])
 
 
+// desh line
+register_dust('desh_group_sludge',[],'0x331305', no_decomp)
+register_nosmelt_elem_metal('lunarium', [], true, '0x000d61', [4500, 'mid', voltTier('iv'), 20*64], [200, 500, 1, 100000], voltTier('iv'))
+
+register_dust('lunar_metal_residue', ['desh', 'titanium', '3x glowstone', '2x gold'], '0x634d21', no_decomp)
+register_fluid('sulfuric_lunar_metal_residue','0x634d21', [], no_decomp)
+
+register_dust('dense_metal_mixture', ['lunarium', 'tungsten', 'water', '4x oxygen'], '0x200e42', no_decomp)
+register_dust('lunarium_metal_sludge', ['lunarium', 'water'], '0x360d1c', no_decomp)
+register_dust('dewatered_lunarium_metal_mixture', ['lunarium', 'desh', 'titanium', '3x glowstone', '2x gold', '2x carbon', '3x hydrogen', 'zinc', 'barium'], '0x657e9c', no_decomp)
+register_dust('impure_lunarium', ['lunarium', 'desh', '1x carbon', 'calcium'], '0x7fa9b0', electrolyze)
 
 /*
     Materials are in-game items or fluids. They can be dusts, ingots, gems, fluids and all their derivatives.

@@ -489,7 +489,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["51FA7C2C0374BDAB"]
+			dependencies: [
+				"51FA7C2C0374BDAB"
+				"34CBE97EDD370F39"
+			]
 			hide_dependency_lines: true
 			id: "525AB3C856187597"
 			tasks: [{
@@ -738,6 +741,7 @@
 			dependencies: [
 				"5D1E251B9F28C8B4"
 				"66D61F15E0CAD74A"
+				"70E27B7B4AECA72C"
 			]
 			description: [
 				"The &bbasic chemist helper&r is the &dEV&r tier chemistry helper."
@@ -761,14 +765,37 @@
 		}
 		{
 			id: "70E27B7B4AECA72C"
+			size: 2.0d
 			tasks: [{
 				id: "5BF0D8EA01710C35"
 				item: "gtceu:platinum_group_sludge_dust"
 				type: "item"
 			}]
 			title: "Plat-line"
-			x: 8.5d
+			x: 10.0d
 			y: 14.0d
+		}
+		{
+			id: "34CBE97EDD370F39"
+			size: 2.0d
+			tasks: [{
+				id: "2690530B4BC7A3FF"
+				item: "gtceu:desh_group_sludge_dust"
+				type: "item"
+			}]
+			title: "Desh-line"
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			id: "0D398D8FE47F9B67"
+			tasks: [{
+				id: "53EA80EB05E70D93"
+				type: "checkmark"
+			}]
+			title: "Platinum Line Byproducts"
+			x: 10.0d
+			y: 15.5d
 		}
 	]
 	title: "Chapter 4: To Space! (EV)"

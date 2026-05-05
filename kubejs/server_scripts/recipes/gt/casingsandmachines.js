@@ -38,9 +38,11 @@ ServerEvents.recipes(event => {
 
     // fuck it ill put these here too
 
-    function cube_multi(mat, output)
-    {
-        event.shaped(
+    function cube_multi(mat, output, input)
+    {  
+        if(!input)
+        {
+            event.shaped(
             Item.of('gtceu:cube_' + output, 1), // arg 1: output
             [
                 'ABA',
@@ -52,11 +54,29 @@ ServerEvents.recipes(event => {
                 B: '#gtceu:circuits/ev',  //arg 3: the mapping object
                 C: 'gtceu:ev_' + output,
             }
-        )
+            )
+        } else
+
+        {
+            event.shaped(
+            Item.of('gtceu:cube_' + output, 1), // arg 1: output
+            [
+                'ABA',
+                'BCB', // arg 2: the shape (array of strings)
+                'ABA'
+            ],
+            {
+                A: 'gtceu:double_' + mat + '_plate',
+                B: '#gtceu:circuits/ev',  //arg 3: the mapping object
+                C: 'gtceu:' + input,
+            }
+            )
+        }
+
     }
 
     cube_multi('desh', 'centrifuge')
     cube_multi('titanium_carbide', 'macerator')
     cube_multi('ultimet', 'electrolyzer')
-    cube_multi('lead', 'oven')
+    cube_multi('lead', 'oven', 'molybdenum_disilicide_coil_block')
 });

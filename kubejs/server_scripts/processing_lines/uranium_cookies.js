@@ -23,6 +23,31 @@ ServerEvents.recipes(event => {
             .EUt(eut);
     }
 
+    function oven(output, ingredientsItem, bakingsheet, grandma, eut, time)
+    {
+        if(bakingsheet[1])
+        {
+            event.recipes.gtceu.mixer('kubejs:' + output)
+            .itemInputs(ingredientsItem)
+            .itemOutputs(output)
+            .chancedInput(bakingsheet[0], bakingsheet[1])
+            .notConsumable('kubejs:' + grandma + '_grandma_helper')
+            .duration(time * 20)
+            .EUt(eut);
+        }
+        else
+        {
+           event.recipes.gtceu.mixer('kubejs:' + output)
+            .itemInputs(ingredientsItem, bakingsheet)
+            .itemOutputs(output)
+            .notConsumable('kubejs:' + grandma + '_grandma_helper')
+            .duration(time * 20)
+            .EUt(eut);
+        } 
+    }
+        
+    
+
 /**
      * Create a lcr recipe
      * @param {*} name - recipe name (dont include kubejs:)
@@ -73,6 +98,8 @@ ServerEvents.recipes(event => {
         '12x kubejs:uranium_cookie_dough', [], 3.6 * 9 * .66, 1520, 'basic_chemist_helper'
     )
 
+    oven('grandmas_uranium_cookies', 'kubejs:uranium_cookie_dough', ['kubejs:grandmas_baking_sheet', 25], 'radiation_resistant', 1980, 60)
+    oven('grandmas_uranium_cookies', 'kubejs:uranium_cookie_dough', 'kubejs:grandmas_tungsten_baking_sheet', 'radiation_resistant', 1980, 60)
 
 
 });

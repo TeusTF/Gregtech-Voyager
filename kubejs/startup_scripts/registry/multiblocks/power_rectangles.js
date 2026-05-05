@@ -19,6 +19,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         event.create(`power_rectangle_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(recipe)
+            .generator(true)
             .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
             .appearanceBlock(() => Block.getBlock(`kubejs:${casing}_casing`))
             .pattern(definition => FactoryBlockPattern.start()
@@ -41,6 +42,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
     }
 
-    powerRectangle('helper_calorie_converter', 'radiation_proof_lead', ['helper_calorie_conversion', 'large_helper_wheel'])
+    powerRectangle('helper_calorie_converter', 'radiation_proof_lead', 'helper_calorie_conversion')
 
 });

@@ -5,7 +5,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setEUIO("out")
         .setMaxIOSize(4, 1, 2, 1)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
-        .setSound(GTSoundEntries.CHEMICAL_REACTOR);
+        .setSound(GTSoundEntries.CHEMICAL);
 
 });
 

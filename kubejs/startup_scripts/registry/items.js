@@ -122,7 +122,11 @@ StartupEvents.registry('item', event => {
 
     event.create('heart_of_gold').texture('kubejs:item/heart_of_gold').displayName('Heart of Gold');
 
-    event.create('grandmas_uranium_cookies').texture('kubejs:item/grandmas_uranium_cookies').displayName('§aGrandma\'s Ultra-Calorie Dense Uranium Cookies').food(food => {
+    event.create('grandmas_uranium_cookies').texture('kubejs:item/grandmas_uranium_cookies').displayName('§aGrandma\'s Ultra-Calorie Dense Uranium Cookies')
+    .tooltip(
+        "§2Contains millions of calories. Optimal for bulking."
+      )
+    .food(food => {
     food
       .hunger(8)
       .saturation(6) // This value does not directly translate to saturation points gained
@@ -131,9 +135,7 @@ StartupEvents.registry('item', event => {
       .effect('minecraft:speed', 600, 0, 1)
       .alwaysEdible() // Like golden apples
       .fastToEat() // Like dried kelp
-      .tooltip(
-        "§2Contains millions of calories. Optimal for bulking."
-      )
+      
       .eaten(ctx => {
         ctx.player.tell(Text.gold('Grandma thanks you for eating her cookies! She invites you over for more.'))
       });

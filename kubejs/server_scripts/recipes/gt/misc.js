@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
             C: 'minecraft:bucket',
             D: 'gtceu:stone_dust'
         }
-        )
+    )
 
         event.shaped(
         Item.of('minecraft:bricks', 2), // arg 1: output

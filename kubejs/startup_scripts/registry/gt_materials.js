@@ -86,6 +86,7 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('lunite').setFormula('(Ds)2W(Si)2O4');
     GTMaterials.get('glowstone').setFormula('(Si(FeS2)5(CrAl2O3)Hg3)Au');
     GTMaterials.get('lunarium').setFormula('Lt');
+    GTMaterials.get('titanite').setFormula('Tx');
 
 
 });
@@ -173,7 +174,7 @@ function register_ore_gem(name, ingredients, color, flags, byproducts)
             .ore()
             .components(ingredients)
             .color(color)
-            .iconSet('shiny')
+            .iconSet('gem')
             .flags(flags);
 
 
@@ -289,19 +290,20 @@ register_dust('calcium_carbide', ['calcium', '2x carbon'], '0xffcfff', electroly
 register_metal('metallic_mica', ['3x mica', '1x silver'], false, '0xaba376', [0, null, voltTier('lv'), 0]);
 
 register_nosmelt_elem_metal('desh', [], true, '0xd44e06', [3600, 'mid', voltTier('ev'), 20*64], [300, 150, 1, 100000], voltTier('iv'));
-register_dust('desh_dioxide', ['desh', '2x oxygen'], '0xff4000', electrolyze); // to be inserted into desh line!
+register_dust('desh_dioxide', ['desh', '2x oxygen'], '0xff4000', electrolyze); 
 
 register_metal('source_steel', [], false, '0xd745ff', [0, null, voltTier('lv'), 0])
 register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'), 1800])
 
 register_dust('fluxed_titanium_electrum_compound', [], '0x2c2e16', no_decomp);
-
+register_nosmelt_elem_metal('titanite', [], true, '0x75008c', [5400, 'mid', voltTier('iv'), 20*64], [450, 450, 1, 1000000], voltTier('luv'))
+register_nosmelt_elem_metal('ostrum', [], true, '0xc785a2', [5400, 'mid', voltTier('iv'), 20*64], [375, 650, 1, 1000000], voltTier('luv'))
 
 register_superconductor('tin_silver_alloy',['3x silver ', '4x tin'], false, '0xbfcdd6', 32, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_electrum',[], true, '0xfcad03', 128, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_cobalt_electrum', [], true, '0x006387', 512, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('refined_fluxed_electrum', [], true, '0xdbff66', 2048, 4, [3600, 'mid', voltTier('ev'), 20*64]);
-// register_superconductor('desh_infused_refined_electrum', true, '0xcf1fc0', 8192, 8, [4500, 'mid', voltTier('iv'), 1]);
+register_superconductor('titanite_alloy',['2x titanite', '2x hssg', 'lunarium', '2x titanium', '3x fluxed_electrum', 'fluorine', 'electrotine'], true, '0xff1284', 8192, 8, [4500, 'mid', voltTier('iv'), 1]);
 // register_superconductor('desh_rhodium_infused_refined_electrum', true, '0xf57040', 32768, 8, [7200, 'high', voltTier('luv'), 1]);
 // register_superconductor('perfected_electrum', true, '0xfffef7', 131072, 64, [9001, 'high', voltTier('zpm'), 1]);
 // register_superconductor('trilectrum', true, '0xe3527d', 524288, 64, [10080, 'higher', voltTier('uv'), 1]);
@@ -334,10 +336,14 @@ register_ore_metal('lunite', ['2x desh','1x tungsten', '2x silicon','4x oxygen']
 register_ore_gem('socochalamite', ['2x amethyst', '1x rutile', '4x glowstone', '6x fluorine', '2x mercury'], '0x7764b0', [electrolyze], [])
 register_ore_gem('glunite', ['1x amethyst', '5x glowstone', '1x hydrogen'], '0xffbf00', [electrolyze], [])
 
+// mars ores
+register_ore_gem('titanichite', ['5x tungsten', '2x titanite', '5x fluorine'], '0xff0055', [no_decomp], [])
+
 
 // desh line
 register_dust('desh_group_sludge',[],'0x331305', no_decomp)
 register_nosmelt_elem_metal('lunarium', [], true, '0x000d61', [4500, 'mid', voltTier('iv'), 20*64], [200, 500, 1, 100000], voltTier('iv'))
+
 
 register_dust('lunar_metal_residue', ['desh', 'titanium', '3x glowstone', '2x gold'], '0x634d21', no_decomp)
 register_fluid('sulfuric_lunar_metal_residue','0x634d21', [], no_decomp)

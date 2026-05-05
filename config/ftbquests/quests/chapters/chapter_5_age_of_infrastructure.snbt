@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "chapter_5_age_of_infrastructure"
 	group: "3E515D2B3A8DFC29"
+	icon: "gtceu:iv_parallel_hatch"
 	id: "6BF380BE63F87279"
 	order_index: 6
 	quest_links: [ ]

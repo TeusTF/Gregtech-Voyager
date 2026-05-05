@@ -8,6 +8,22 @@ ItemEvents.tooltip(event => {
   {
     event.add(`gtceu:cube_${name}`, '§7Has perfect overclock and batching\n§r§4Can only have one energy hatch\nMUST have a normal maintenance hatch')
   }
+
+  function rectangleTooltip(name)
+  {
+    event.add(`gtceu:power_rectangle_${name}`, '\n§r§4Can only have one dynamo hatch')
+  }
+
+  function addHelperTooltip(helper, text)
+  {
+    event.add(`kubejs:${helper}_helper`, `§4${text}`)
+  }
+
+  event.add(`gtceu:power_rectangle_helper_calorie_converter`, '§6\n§6Can run helper calorie conversion recipes\n§7Can run normal helper wheel recipes')
+  rectangleTooltip('helper_calorie_converter')
+
+  addHelperTooltip('hungry', 'Can consume a LOT of calories')
+
   cubeTooltip('macerator');
   cubeTooltip('electrolyzer')
   cubeTooltip('oven');

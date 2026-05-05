@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
     tiers.forEach(tier => register_loot_bag(tier));
     tiers.forEach(tier => register_universal_circuit(tier));
 
-    const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'basic_chemist', 'radiation_resistant_grandma']
+    const helpers = ['brick', 'track_runner', 'farmer', 'grandma', 'basic_chemist', 'radiation_resistant_grandma', 'hungry']
 
     function register_helper_item(name)
     {
@@ -118,6 +118,9 @@ StartupEvents.registry('item', event => {
     event.create('butter').texture('kubejs:item/butter').displayName('Butter');
     event.create('roasted_cacao_beans').texture('kubejs:item/roasted_cacao_beans').displayName('Roasted Cacao Beans');
     event.create('cookie_dough').texture('kubejs:item/cookie_dough').displayName('Cookie Dough');
+
+    event.create('ev_stomach_unit').texture('kubejs:item/ev_stomach_unit').displayName('EV Stomach Unit');
+    event.create('iv_stomach_unit').texture('kubejs:item/iv_stomach_unit').displayName('IV Stomach Unit');
 
     event.create('uranium_cookie_dough').texture('kubejs:item/uranium_cookie_dough').displayName('§aUltra-Calorie Dense Uranium Cookie Dough');
 

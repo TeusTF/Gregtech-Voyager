@@ -32,7 +32,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                     .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setExactLimit(1).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setExactLimit(1).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setExactLimit(1).setPreviewCount(1))
-                    .or(Predicates.blocks('gtceu:maintenance_hatch').setExactLimit(1)))
+                    .or(Predicates.blocks(PartAbility.MAINTENANCE).setExactLimit(1)))
                 .where('B', Predicates.blocks('gtceu:titanium_gearbox'))
                 .where('D', Predicates.abilities(PartAbility.OUTPUT_ENERGY))
                 .build())
@@ -41,6 +41,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
 
     }
 
-    powerRectangle('helper_calorie_converter', 'radiation_proof_lead', 'helper_calorie_conversion')
+    powerRectangle('helper_calorie_converter', 'radiation_proof_lead', ['helper_calorie_conversion', 'large_helper_wheel'])
 
 });

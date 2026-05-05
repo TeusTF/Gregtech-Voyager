@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     )
 
     oven('grandmas_uranium_cookies', 16, '16x kubejs:uranium_cookie_dough', 'kubejs:grandmas_baking_sheet', 'radiation_resistant', 1980, 60)
-    oven('grandmas_uranium_cookies', 32, '32x kubejs:uranium_cookie_dough', 'kubejs:grandmas_tungsten_baking_sheet', 'radiation_resistant', 1520, 60 *.66)
+    oven('grandmas_uranium_cookies_tungsten', 32, '32x kubejs:uranium_cookie_dough', 'kubejs:grandmas_tungsten_baking_sheet', 'radiation_resistant', 1520, 60 *.66)
 
 
 });

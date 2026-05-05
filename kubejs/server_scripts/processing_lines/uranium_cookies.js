@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             event.recipes.gtceu.mixer('kubejs:' + output)
             .itemInputs(ingredientsItem)
             .itemOutputs('kubejs:' + output)
-            .chancedInput(bakingsheet[0], 25, 0)
+            .chancedInput('kubejs:' + bakingsheet[0], 25, 0)
             .notConsumable('kubejs:' + grandma + '_grandma_helper')
             .duration(time * 20)
             .EUt(eut);

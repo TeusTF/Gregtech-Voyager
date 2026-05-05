@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             'DCD'
         ],
         {
-            A: 'gtceu:hv_helper_Wheel',
+            A: 'gtceu:hv_helper_wheel',
             B: 'gtceu:refined_fluxed_electrum_frame',  //arg 3: the mapping object
             C: '#gtceu:circuits/iv',
             D: 'kubejs:radiation_proof_lead_casing'

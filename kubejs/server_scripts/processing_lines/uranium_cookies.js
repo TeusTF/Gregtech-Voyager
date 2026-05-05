@@ -26,8 +26,8 @@ ServerEvents.recipes(event => {
     function oven(output, count, ingredientsItem, bakingsheet, grandma, eut, time)
     {
 
-            event.recipes.gtceu.oven('kubejs:' + output)
-            .itemInputs(ingredientsItem, bakingsheet)
+            event.recipes.gtceu.oven('kubejs:' + output + '_' + bakingsheet)
+            .itemInputs(ingredientsItem, 'kubejs:' + bakingsheet)
             .itemOutputs(count + 'x kubejs:' + output)
             .notConsumable('kubejs:' + grandma + '_grandma_helper')
             .duration(time * 20)
@@ -87,8 +87,8 @@ ServerEvents.recipes(event => {
         '12x kubejs:uranium_cookie_dough', [], 3.6 * 9 * .66, 1520, 'basic_chemist_helper'
     )
 
-    oven('grandmas_uranium_cookies', 16, '16x kubejs:uranium_cookie_dough', 'kubejs:grandmas_baking_sheet', 'radiation_resistant', 1980, 60)
-    oven('grandmas_uranium_cookies_tungsten', 32, '32x kubejs:uranium_cookie_dough', 'kubejs:grandmas_tungsten_baking_sheet', 'radiation_resistant', 1520, 60 *.66)
+    oven('grandmas_uranium_cookies', 16, '16x kubejs:uranium_cookie_dough', 'grandmas_baking_sheet', 'radiation_resistant', 1980, 60)
+    oven('grandmas_uranium_cookies', 32, '32x kubejs:uranium_cookie_dough', 'grandmas_tungsten_baking_sheet', 'radiation_resistant', 1520, 60 *.66)
 
 
 });

@@ -273,21 +273,21 @@ LootJS.modifiers(event => {
         .addLootTableModifier("kubejs:ev_loot_bag")
         .addWeightedLoot([
             Item.of("1x gtceu:nano_processor_assembly").withChance(4),
-            Item.of("1x gtceu:ev_conveyor_module").withChance(2/100*100),
-            Item.of("1x gtceu:ev_electric_pump").withChance(2/100*100),
-            Item.of("2x gtceu:ev_electric_motor").withChance(4/100*100),
-            Item.of("1x gtceu:ev_fluid_regulator").withChance(2/100*100),
-            Item.of("1x gtceu:ev_electric_piston").withChance(4/100*100),
-            Item.of("1x gtceu:ev_robot_arm").withChance(2/100*100),
+            Item.of("2x gtceu:ev_conveyor_module").withChance(6/100*100),
+            Item.of("1x gtceu:ev_electric_pump").withChance(5/100*100),
+            Item.of("2x gtceu:ev_electric_motor").withChance(8/100*100),
+            Item.of("1x gtceu:ev_fluid_regulator").withChance(1/100*100),
+            Item.of("2x gtceu:ev_electric_piston").withChance(8/100*100),
+            Item.of("1x gtceu:ev_robot_arm").withChance(4/100*100),
             Item.of("1x gtceu:hv_emitter").withChance(1/100*100),
             Item.of("1x gtceu:ev_sensor").withChance(1/100*100),
-            Item.of("1x gtceu:ev_output_hatch").withChance(1/100*100),
-            Item.of("1x gtceu:ev_input_hatch").withChance(1/100*100),
-            Item.of("1x gtceu:ev_input_bus").withChance(1/100*100),
-            Item.of("gtceu:ev_output_bus").withChance(1/100*100),
+            Item.of("1x gtceu:ev_output_hatch").withChance(2/100*100),
+            Item.of("1x gtceu:ev_input_hatch").withChance(2/100*100),
+            Item.of("1x gtceu:ev_input_bus").withChance(2/100*100),
+            Item.of("gtceu:ev_output_bus").withChance(2/100*100),
             Item.of("8x kubejs:ev_universal_coin").withChance(75),
-            Item.of("gtceu:ev_vanadium_battery").withChance(1/100*100),
-            Item.of("1x kubejs:ev_helper_computation_array").withChance(.5/100*100),
+            Item.of("gtceu:ev_vanadium_battery").withChance(2/100*100),
+            Item.of("1x kubejs:ev_helper_computation_array").withChance(1/100*100),
             Item.of("4x gtceu:titanium_carbide_ingot").withChance(3/100*100),
             Item.of({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "minecraft:fortune", lvl: 5}]}}).withChance(.25),
             Item.of({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "apotheosis:life_mending", lvl: 3}]}}).withChance(.25),
@@ -307,6 +307,31 @@ LootJS.modifiers(event => {
 
 });
 
+function lootbag_drop_event(tier)
+{
+    ItemEvents.rightClicked(`kubejs:${tier}_loot_bag`, event => {
+        const player = event.player;
+
+        for (let i = 0; i < rollDropTimes(); i++) {
+            event.server.runCommandSilent(
+                `/execute at ${player.username} run loot spawn ~ ~ ~ loot kubejs:${tier}_loot_bag` //LOL!!! (if you know how to do this in kjs make a pull req pls)
+            );
+
+        }
+            event.server.runCommandSilent(
+                `/playsound minecraft:item.bundle.drop_contents player ${player.username}`
+            );
+        event.item.shrink(1);
+
+    });
+}
+
+lootbag_drop_event('ulv');
+lootbag_drop_event('lv');
+lootbag_drop_event('mv');
+lootbag_drop_event('hv');
+lootbag_drop_event('ev');
+
 ItemEvents.rightClicked('kubejs:stone_bag', event => {
     const player = event.player;
 
@@ -321,70 +346,4 @@ ItemEvents.rightClicked('kubejs:stone_bag', event => {
         );
     event.item.shrink(1);
 
-});
-
-ItemEvents.rightClicked('kubejs:ulv_loot_bag', event => {
-    const player = event.player;
-
-    for (let i = 0; i < rollDropTimes(); i++) {
-        event.server.runCommandSilent(
-            `/execute at ${player.username} run loot spawn ~ ~ ~ loot kubejs:ulv_loot_bag` //LOL!!!
-        );
-
-    }
-        event.server.runCommandSilent(
-            `/playsound minecraft:item.bundle.drop_contents player ${player.username}`
-        );
-    event.item.shrink(1);
-
-});
-
-ItemEvents.rightClicked('kubejs:lv_loot_bag', event => {
-    const player = event.player;
-
-    let rolls = Math.floor(Math.random() * 3) + 1;
-
-    for (let i = 0; i < rollDropTimes(); i++) {
-        event.server.runCommandSilent(
-            `/execute at ${player.username} run loot spawn ~ ~ ~ loot kubejs:lv_loot_bag`
-        );
-
-    }        event.server.runCommandSilent(
-            `/playsound minecraft:item.bundle.drop_contents player ${player.username}`
-        );
-
-    event.item.shrink(1);
-
-});
-
-ItemEvents.rightClicked('kubejs:mv_loot_bag', event => {
-    const player = event.player;
-
-
-    for (let i = 0; i < rollDropTimes(); i++) {
-        event.server.runCommandSilent(
-            `/execute at ${player.username} run loot spawn ~ ~ ~ loot kubejs:mv_loot_bag`
-        );
-
-    }
-        event.server.runCommandSilent(
-            `/playsound minecraft:item.bundle.drop_contents player ${player.username}`
-        );
-    event.item.shrink(1);
-
-});
-
-ItemEvents.rightClicked('kubejs:hv_loot_bag', event => {
-    const player = event.player;
-
-    for (let i = 0; i < rollDropTimes(); i++) {
-        event.server.runCommandSilent(
-            `/execute at ${player.username} run loot spawn ~ ~ ~ loot kubejs:hv_loot_bag`
-        );
-    }
-        event.server.runCommandSilent(
-            `/playsound minecraft:item.bundle.drop_contents player ${player.username}`
-        );
-
-    event.item.shrink(1);
 });

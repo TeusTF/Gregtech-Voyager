@@ -1622,7 +1622,7 @@
 				""
 				"With &dEV&r rotor holders and &6Desh rotors&r, a LGT will produce &l&b12,288 EU/t&r&r at full speed."
 				""
-				"&1Lunarium rotors&r will produce &l&b8,192 EU/t&r&r with &dEV&r rotor holders, but only consume &l2/3&r the fuel compared to the &6Desh rotors&r."
+				"&1Lunarium rotors&r will produce &l&b8,192 EU/t&r&r with &dEV&r rotor holders, and consume &l416.129% less&r fuel compared to the &6Desh rotors&r."
 			]
 			hide_dependency_lines: true
 			id: "74932E28380BF605"

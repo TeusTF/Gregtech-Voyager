@@ -134,7 +134,7 @@
 			id: "71FE83BBDCA62F52"
 			tasks: [{
 				id: "0367775F21B82794"
-				item: "megacells:mega_interface"
+				item: "megacells:mega_pattern_provider"
 				type: "item"
 			}]
 			x: 1.5d

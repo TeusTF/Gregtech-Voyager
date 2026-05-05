@@ -858,6 +858,10 @@
         "isSelected": true
       },
       {
+        "path": "config\\ftbquests\\quests\\chapters\\ae12.snbt",
+        "isSelected": true
+      },
+      {
         "path": "config\\ftbquests\\quests\\chapters\\ars_novou.snbt",
         "isSelected": true
       },
@@ -879,6 +883,10 @@
       },
       {
         "path": "config\\ftbquests\\quests\\chapters\\chapter_4_to_space_ev.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\chapters\\chapter_5_age_of_infrastructure.snbt",
         "isSelected": true
       },
       {
@@ -931,6 +939,26 @@
       },
       {
         "path": "config\\ftbquests\\quests\\reward_tables\\bagorsteam.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\reward_tables\\ev1.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\reward_tables\\ev2.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\reward_tables\\ev3.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\reward_tables\\ev4.snbt",
+        "isSelected": true
+      },
+      {
+        "path": "config\\ftbquests\\quests\\reward_tables\\ev5.snbt",
         "isSelected": true
       },
       {
@@ -2470,6 +2498,62 @@
         "isSelected": false
       },
       {
+        "path": "crash-reports\\crash-2026-05-04_06.19.05-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_06.25.18-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_06.29.50-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_06.36.08-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_06.38.49-server.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.36.41-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.38.06-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.39.48-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.43.03-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.45.04-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.46.34-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.48.02-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.53.03-client.txt",
+        "isSelected": false
+      },
+      {
+        "path": "crash-reports\\crash-2026-05-04_07.53.37-client.txt",
+        "isSelected": false
+      },
+      {
         "path": "datapacks",
         "isSelected": true
       },
@@ -2751,6 +2835,10 @@
       },
       {
         "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\New_World_d65ced63-c29a-47b1-b3ff-a7065b66fb60\\gtceu",
+        "isSelected": false
+      },
+      {
+        "path": "gtceu\\prospection_cache\\jzells_2119c4f3-0682-4a8b-9265-397015857991\\New_World_d65ced63-c29a-47b1-b3ff-a7065b66fb60\\gtceu\\DIMad_astra=moon.nbt",
         "isSelected": false
       },
       {
@@ -3222,6 +3310,826 @@
         "isSelected": false
       },
       {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\cache",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\cache\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\cache\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\cache\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\cache\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\-1,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\-1,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\0,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-3\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-4",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-4\\cache",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-4\\cache\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-4\\cache\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-4\\-1,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\-4\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6\\cache",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6\\cache\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6\\cache\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6\\cache\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6\\-1,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6\\0,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\6\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\-1,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\-1,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\-2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\0,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\11,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\12,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\12,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\2,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\3,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\3,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\3,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\3,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\4,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\4,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\5,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\5,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\6,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\6,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\7,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\7,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\8,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\8,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\9,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\biome\\9,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.-2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.12.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.12.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.3.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.3.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.3.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.3.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.4.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.4.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.5.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.5.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.6.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.6.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.7.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.7.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.8.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.8.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.9.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\cache\\r.9.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\-1,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\-1,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\-2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\0,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\11,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\12,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\12,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\2,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\3,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\3,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\3,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\3,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\4,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\4,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\5,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\5,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\6,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\6,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\7,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\7,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\8,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\8,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\9,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\day\\9,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\-1,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\-1,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\-2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\0,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\11,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\12,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\12,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\2,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\3,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\3,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\3,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\3,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\4,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\4,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\5,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\5,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\6,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\6,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\7,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\7,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\8,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\8,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\9,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\night\\9,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.-2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.12.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.12.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.3.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.3.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.3.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.3.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.4.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.4.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.5.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.5.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.6.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.6.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.7.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.7.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.8.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.8.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.9.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\cache\\r.9.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\-1,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\-1,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\-2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\0,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\11,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\12,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\12,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\2,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\2,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\3,-1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\3,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\3,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\3,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\4,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\4,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\5,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\5,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\6,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\6,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\7,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\7,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\8,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\8,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\9,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\ad_astra~moon\\topo\\9,2.png",
+        "isSelected": false
+      },
+      {
         "path": "journeymap\\data\\sp\\New World (1)\\overworld",
         "isSelected": false
       },
@@ -3286,6 +4194,22 @@
         "isSelected": false
       },
       {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\biome\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\biome\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\biome\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\biome\\11,2.png",
+        "isSelected": false
+      },
+      {
         "path": "journeymap\\data\\sp\\New World (1)\\overworld\\cache",
         "isSelected": false
       },
@@ -3314,6 +4238,22 @@
         "isSelected": false
       },
       {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\cache\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\cache\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\cache\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\cache\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
         "path": "journeymap\\data\\sp\\New World (1)\\overworld\\day",
         "isSelected": false
       },
@@ -3334,6 +4274,22 @@
         "isSelected": false
       },
       {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\day\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\day\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\day\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\day\\11,2.png",
+        "isSelected": false
+      },
+      {
         "path": "journeymap\\data\\sp\\New World (1)\\overworld\\night",
         "isSelected": false
       },
@@ -3351,6 +4307,22 @@
       },
       {
         "path": "journeymap\\data\\sp\\New World (1)\\overworld\\night\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\night\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\night\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\night\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\night\\11,2.png",
         "isSelected": false
       },
       {
@@ -3378,6 +4350,22 @@
         "isSelected": false
       },
       {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\cache\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\cache\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\cache\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\cache\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
         "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\-1,-1.png",
         "isSelected": false
       },
@@ -3391,6 +4379,22 @@
       },
       {
         "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\0,0.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\10,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\10,2.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\11,1.png",
+        "isSelected": false
+      },
+      {
+        "path": "journeymap\\data\\sp\\New World (1)\\overworld\\topo\\11,2.png",
         "isSelected": false
       },
       {
@@ -4146,6 +5150,22 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\casing",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\casing\\durable_desh_casing.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\casing\\firm_ultimet_casing.png",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\block\\casing\\stout_titanium_carbide_casing.png",
+        "isSelected": false
+      },
+      {
         "path": "kubejs\\assets\\kubejs\\textures\\block\\coil",
         "isSelected": true
       },
@@ -4384,6 +5404,10 @@
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\crystalline_titanium_electrum.png",
         "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\desh_interplanetary_coordinatal_calculator.png",
+        "isSelected": false
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\desh_rocket_fin.png",
@@ -4766,6 +5790,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\data\\kubejs\\loot_tables\\ev_loot_bag.json",
+        "isSelected": false
+      },
+      {
         "path": "kubejs\\data\\kubejs\\loot_tables\\hv_loot_bag.json",
         "isSelected": true
       },
@@ -4994,6 +6022,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\server_scripts\\recipes\\gt\\casingsandmachines.js",
+        "isSelected": false
+      },
+      {
         "path": "kubejs\\server_scripts\\recipes\\gt\\circuits.js",
         "isSelected": true
       },
@@ -5019,10 +6051,6 @@
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gt_removal",
-        "isSelected": true
-      },
-      {
-        "path": "kubejs\\server_scripts\\recipes\\gt_removal\\casings.js",
         "isSelected": true
       },
       {
@@ -5098,6 +6126,18 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\startup_scripts\\registry\\multiblocks",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\registry\\multiblocks\\ev_cubes.js",
+        "isSelected": false
+      },
+      {
+        "path": "kubejs\\startup_scripts\\registry\\multiblocks\\multiblocks.js",
+        "isSelected": false
+      },
+      {
         "path": "kubejs\\startup_scripts\\registry\\armor_tools.js",
         "isSelected": true
       },
@@ -5123,10 +6163,6 @@
       },
       {
         "path": "kubejs\\startup_scripts\\registry\\items.js",
-        "isSelected": true
-      },
-      {
-        "path": "kubejs\\startup_scripts\\registry\\multiblocks.js",
         "isSelected": true
       },
       {
@@ -6994,6 +8030,138 @@
         "isSelected": false
       },
       {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA5E-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA5E-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA5F-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA5F-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA60-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA60-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA62-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA62-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA63-0EA5F.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA63-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA63-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA63-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA64-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA64-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA65-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA65-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA66-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA66-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA67-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA67-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA68-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA68-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA69-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA69-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA6A-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA6A-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA6B-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA6B-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA6C-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\0EA6C-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\dimension.regions",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\ad_astra_moon\\waypoints.json",
+        "isSelected": false
+      },
+      {
         "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld",
         "isSelected": false
       },
@@ -7011,6 +8179,30 @@
       },
       {
         "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld\\0EA60-0EA60.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld\\0EA6A-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld\\0EA6A-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld\\0EA6A-0EA63.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld\\0EA6B-0EA61.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld\\0EA6B-0EA62.zip",
+        "isSelected": false
+      },
+      {
+        "path": "local\\ftbchunks\\data\\ef421b7f-b8bb-4074-a37b-dbe7cb11072b\\minecraft_overworld\\0EA6B-0EA63.zip",
         "isSelected": false
       },
       {
@@ -7763,6 +8955,22 @@
       },
       {
         "path": "logs\\2026-05-04-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-04-4.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-04-5.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-04-6.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-04-7.log.gz",
         "isSelected": false
       },
       {
@@ -11138,6 +12346,10 @@
         "isSelected": false
       },
       {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\data\\adastra_planet_data.dat",
+        "isSelected": false
+      },
+      {
         "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\data\\an_redstone_signals.dat",
         "isSelected": false
       },
@@ -11146,7 +12358,503 @@
         "isSelected": false
       },
       {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\data\\forestry_poboxes.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\data\\gtceu_ore_vein_cache.dat",
+        "isSelected": false
+      },
+      {
         "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\data\\raids.dat",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.-2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.-2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.12.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.12.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.3.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.3.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.3.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.3.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.4.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.4.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.5.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.5.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.6.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.6.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.7.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.7.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.8.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.8.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.9.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\entities\\r.9.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.-1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.0.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.10.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.11.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.12.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.12.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.12.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.2.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.3.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.3.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.3.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.3.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.4.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.4.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.4.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.5.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.5.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.6.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.6.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.7.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.7.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.8.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.8.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.8.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.9.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\poi\\r.9.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.-1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.-1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.-1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.-2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.-2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.-2.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.0.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.0.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.0.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.1.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.1.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.10.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.10.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.11.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.11.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.12.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.12.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.12.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.12.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.2.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.2.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.2.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.2.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.3.-1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.3.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.3.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.3.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.4.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.4.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.4.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.5.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.5.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.5.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.6.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.6.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.6.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.7.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.7.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.7.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.8.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.8.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.8.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.9.0.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.9.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\dimensions\\ad_astra\\moon\\region\\r.9.2.mca",
         "isSelected": false
       },
       {
@@ -11330,6 +13038,30 @@
         "isSelected": false
       },
       {
+        "path": "saves\\New World (1)\\entities\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\entities\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\entities\\r.10.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\entities\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\entities\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\entities\\r.11.3.mca",
+        "isSelected": false
+      },
+      {
         "path": "saves\\New World (1)\\ftbchunks",
         "isSelected": false
       },
@@ -11426,6 +13158,42 @@
         "isSelected": false
       },
       {
+        "path": "saves\\New World (1)\\poi\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.10.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.11.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.12.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.12.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\poi\\r.12.3.mca",
+        "isSelected": false
+      },
+      {
         "path": "saves\\New World (1)\\region",
         "isSelected": false
       },
@@ -11471,6 +13239,42 @@
       },
       {
         "path": "saves\\New World (1)\\region\\r.1.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.10.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.10.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.10.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.11.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.11.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.11.3.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.12.1.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.12.2.mca",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\region\\r.12.3.mca",
         "isSelected": false
       },
       {
@@ -20286,23 +22090,15 @@
         "isSelected": false
       },
       {
+        "path": "screenshots\\2026-05-04_08.21.05.png",
+        "isSelected": false
+      },
+      {
         "path": "shaderpacks",
         "isSelected": true
       },
       {
         "path": "simplebackups",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\GT setups_2026-05-01_04-24-55.zip",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\GT setups_2026-05-01_17-36-52.zip",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\GT setups_2026-05-02_00-26-32.zip",
         "isSelected": false
       },
       {
@@ -20318,11 +22114,23 @@
         "isSelected": false
       },
       {
-        "path": "simplebackups\\world_2026-05-02_02-05-41.zip",
+        "path": "simplebackups\\New World (1)_2026-05-04_04-55-03.zip",
         "isSelected": false
       },
       {
-        "path": "simplebackups\\world_2026-05-03_00-06-35.zip",
+        "path": "simplebackups\\New World (1)_2026-05-04_06-55-04.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\New World (1)_2026-05-04_08-55-04.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\New World (1)_2026-05-04_10-55-04.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\New World (1)_2026-05-04_19-34-57.zip",
         "isSelected": false
       },
       {

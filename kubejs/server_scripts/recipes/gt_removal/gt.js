@@ -42,5 +42,11 @@ event.replaceInput(
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 
+event.replaceInput(
+  { output: 'gtceu:iv_parallel_hatch' }, // Arg 1: the filter
+  'gtceu:platinum_double_cable',            // Arg 2: the item to replace
+  'gtceu:titanite_double_cable'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
 
 })

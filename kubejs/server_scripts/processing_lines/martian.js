@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("kubejs:radio")
         .itemInputs('12x gtceu:double_ostrum_plate', '32x gtceu:lunarium_ring', '16x gtceu:uranium_triplatinum_single_wire', '32x gtceu:qbit_cpu_chip', '8x #gtceu:circuits/luv', '2x gtceu:iv_emitter', '2x gtceu:iv_sensor')
         .inputFluids('gtceu:soldering_alloy 1000')
-        .itemOutputs('kubejs:celestial_radio')
+        .itemOutputs({type: "minecraft:item_nbt", item: "kubejs:celestial_radio", nbt: {message:1}})
         .duration(1000) 
         .EUt(7860) 
 

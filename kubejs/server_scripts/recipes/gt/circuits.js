@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
         , eut, duration
     )
     {
-        event.remove({output: output})
+        event.remove({output: 'gtceu:' + name})
 
         let componentMultiplier = 1;
         let fluidMultiplier = 72;

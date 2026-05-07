@@ -22,10 +22,10 @@ function radio(radio, i_nbt, i_message, direction)
             item.setNbt(newNbt)
         })
     }
-    if (i_nbt == 24) {
-        player.tell(text)
-        player.tell(Text.yellow('Transmission ended.'))
-    }
+    // if (i_nbt == 24) {
+    //     player.tell(text)
+    //     player.tell(Text.yellow('Transmission ended.'))
+    // }
 
     event.server.runCommandSilent(
         `/playsound gtceu:computation player ${player.username}`

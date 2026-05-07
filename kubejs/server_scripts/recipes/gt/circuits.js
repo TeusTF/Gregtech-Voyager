@@ -1,10 +1,10 @@
 ServerEvents.recipes(event => {
 
-    event.remove({ output: "gtceu:nano_processor" }) // these didn't remove anything...?
-    event.remove({ output: "gtceu:nano_processor_assembly" })
-    event.remove({ output: "gtceu:nano_processor_computer" })
-    event.remove({ output: "gtceu:nano_processor_mainframe" })
-    event.remove({ output: "gtceu:micro_processor_mainframe" })
+    // event.remove({ output: "gtceu:nano_processor" }) // these didn't remove anything...?
+    // event.remove({ output: "gtceu:nano_processor_assembly" })
+    // event.remove({ output: "gtceu:nano_processor_computer" })
+    // event.remove({ output: "gtceu:nano_processor_mainframe" })
+    // event.remove({ output: "gtceu:micro_processor_mainframe" })
 
     // event.remove({ type: "gtceu:circuit_assembler" })
 
@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
         , eut, duration
     )
     {
+        event.remove({output: output})
 
         let componentMultiplier = 1;
         let fluidMultiplier = 72;
@@ -175,6 +176,23 @@ ServerEvents.recipes(event => {
         true, 
         true, 'desh', 
         1200, 40
+    )
+
+    circuit_assembler_recipe('quantum_processor', '2x gtceu:quantum_processor', 'low', 'gtceu:fiber_reinforced_printed_circuit_board',
+        ['gtceu:nano_cpu_chip', 'gtceu:smd_capacitor', 'gtceu:smd_transistor'], 'gtceu:qbit_cpu_chip', 'low', 'refined_fluxed_electrum', false,
+        false, '', 2400, 10
+    )
+    circuit_assembler_recipe('quantum_processor_assembly', '2x gtceu:quantum_processor_assembly', 'mid', 'gtceu:fiber_reinforced_printed_circuit_board',
+        ['gtceu:quantum_processor','gtceu:smd_capacitor', 'gtceu:smd_inductor'], 'gtceu:ram_chip', 'mid','refined_fluxed_electrum', false, true, '',
+        2400, 20
+    )
+    circuit_assembler_recipe('quantum_processor_computer', 'gtceu:quantum_processor_computer', 'mid', 'gtceu:fiber_reinforced_printed_circuit_board',
+        ['2x gtceu:quantum_processor_assembly', 'gtceu:smd_diode', 'gtceu:ram_chip'], 'gtceu:nor_memory_chip', 'mid', 'titanite', false, true, '',
+        2400, 30
+    )
+    circuit_assembler_recipe('quantum_processor_mainframe', 'gtceu:quantum_processor_mainframe', 'high', 'gtceu:fiber_reinforced_printed_circuit_board',
+        ['2x gtceu:quantum_processor_assembly', 'gtceu:capcacitor', 'gtceu:inductor'], 'gtceu:qbit_cpu_chip', 'high', 'titanite', true, true, 'titanite_alloy',
+        7680, 60
     )
 
 });

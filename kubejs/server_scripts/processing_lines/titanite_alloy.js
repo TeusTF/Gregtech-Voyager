@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     )
 
     create_recipe_lcr('lunarium_slurry', ['2x gtceu:lunarium_dust', 'gtceu:carbon_dust'],
-        ['gtceu:chlorine 4000', 'gtceu:fluorine 2000'], [], 'gtceu:lunarium_growth_slurry 1500', 25, 6520, 'basic_chemist_helper'
+        ['gtceu:chlorine 4000', 'gtceu:fluorine 2000'], [], 'gtceu:lunarium_growth_slurry 1500', 25, 6520, 'advanced_chemist_helper'
     )
 
     event.recipes.gtceu.chemical_bath("kubejs:titanichite_spores")

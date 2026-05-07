@@ -191,7 +191,7 @@ ServerEvents.recipes(event => {
         2400, 30
     )
     circuit_assembler_recipe('quantum_processor_mainframe', 'gtceu:quantum_processor_mainframe', 'high', '',
-        ['gtceu:quantum_processor_computer', 'gtceu:smd_capacitor', 'gtceu:smd_inductor'], 'gtceu:qbit_cpu_chip', 'high', 'titanite', true, true, 'titanite_alloy',
+        ['gtceu:quantum_processor_computer', 'gtceu:advanced_smd_capacitor', 'gtceu:advanced_smd_inductor'], 'gtceu:qbit_cpu_chip', 'high', 'titanite', true, true, 'titanite_alloy',
         7680, 60
     )
 

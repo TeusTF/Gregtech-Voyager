@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
         .EUt(1980) 
 
     create_recipe_lcr('dissolved_martian', '16x kubejs:shredded_martian_scrap', 'gtceu:aqua_regia 9000', [], 'kubejs:dissolved_martian_mineral_solution 1000', 240, 1980)
-    create_recipe_lcr('dissolved_martian', '16x kubejs:shredded_martian_scrap', 'gtceu:aqua_regia 6000', [], 'kubejs:dissolved_martian_mineral_solution 1666', 180, 1560, 'basic_chemist_helper')
+    create_recipe_lcr('dissolved_martian', '16x kubejs:shredded_martian_scrap', 'gtceu:aqua_regia 6000', [], 'kubejs:dissolved_martian_mineral_solution 1666', 180, 1560, 'advanced_chemist_helper')
 
     event.recipes.gtceu.electrolyzer("kubejs:elec_martian_soup")
         .inputFluids('kubejs:dissolved_martian_mineral_solution 1000')

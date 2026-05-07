@@ -48,3 +48,8 @@ usernamecache.json
 config/oculus.properties
 /journeymap
 config/oculus.properties
+/.vscode
+kubejs/config/probejs.json
+kubejs/jsconfig.json
+mods/.index/probejs.pw.toml
+mods/probejs-6.0.1-forge.jar

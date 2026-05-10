@@ -936,6 +936,7 @@
 		{
 			dependencies: ["64B5D866D92BA6C4"]
 			id: "7D03DD080C4A9C7F"
+			size: 1.5d
 			tasks: [{
 				id: "066B711EA727BB91"
 				item: "gtceu:helper_software_installation_unit"

@@ -196,7 +196,7 @@ function register_nosmelt_metal(name, ingredients, ebf, color, blasting, genroto
         if (ebf) {
             mat.blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
         }
-        if(rotor)
+        if(genrotor)
         {
             // power, efficiency, damage, durability
             mat.rotorStats(genrotor[0], genrotor[1], genrotor[2], genrotor[3])
@@ -220,7 +220,7 @@ function register_nosmelt_elem_metal(name, ingredients, ebf, color, blasting, ge
         if (ebf) {
             mat.blastTemp(blasting[0], blasting[1], blasting[2], blasting[3]);
         }
-        if(rotor)
+        if(genrotor)
         {
             // power, efficiency, damage, durability
             mat.rotorStats(genrotor[0], genrotor[1], genrotor[2], genrotor[3])
@@ -297,7 +297,7 @@ register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'
 
 register_dust('fluxed_titanium_electrum_compound', [], '0x2c2e16', no_decomp);
 register_nosmelt_elem_metal('titanite', [], true, '0x75008c', [5400, 'mid', voltTier('iv'), 20*64], [450, 450, 1, 1000000], voltTier('luv'))
-register_nosmelt_elem_metal('ostrum', [], true, '0xc785a2', [5400, 'mid', voltTier('iv'), 20*64], [375, 650, 1, 1000000], voltTier('luv'))
+register_nosmelt_elem_metal('ostrum', [], true, '0xc785a2', [5400, 'mid', voltTier('iv'), 20*64], false, voltTier('luv'))
 
 register_superconductor('tin_silver_alloy',['3x silver ', '4x tin'], false, '0xbfcdd6', 32, 1, [0, null, voltTier('lv'), 0]);
 register_superconductor('fluxed_electrum',[], true, '0xfcad03', 128, 1, [0, null, voltTier('lv'), 0]);

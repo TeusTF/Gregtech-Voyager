@@ -130,6 +130,23 @@ ServerEvents.recipes(event => {
         
     }
 
+    function circuit_assembly_no_research(output, namespace, inputs, fluidInputs, eut, time)
+    {
+        event.remove({output: `${namespace}:${output}`})
+        event.recipes.gtceu.assembly_line(`gtceu:${output}`)
+            .itemInputs(inputs)
+            .inputFluids(fluidInputs)
+            .itemOutputs(`${namespace}:${output}`)
+            // ["scannerResearch(java.util.function.UnaryOperator)"](
+            //     researchRecipeBuilder => researchRecipeBuilder
+            //         .researchStack(Item.of(toScan))
+            //         .duration(dura * 2)
+            //         .EUt(eut/4)
+            //     )
+            .duration(time * 20)
+            .EUt(eut);
+    }
+
 
 
     //
@@ -190,9 +207,8 @@ ServerEvents.recipes(event => {
         ['gtceu:quantum_processor_assembly', 'gtceu:smd_diode', 'gtceu:ram_chip'], 'gtceu:nor_memory_chip', 'mid', 'titanite', false, true, '',
         2400, 30
     )
-    circuit_assembler_recipe('quantum_processor_mainframe', 'gtceu:quantum_processor_mainframe', 'high', '',
-        ['gtceu:quantum_processor_computer', 'gtceu:advanced_smd_capacitor', 'gtceu:advanced_smd_inductor'], 'gtceu:qbit_cpu_chip', 'high', 'titanite', true, true, 'titanite_alloy',
-        7680, 60
-    )
+    circuit_assembly_no_research('quantum_processor_mainframe', 'gtceu', ['4x gtceu:titanite_alloy_frame', '2x gtceu:quantum_processor_computer', '32x gtceu:advanced_smd_capacitor', '32x gtceu:advanced_smd_inductor',
+        '32x gtceu:qbit_cpu_chip', '64x gtceu:ram_chip', '32x gtceu:titanite_single_wire'
+    ], 'gtceu:soldering_alloy 2000', 7680, 90)
 
 });

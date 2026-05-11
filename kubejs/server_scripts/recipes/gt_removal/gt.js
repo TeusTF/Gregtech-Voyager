@@ -56,4 +56,32 @@ event.replaceInput(
   // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
 )
 
+event.replaceInput(
+  { output: 'gtceu:assembly_line_casing' }, // Arg 1: the filter
+  '#gtceu:circuits/ev',            // Arg 2: the item to replace
+  '#gtceu:circuits/iv'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+event.replaceInput(
+  { output: 'gtceu:assembly_line_casing' }, // Arg 1: the filter
+  'gtceu:tungsten_steel_frame',            // Arg 2: the item to replace
+  'gtceu:titanite_frame'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+event.replaceInput(
+  { output: 'gtceu:assembly_line_unit' }, // Arg 1: the filter
+  'gtceu:tungsten_steel_frame',            // Arg 2: the item to replace
+  'gtceu:titanite_frame'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
+event.replaceInput(
+  { output: 'gtceu:assembly_line_unit' }, // Arg 1: the filter
+  'gtceu:steel_plate',            // Arg 2: the item to replace
+  'gtceu:titanite_plate'         // Arg 3: the item to replace it with
+  // Note: tagged fluid ingredients do not work on Fabric, but tagged items do.
+)
+
 })

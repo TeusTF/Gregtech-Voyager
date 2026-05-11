@@ -410,8 +410,8 @@
 				item: "gtceu:samarium_iron_arsenic_oxide_ingot"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 7.0d
+			x: -4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -432,7 +432,9 @@
 				"495DFB75E94690EC"
 				"3FB4F231181DD428"
 				"044B5E4FBBD3C277"
+				"436220F63DCFFB5D"
 			]
+			hide_dependent_lines: true
 			id: "64B5D866D92BA6C4"
 			size: 1.5d
 			tasks: [{
@@ -584,7 +586,7 @@
 			]
 			title: "Advanced SMDs"
 			x: -3.5d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			id: "3EB2AED9E53B3F2F"
@@ -593,8 +595,8 @@
 				item: "gtceu:polybenzimidazole_bucket"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 8.5d
+			x: -2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["66A7E0D8339F7542"]
@@ -607,7 +609,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["58BF847DADB89C2E"]
@@ -618,8 +620,8 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 8.0d
+			x: -3.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["58BF847DADB89C2E"]
@@ -631,7 +633,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 7.0d
+			y: 9.0d
 		}
 		{
 			id: "2C22C31B13F71CD0"
@@ -865,6 +867,7 @@
 		}
 		{
 			dependencies: ["64B5D866D92BA6C4"]
+			description: ["After you get your first assembly line and &4ZPM&r circuits, you are going to want to make this. This multiblock is the solution to all of your power storage needs, and you will learn to love it (as you will have it until the end of the pack!)"]
 			id: "3AA061D9096EA590"
 			shape: "gear"
 			size: 2.0d
@@ -942,8 +945,8 @@
 				item: "gtceu:helper_software_installation_unit"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 11.0d
+			x: -13.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["7D03DD080C4A9C7F"]
@@ -953,41 +956,48 @@
 				item: "kubejs:iv_helper_computation_array"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 11.0d
+			x: -12.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["17EC186948CB00B9"]
 			id: "2EF0F4EBCA6457AA"
 			tasks: [{
-				id: "6F8C4BE1729DB360"
-				item: "kubejs:iv_ebf_helper"
+				id: "278CC51ADAAD50C5"
+				item: "kubejs:ev_ebf_helper"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 10.0d
+			x: -10.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["17EC186948CB00B9"]
+			dependencies: [
+				"17EC186948CB00B9"
+				"15C88C01C7723480"
+			]
 			id: "43C04EEFAC435F2A"
 			tasks: [{
 				id: "37EF7244F7644BD6"
 				item: "kubejs:embassy_helper"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 11.0d
+			x: -9.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["17EC186948CB00B9"]
+			dependencies: [
+				"17EC186948CB00B9"
+				"5B7B2720BBCF9C1E"
+				"15C88C01C7723480"
+			]
 			id: "2D4AC4935C3C57DB"
 			tasks: [{
 				id: "3AB085EA73BCCEAA"
 				item: "kubejs:advanced_chemist_helper"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 12.0d
+			x: -9.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["17EC186948CB00B9"]
@@ -997,33 +1007,322 @@
 				item: "kubejs:iv_technician_helper"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 13.0d
+			x: -10.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["7764E1FF769BDCB6"]
+			hide_dependency_lines: true
 			id: "2120793652BC1F0D"
 			tasks: [{
 				id: "000BA987DEE6EF04"
 				item: "kubejs:iv_stomach_unit"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 7.0d
+			x: -10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
 				"2120793652BC1F0D"
 				"17EC186948CB00B9"
 			]
+			description: ["Can consume &auranium cookies only&r, but produces &a&l2x the power&r of the normal hungry helper."]
 			id: "1A250E50BC201DDE"
 			tasks: [{
 				id: "2B6FD176BAB1AB98"
 				item: "kubejs:hungry_hungry_helper"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"436220F63DCFFB5D"
+				"08A96C5C32906F28"
+			]
+			id: "15C88C01C7723480"
+			tasks: [{
+				id: "23B6747B4FD61148"
+				item: "gtceu:luv_robot_arm"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["436220F63DCFFB5D"]
+			id: "5B7B2720BBCF9C1E"
+			tasks: [{
+				id: "646887A65558028D"
+				item: "gtceu:luv_electric_motor"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1B5DC7564288B03C"]
+			description: [
+				"Now that you are on the last parts of &9IV&r, you are going to need an assembly line. It might not be a bad idea to make 2 or 3 of these when you can, but keep in mind you will be replacing them in &2UV&r."
+				""
+				"Assembly lines are interesting in the fact that they need ordered input. I recommend just patterning a recipe thru AE2, and then setting priorities on storage buses in a sub-net to accomplish easy crafting in these. Front of the assembly line should have most priority, going down all the way to the back."
+			]
+			hide_dependency_lines: true
+			id: "436220F63DCFFB5D"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1CF48D1123CF8803"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"50A265E32ADDD82E"
+				"5852659183FD39DB"
+				"3F87D3EBB5E3BBC4"
+				"66A7E0D8339F7542"
+			]
+			hide_dependency_lines: true
+			id: "3493969092F43A8B"
+			tasks: [{
+				id: "7AA485C00C424F21"
+				item: "gtceu:assembly_line_casing"
+				type: "item"
+			}]
+			x: -6.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["5B7B2720BBCF9C1E"]
+			id: "08A96C5C32906F28"
+			tasks: [{
+				id: "1B7D7EA08CD47777"
+				item: "gtceu:luv_electric_piston"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"50A265E32ADDD82E"
+				"1B5DC7564288B03C"
+			]
+			hide_dependency_lines: true
+			id: "13142A5EAAAA66B7"
+			tasks: [{
+				id: "37AD7C2DA107DFC8"
+				item: "gtceu:assembly_line_unit"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7A3CD112368FA9B2"]
+			description: ["Now that you are in &9IV&r, the ECEs are a superb option for power. Check out &6High-Octane Gasoline&r (or HOG for short)."]
+			hide_dependency_lines: true
+			id: "11AC4AEA702C5F50"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "503530FB867B409C"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["50A265E32ADDD82E"]
+			description: ["&5Titanite&r is a great rotor option. For only a &c50% loss&r of efficiency (compared to the &1Lunarium&r rotors), you &again 250% more power&r output."]
+			hide_dependency_lines: true
+			id: "0F070E1FA2BB4374"
+			tasks: [{
+				id: "727927248A7E026C"
+				item: {
+					Count: 1
+					id: "gtceu:turbine_rotor"
+					tag: {
+						GT.PartStats: {
+							Material: "gtceu:titanite"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Titanite Rotors"
+			x: -2.0d
+			y: 16.5d
+		}
+		{
+			dependencies: [
+				"3FB4F231181DD428"
+				"64B5D866D92BA6C4"
+				"58BF847DADB89C2E"
+				"73B07062397A7AB7"
+				"5A6CCE713C1D1143"
+			]
+			description: [
+				"The &4Titanite blast furnace&r is your next tier of EBF. This is going to be super useful for on-demand blasting, just keep in mind it can only run &9IV&r and below recipes, but it has &l4x parallels&r"
+				""
+				"&7In future, this will be updated for future voltage tiers, but bear with us as we need to make a core mod first. It is in the works"
+				""
+				"&7-GregTech: Voyager team&r&r"
+			]
+			hide_dependency_lines: true
+			id: "319C5A7733086A0D"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "To meet all of your autocrafting needs"
+			tasks: [{
+				id: "2D901A71AEB093DE"
+				item: "gtceu:titanite_blast_furnace"
+				type: "item"
+			}]
+			title: "Better Blasting"
+			x: -7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1EA011566D0AF90B"]
+			hide_dependency_lines: true
+			id: "09D0717AD16E84FB"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3E111D2B92B17BA4"
+				item: "gtceu:iv_large_miner"
+				type: "item"
+			}]
+			x: -9.75d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"35A76EF5228154C7"
+				"1EA011566D0AF90B"
+			]
+			hide_dependency_lines: true
+			id: "5B5B446B8FB19838"
+			tasks: [{
+				id: "01C1E5192C38E7C3"
+				item: "gtceu:iv_rotor_holder"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 16.5d
+		}
+		{
+			id: "57273F946436DC4C"
+			size: 3.0d
+			tasks: [{
+				id: "3FF5D72EB486E44A"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3FB4F231181DD428"]
+			hide_dependency_lines: true
+			id: "6355712EF473596B"
+			tasks: [{
+				count: 6L
+				id: "4F47F869F4E08FF1"
+				item: { Count: 6, id: "kubejs:titanite_rocket_hull_plate" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"436220F63DCFFB5D"
+				"6355712EF473596B"
+			]
+			hide_dependency_lines: true
+			id: "6768D4CD80D3E8AE"
+			tasks: [{
+				count: 4L
+				id: "335890DDCA7C160B"
+				item: { Count: 5, id: "kubejs:titanite_rocket_fin" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"436220F63DCFFB5D"
+				"6355712EF473596B"
+				"528A7767F9189242"
+			]
+			hide_dependency_lines: true
+			id: "2597FEAE670B7E8C"
+			tasks: [{
+				id: "1671EE638816ABB5"
+				item: "kubejs:titanite_rocket_nose_cone"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"436220F63DCFFB5D"
+				"6355712EF473596B"
+			]
+			hide_dependency_lines: true
+			id: "0BAE4AAE70DB71F2"
+			tasks: [{
+				id: "38A81726AB15973B"
+				item: "ad_astra:ostrum_engine"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"436220F63DCFFB5D"
+				"6355712EF473596B"
+			]
+			hide_dependency_lines: true
+			id: "0DC7B262CFD55FB5"
+			tasks: [{
+				id: "23F851F64C92E8BF"
+				item: "ad_astra:ostrum_tank"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"436220F63DCFFB5D"
+				"3FB4F231181DD428"
+			]
+			hide_dependency_lines: true
+			id: "528A7767F9189242"
+			tasks: [{
+				id: "7000D865EBC0FB98"
+				item: "kubejs:titanite_interplanetary_coordinatal_calculator"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 6.0d
 		}
 	]
 	title: "Chapter 5: Age of Infrastructure (IV)"

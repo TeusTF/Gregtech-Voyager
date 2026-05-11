@@ -29,10 +29,13 @@ ServerEvents.recipes(event => {
     }
 
     calorie_conversion('uranium_cookies', 'hungry', 'gtceu:thorium_dust', 15, 8192)
-    calorie_conversion('uranium_cookies', 'lcptr', 'gtceu:thorium_dust', 60, 4196)
+    calorie_conversion('uranium_cookies', 'lcptr', 'gtceu:thorium_dust', 60, 4096)
 
     calorie_conversion('cookie', 'hungry', 'gtceu:carbon_dust', 3.75, 2048)
     calorie_conversion('cookie', 'lcptr', 'gtceu:carbon_dust', 15, 1024)
+
+    calorie_conversion('uranium_cookies', 'hungry_hungry', 'gtceu:uranium_dust', 10, 16384)
+    // calorie_conversion('cookie', 'hungry_hungry', 'gtceu:graphite_dust', 3, 4096)
 
     
 })

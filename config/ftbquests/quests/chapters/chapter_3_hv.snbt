@@ -1951,11 +1951,7 @@
 				"666FFA22AA04D004"
 				"7B853D6D4BC03B8C"
 			]
-			description: [
-				"The LHW (Large helper wheel) is a superb option for power while in &6HV&r. It generates 1.5 Amps of HV Power using Grandma's Cookies and an LCPTR Helper. A few of these will get your power needs up until &dEV&r with ease."
-				""
-				"It is also easily upgraded when in &dEV&r."
-			]
+			description: ["The LHW (Large helper wheel) is a superb option for power while in &6HV&r. It generates 1.5 Amps of HV Power using Grandma's Cookies and an LCPTR Helper. A few of these will get your power needs up until &dEV&r with ease."]
 			hide_dependency_lines: true
 			id: "5DFC5C683D8CDCE2"
 			rewards: [

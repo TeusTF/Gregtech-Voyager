@@ -1,22 +1,42 @@
 
 ServerEvents.recipes(event => {
 
-    function casing_recipe(mat, output)
+    function casing_recipe(mat, output, additionalInputs)
     {
-        event.recipes.gtceu.assembler('kubejs:' + mat + '_casing')
+        if(additionalInputs)
+        {
+            event.recipes.gtceu.assembler('kubejs:' + mat + '_casing')
             .itemInputs(
                 '6x gtceu:' + mat + '_plate',
                 '1x gtceu:' + mat + '_frame',
+                additionalInputs
             )
             .circuit(6)
             .itemOutputs('2x kubejs:' + output + '_casing')
             .duration(30)
             .EUt(16);
+        }
+        else
+        {
+           event.recipes.gtceu.assembler('kubejs:' + mat + '_casing')
+            .itemInputs(
+                '6x gtceu:' + mat + '_plate',
+                '1x gtceu:' + mat + '_frame'
+            )
+            .circuit(6)
+            .itemOutputs('2x kubejs:' + output + '_casing')
+            .duration(30)
+            .EUt(16); 
+        }
+        
+
+        
     }
 
     casing_recipe('desh', 'durable_desh')
     casing_recipe('ultimet', 'firm_ultimet')
     casing_recipe('ostrum', 'ostrum')
+    casing_recipe('titanite_alloy', 'titanite', ['#gtceu:circuits/iv'])
     event.recipes.gtceu.assembler('kubejs:stout_titanium_carbide_casing')
             .itemInputs(
                 '6x gtceu:titanium_carbide_plate',
@@ -36,6 +56,23 @@ ServerEvents.recipes(event => {
             .itemOutputs('2x kubejs:radiation_proof_lead_casing')
             .duration(30)
             .EUt(16);
+
+    event.recipes.gtceu.assembler('kubejs:titanite_blast_furnace')
+        .itemInputs(
+            '16x kubejs:titanite_casing',
+            '4x #gtceu:circuits/zpm',
+            '8x kubejs:desh_coil_block',
+            '8x gtceu:electric_blast_furnace',
+            '4x gtceu:lunarium_gear',
+            '4x gtceu:iv_electric_pump',
+            '4x gtceu:iv_electric_motor',
+            '4x gtceu:iv_conveyor_module'
+
+        )
+        .circuit(2)
+        .itemOutputs('gtceu:titanite_blast_furnace')
+        .duration(60 * 20)
+        .EUt(7680); 
 
     // fuck it ill put these here too
 

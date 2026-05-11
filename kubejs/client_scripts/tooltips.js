@@ -6,7 +6,7 @@ ItemEvents.tooltip(event => {
 
   function cubeTooltip(name)
   {
-    event.add(`gtceu:cube_${name}`, '§7Has perfect overclock and batching\n§r§4Can only have one energy hatch\nMUST have a normal maintenance hatch')
+    event.add(`gtceu:cube_${name}`, '§7Has perfect overclock and batching\n§r§4Can only have one energy hatch&r\n§4MUST have a normal maintenance hatch')
   }
 
   function rectangleTooltip(name)
@@ -16,15 +16,15 @@ ItemEvents.tooltip(event => {
 
   function addHelperTooltip(helper, text)
   {
-    event.add(`kubejs:${helper}_helper`, `§4${text}`)
+    event.add(`kubejs:${helper}_helper`, `§4${text}&r`)
   }
 
   event.add(`gtceu:power_rectangle_helper_calorie_converter`, '\n§6Can run helper calorie conversion recipes')
 
-  event.add(`gtceu:titanite_blast_furnace`, '§6Has perfect overclock (regardless of coil temperature)§r\n§6Can use 4x parallel hatches§r\n')
+  event.add(`gtceu:titanite_blast_furnace`, '§6Has perfect overclock (regardless of coil temperature)§r\n§6Can use 4x parallel hatches§r\n§4Can only use ONE IV energy hatch§r\nNOTE: In future this multiblock will be changed to use GT Coil mechanics.')
   rectangleTooltip('helper_calorie_converter')
 
-  addHelperTooltip('hungry', 'Can consume a LOT of calories\n')
+  addHelperTooltip('hungry', 'Can consume a LOT of calories')
 
   cubeTooltip('macerator');
   cubeTooltip('electrolyzer')

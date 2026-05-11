@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu
         .assembler('kubejs:iv_stomach_unit')   
         .itemInputs('16x gtceu:polybenzimidazole_plate', '4x #gtceu:circuits/iv', '4x gtceu:ptfe_pipe_casing', '2x gtceu:iv_field_generator')
-        .itemOutputs('kubejs:ev_stomach_unit')
+        .itemOutputs('kubejs:iv_stomach_unit')
         .inputFluids('gtceu:fluoroantimonic_acid 1000')
         .duration(200)                               
         .EUt(1980) 

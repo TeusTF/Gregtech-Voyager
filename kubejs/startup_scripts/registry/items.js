@@ -104,6 +104,12 @@ StartupEvents.registry('item', event => {
     event.create('desh_rocket_nose_cone').texture('kubejs:item/desh_rocket_nose_cone').maxStackSize(16).displayName('Desh Rocket Nose Cone');
     event.create('desh_interplanetary_coordinatal_calculator').texture('kubejs:item/desh_interplanetary_coordinatal_calculator').maxStackSize(16).displayName('Desh Interplanetary Coordinatal Calculator');
 
+    event.create('titanite_rocket_hull_plate').texture('kubejs:item/titanite_rocket_hull_plate').maxStackSize(16).displayName('Titanite Rocket Hull Plate');
+    event.create('titanite_rocket_fin').texture('kubejs:item/titanite_rocket_fin').maxStackSize(16).displayName('Titanite Rocket Fin');
+    event.create('titanite_rocket_nose_cone').texture('kubejs:item/titanite_rocket_nose_cone').maxStackSize(16).displayName('Titanite Rocket Nose Cone');
+    event.create('titanite_interplanetary_coordinatal_calculator').texture('kubejs:item/titanite_interplanetary_coordinatal_calculator').maxStackSize(16).displayName('Titanite Interplanetary Coordinatal Calculator');
+
+
     event.create('martian_scrap').texture('kubejs:item/martian_scrap').displayName('Martian Scrap').tooltip('§4Remnants of martian ships\n§r§8Contains materials that can not yet be synthesized without 0G');
     event.create('shredded_martian_scrap').texture('kubejs:item/shredded_martian_scrap').displayName('Shredded Martian Scrap').tooltip('§4Remnants of martian ships\n§r§8Contains materials that can not yet be synthesized without 0G');
     
@@ -177,7 +183,7 @@ StartupEvents.registry('item', event => {
     event.create('crystalline_titanium_electrum').texture('kubejs:item/crystalline_titanium_electrum').displayName('Crystalline Titanium Electrum').tooltip('§4Pure Capacitance');
 //refined_fluxed_electrum_crystal
     event.create('refined_fluxed_electrum_crystal').texture('kubejs:item/refined_fluxed_electrum_crystal').displayName('Refined Fluxed Electrum Crystal').tooltip('§eRefined Capacitance');
-    event.create('titanichite_bud').texture('kubejs:item/titanichite_spores').displayName('Titanichite Bud').tooltip('§eGlimmering Capacitance');
+    event.create('titanichite_bud').texture('kubejs:item/titanichite_bud').displayName('Titanichite Bud').tooltip('§eGlimmering Capacitance');
 
 
     // misc

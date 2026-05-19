@@ -1,4 +1,5 @@
 //priority: 1000
+
 StartupEvents.registry('item', event => {
   // The texture for this item has to be placed in kubejs/assets/kubejs/textures/item/test_item.png
   // If you want a custom item model, you can create one in Blockbench and put it in kubejs/assets/kubejs/models/item/test_item.json
@@ -139,12 +140,9 @@ StartupEvents.registry('item', event => {
 				.displayName(tier.toUpperCase() + ' Voucher')
 				.tooltip("Can be claimed for loot rewards")
 		} else {
-			colorPrimary = '#FFFFFF'
-			colorSecondary = '#505050'
 			event.create(`${tier}_voucher`)
 				.textureJson({ layer0: 'kubejs:item/voucher/color_primary', layer1: 'kubejs:item/voucher/color_secondary' })
-				.color(0, colorPrimary)
-				.color(1, colorSecondary)
+				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] && !(itemstack.nbt.rainbow) ? itemstack.nbt[`color` + tintIndex] : -1) // This saves so much time closing/reopening lol
 				.displayName(tier.toUpperCase() + ' Voucher')
 				.tooltip("Can be claimed for loot rewards")
 		}
@@ -153,15 +151,16 @@ StartupEvents.registry('item', event => {
 	function universalCircuitCreation(tier, colorExtra) {
 		if (colorExtra.match(/#[A-Fa-f0-9]{6,8}/)) {
 			event.create(`${tier}_universal_circuit`)
-				.textureJson({ layer0: 'kubejs:item/universal_circuit/base', layer1: 'kubejs:item/universal_circuit/lights', layer2:'kubejs:item/universal_circuit/flare' })
+				.textureJson({ layer0: 'kubejs:item/universal_circuit/circuit_base', layer1: 'kubejs:item/universal_circuit/circuit_overlay' })
 				.color(1, colorExtra)
 				.displayName(tier.toUpperCase() + ' Universal Circuit')
 		} else {
-			colorExtra = '#FFFFFF'
 			event.create(`${tier}_universal_circuit`)
-				.textureJson({ layer0: 'kubejs:item/universal_circuit/base', layer1: 'kubejs:item/universal_circuit/lights', layer2: 'kubejs:item/universal_circuit/flare' })
-				.color(1, colorExtra)
+				.textureJson({ layer0: 'kubejs:item/universal_circuit/circuit_base', layer1: 'kubejs:item/universal_circuit/circuit_overlay' })
+				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] && !(itemstack.nbt.rainbow) ? itemstack.nbt[`color` + tintIndex] : -1) //Testin
 				.displayName(tier.toUpperCase() + ' Universal Circuit')
+				
+				
 		}
 	}
 

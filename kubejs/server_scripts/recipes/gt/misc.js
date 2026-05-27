@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    const mcTiers = ['wooden', 'stone', 'iron', 'gold', 'diamond', 'netherite']
+    const mcTiers = ['stone', 'iron', 'gold', 'diamond', 'netherite']
     function removeTools(tier)
     {
         event.remove({output : `minecraft:${tier}_pickaxe`})

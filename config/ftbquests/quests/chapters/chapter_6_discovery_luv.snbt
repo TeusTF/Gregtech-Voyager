@@ -40,7 +40,7 @@
 		}
 		{
 			dependencies: ["4F90C8C104390038"]
-			description: ["Within the obelisks, you find technology capable of creating beams of plasma so hot, they deprecate into a degenerate form of matter in-between light and matter. Safe to say, these aliens had it figured out. Only certain materials work. Researching this block inside of a scanner will grant you it's secrets."]
+			description: ["Within the obelisks, you find technology capable of creating beams of plasma so hot, they deprecate into a degenerate form of matter in-between light and matter. Safe to say, these aliens had their &o&8stuff&r figured out. Only certain materials work. Researching this block inside of a scanner will grant you it's secrets."]
 			id: "3B7BDED395E1A9E1"
 			tasks: [{
 				id: "2EB65D8C0E2C26B2"
@@ -223,6 +223,7 @@
 				"5390BED72C58EECD"
 				"3D9FF11995473371"
 			]
+			description: ["&7&oWait... isn't that just a normal mold...?&r&r"]
 			id: "6777E1E70A5D9FD3"
 			tasks: [{
 				id: "29324CFDABD1103A"

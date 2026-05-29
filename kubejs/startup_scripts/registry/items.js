@@ -9,10 +9,6 @@ StartupEvents.registry('item', event => {
 
     const allTiers = ['stone', 'ulv', 'lv','mv','hv','ev','iv','luv','zpm','uv','uhv','uev','uiv','max'];
 
-    function register_universal_circuit(energy_tier)
-    {
-        event.create(energy_tier + '_universal_circuit').texture('kubejs:item/' + energy_tier + '_universal_circuit').displayName(energy_tier.toUpperCase() + ' Universal Circuit')
-    }
 
     function register_loot_bag(energy_tier)
     {
@@ -44,11 +40,6 @@ StartupEvents.registry('item', event => {
 
     helpers.forEach(name => register_helper_item(name));
 
-    function register_computation_array(tier)
-    {
-        event.create(tier + '_helper_computation_array').texture('kubejs:item/' + tier + '_helper_computation_array').displayName(tier.toUpperCase() + ' Helper Computation Array');
-    }
-
     function register_universal_coin(tier)
     {
         event.create(tier + '_universal_coin').texture('kubejs:item/' + tier + '_universal_coin').displayName(tier.toUpperCase() + ' Universal Coin');
@@ -78,10 +69,6 @@ StartupEvents.registry('item', event => {
         event.create(name + '_bag_' + level).texture('kubejs:item/' + name + '_bag_' + level).displayName(name.toUpperCase() + ' Bag ' + level).tooltip("Not yet implemented");
     }
 
-    function register_voucher(tier)
-    {
-        event.create(tier + '_voucher').texture('kubejs:item/' + tier + '_voucher').displayName(tier.toUpperCase() + ' Voucher').tooltip("Can be claimed for loot rewards");
-    }
 
 
 	//const tiers = [ulv, lv, mv, hv, ev, iv, luv, zpm, uv, uhv, uev, uiv, max] //PROBABLY NOT NEEDED
@@ -142,7 +129,7 @@ StartupEvents.registry('item', event => {
 		} else {
 			event.create(`${tier}_voucher`)
 				.textureJson({ layer0: 'kubejs:item/voucher/color_primary', layer1: 'kubejs:item/voucher/color_secondary' })
-				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] && !(itemstack.nbt.rainbow) ? itemstack.nbt[`color` + tintIndex] : -1) // This saves so much time closing/reopening lol
+				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] ? itemstack.nbt[`color` + tintIndex] : -1) // This saves so much time closing/reopening lol
 				.displayName(tier.toUpperCase() + ' Voucher')
 				.tooltip("Can be claimed for loot rewards")
 		}
@@ -157,7 +144,7 @@ StartupEvents.registry('item', event => {
 		} else {
 			event.create(`${tier}_universal_circuit`)
 				.textureJson({ layer0: 'kubejs:item/universal_circuit/circuit_base', layer1: 'kubejs:item/universal_circuit/circuit_overlay' })
-				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] && !(itemstack.nbt.rainbow) ? itemstack.nbt[`color` + tintIndex] : -1) //Testin
+				.color((itemstack, tintIndex) => itemstack.nbt && itemstack.nbt[`color` + tintIndex] ? itemstack.nbt[`color` + tintIndex] : -1) //Testin
 				.displayName(tier.toUpperCase() + ' Universal Circuit')
 				
 				
@@ -179,7 +166,7 @@ StartupEvents.registry('item', event => {
 	for (let key in tierData) { voucherCreation(key, tierData[key].colorPrimary, tierData[key].colorSecondary) }
 	for (let key in tierData) { universalCircuitCreation(key, tierData[key].colorExtra) }
 
-	
+
 
     
 

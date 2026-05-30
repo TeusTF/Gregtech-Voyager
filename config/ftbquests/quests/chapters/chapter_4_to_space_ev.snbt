@@ -1235,6 +1235,7 @@
 					exclude_from_claim_all: true
 					id: "7E6F8AEEF484D250"
 					table_id: 5335890956226663218L
+					team_reward: false
 					type: "choice"
 				}
 			]

@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         ['gtceu:neodymium 16000', 'gtceu:radon 4000'], 8000 * 4, 60, 'kubejs:eroded_atomic_magnet'
     )
 
-    laser_engraver_c('atomic_lattice', 'kubejs', ['32x kubejs:atomic_lattice', '32x gtceu:nether_star_lens'], 8000 * 4, 120)
+    laser_engraver_c('atomic_lattice', 'kubejs', ['32x kubejs:atomic_magnet', '32x gtceu:nether_star_lens'], 8000 * 4, 120)
     
 
 

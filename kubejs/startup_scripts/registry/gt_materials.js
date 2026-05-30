@@ -330,7 +330,7 @@ register_metal('shadow_steel', [], true, '0x10021f', [3600, 'mid', voltTier('ev'
 
 register_metal('perfected_electrum_base', [], false, '0x5f692a', [])
 
-register_nosmelt_metal('industrial_perfected_electrum', [], true, '0xf5ffdb', [3600, 'mid', voltTier('ev'), 20*64], [600, 600, 1, 1000000], voltTier('zpm'))
+register_nosmelt_metal('industrial_perfected_electrum', [], true, '0xf5ffdb', [3600, 'mid', voltTier('ev'), 20*64], [901, 601, 1, 1000000], voltTier('zpm'))
 
 register_dust('fluxed_titanium_electrum_compound', [], '0x2c2e16', no_decomp);
 register_nosmelt_elem_metal('titanite', [], true, '0x75008c', [5400, 'mid', voltTier('iv'), 20*64], [450, 450, 1, 1000000], voltTier('luv'))

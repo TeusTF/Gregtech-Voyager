@@ -198,11 +198,16 @@ StartupEvents.registry('item', event => {
     event.create('martian_scrap').texture('kubejs:item/martian_scrap').displayName('Martian Scrap').tooltip('§4Remnants of martian ships\n§r§8Contains materials that can not yet be synthesized without 0G');
     event.create('shredded_martian_scrap').texture('kubejs:item/shredded_martian_scrap').displayName('Shredded Martian Scrap').tooltip('§4Remnants of martian ships\n§r§8Contains materials that can not yet be synthesized without 0G');
     
-    event.create('martian_contract').texture('kubejs:item/martian_contract').displayName('Martian Trade Contract').tooltip('§4Place inside of a celestial post box to recieve shipments\n§r');
-    event.create('martian_shipment_t1').texture('kubejs:item/martian_shipment_t1').displayName('Martian Shipment').tooltip('§7Tier 1 Shipment\n§4Contains scrap from martian junkyards\n§r');
-    event.create('martian_shipment_t2').texture('kubejs:item/martian_shipment_t2').displayName('Martian Shipment').tooltip('§bTier 2 Shipment\n§4Contains unsythesized martian compounds\n§r');
-    event.create('martian_shipment_t3').texture('kubejs:item/martian_shipment_t3').displayName('Martian Shipment').tooltip('§cTier 3 Shipment\n§4Contains precious martian artifacts\n§r');
-    event.create('celestial_radio').texture('kubejs:item/celestial_radio').displayName('Celestial Radio').tooltip('§cIs anyone out there?\nRight click to send a radio signal');
+    event.create('martian_contract').texture('kubejs:item/martian_contract').displayName('Martian Trade Contract').tooltip('§4Place inside of a celestial post box to recieve shipments\n');
+    event.create('martian_contract_t2').texture('kubejs:item/martian_contract_t2').displayName('New Martian Trade Contract').tooltip('§4Place inside of a celestial post box to recieve shipments\n');
+    
+    event.create('martian_shipment_t1').texture('kubejs:item/martian_shipment_t1').displayName('Martian Shipment').tooltip('§7Tier 1 Shipment§r\n§4Contains scrap from martian junkyards\n§r');
+    event.create('martian_shipment_t2').texture('kubejs:item/martian_shipment_t2').displayName('Martian Shipment').tooltip('§bTier 2 Shipment§r\n§4Contains unsythesized martian compounds\n§r');
+    event.create('martian_shipment_t3').texture('kubejs:item/martian_shipment_t3').displayName('Martian Shipment').tooltip('§cTier 3 Shipment§r\n§4Contains precious martian artifacts\n§r');
+    event.create('celestial_radio').texture('kubejs:item/celestial_radio').displayName('Celestial Radio').tooltip('§cIs anyone out there?§r\nRight click to send a radio signal');
+
+    event.create('galactic_radio').texture('kubejs:item/galactic_radio').displayName('Galactic Radio').tooltip('§cIs anyone out there?§r\nRight click to send a radio signal');
+
 
     event.create('compressed_grout').texture('kubejs:item/compressed_grout').displayName('Compressed Grout');
 

@@ -1,98 +1,91 @@
 ServerEvents.recipes(event => {
+	event.custom({
+		type:'sophisticatedbackpacks:basic_backpack',
+		key:{
+			A: {tag: 'forge:wool'},
+			B: {item: 'minecraft:leather'},
+			C: {item: 'gtceu:treated_wood_rod'},
+			E: {tag: 'forge:chests'},
+			D: {item: 'gtceu:steel_ring'}
+		},
+		pattern:[
+			'DBD',
+			'BEB',
+			'CAC'
+		],
+		result:{
+			item:'sophisticatedbackpacks:backpack'
+		}
+	})
 
-    event.shaped(
-                Item.of('sophisticatedbackpacks:backpack', 1), // arg 1: output
-                [
-                    'DBD',
-                    'BEB', // arg 2: the shape (array of strings)
-                    'CAC'
-                ],
-                {
-                    A: '#forge:wool',
-                    B: 'minecraft:leather',
-                    C: 'gtceu:treated_wood_rod',
-                    E: '#forge:chests',
-                    D: 'gtceu:steel_ring'
-                }
-    );
+	event.custom({
+		type: 'sophisticatedbackpacks:backpack_upgrade',
+		key: {
+			A: { item: 'minecraft:copper_block' },
+			E: { item: 'sophisticatedbackpacks:backpack' },
+			D: { item: 'gtceu:steel_ingot' }
+		},
+		pattern: [
+			'DAD',
+			'AEA',
+			'DAD'
+		],
+		result: {
+			item: 'sophisticatedbackpacks:copper_backpack'
+		}
+	})
+	
+	event.custom({
+		type: 'sophisticatedbackpacks:backpack_upgrade',
+		key: {
+			A: { item: 'minecraft:iron_block' },
+			E: { item: 'sophisticatedbackpacks:copper_backpack' },
+			D: { item: 'gtceu:steel_ingot' }
+		},
+		pattern: [
+			'DAD',
+			'AEA',
+			'DAD'
+		],
+		result: {
+			item: 'sophisticatedbackpacks:iron_backpack'
+		}
+	})
 
+	event.custom({
+		type: 'sophisticatedbackpacks:backpack_upgrade',
+		key: {
+			A: { item: 'minecraft:gold_block' },
+			E: { item: 'sophisticatedbackpacks:iron_backpack' },
+			D: { item: 'gtceu:aluminium_ingot' }
+		},
+		pattern: [
+			'DAD',
+			'AEA',
+			'DAD'
+		],
+		result: {
+			item: 'sophisticatedbackpacks:gold_backpack'
+		}
+	})
 
-    event.shaped(
-        'sophisticatedbackpacks:copper_backpack',
-        [
-            'DAD',
-            'AEA', // arg 2: the shape (array of strings)
-            'DAD'
-        ],
-        {
-            //  ({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "minecraft:looting", lvl: 1}]}}).withChance(.25)
-            A: 'minecraft:copper_block',
-            E: 'sophisticatedbackpacks:backpack',
-            D: 'gtceu:steel_ingot'
-        }
-        ).modifyResult((grid, result) => {
-        let bp = grid.find('sophisticatedbackpacks:backpack')
-        let nbt = bp.nbt
-        return result.withNBT(nbt)
-     })
-
-    event.shaped(
-        'sophisticatedbackpacks:iron_backpack',
-        [
-            'DAD',
-            'AEA', // arg 2: the shape (array of strings)
-            'DAD'
-        ],
-        {
-            //  ({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "minecraft:looting", lvl: 1}]}}).withChance(.25)
-            A: 'minecraft:iron_block',
-            E: 'sophisticatedbackpacks:copper_backpack',
-            D: 'gtceu:steel_ingot'
-        }
-        ).modifyResult((grid, result) => {
-        let bp = grid.find('sophisticatedbackpacks:copper_backpack')
-        let nbt = bp.nbt
-        return result.withNBT(nbt)
-     })
-
-    event.shaped(
-        'sophisticatedbackpacks:gold_backpack',
-        [
-            'DAD',
-            'AEA', // arg 2: the shape (array of strings)
-            'DAD'
-        ],
-        {
-            //  ({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "minecraft:looting", lvl: 1}]}}).withChance(.25)
-            A: 'minecraft:gold_block',
-            E: 'sophisticatedbackpacks:iron_backpack',
-            D: 'gtceu:aluminium_ingot'
-        }
-        ).modifyResult((grid, result) => {
-        let bp = grid.find('sophisticatedbackpacks:iron_backpack')
-        let nbt = bp.nbt
-        return result.withNBT(nbt)
-     })
+	event.custom({
+		type: 'sophisticatedbackpacks:backpack_upgrade',
+		key: {
+			A: { item: 'minecraft:diamond_block' },
+			E: { item: 'sophisticatedbackpacks:gold_backpack' },
+			D: { item: 'gtceu:aluminium_ingot' }
+		},
+		pattern: [
+			'DAD',
+			'AEA',
+			'DAD'
+		],
+		result: {
+			item: 'sophisticatedbackpacks:diamond_backpack'
+		}
+	})
      
-
-     event.shaped(
-        'sophisticatedbackpacks:diamond_backpack',
-        [
-            'DAD',
-            'AEA', // arg 2: the shape (array of strings)
-            'DAD'
-        ],
-        {
-            //  ({type: "minecraft:item_nbt", item: "minecraft:enchanted_book", nbt: {StoredEnchantments: [{ id: "minecraft:looting", lvl: 1}]}}).withChance(.25)
-            A: 'minecraft:diamond_block',
-            E: 'sophisticatedbackpacks:gold_backpack',
-            D: 'gtceu:aluminium_ingot'
-        }
-        ).modifyResult((grid, result) => {
-        let bp = grid.find('sophisticatedbackpacks:gold_backpack')
-        let nbt = bp.nbt
-        return result.withNBT(nbt)
-     })
 
 
      // upgrades !!!!!

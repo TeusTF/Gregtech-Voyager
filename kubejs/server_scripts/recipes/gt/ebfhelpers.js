@@ -19,6 +19,7 @@ ServerEvents.recipes(event => {
     add_helper_recipe('titanium_carbide', 'gtceu:titanium_carbide_dust', 'gtceu:helium 100', 'gtceu:hot_titanium_carbide_ingot', 'hv_ebf_helper', 33.85, 1920, 3430)
     add_helper_recipe('titanium_dust', 'gtceu:titanium_dust', 'gtceu:helium 100', 'gtceu:hot_titanium_ingot', 'hv_ebf_helper', 50.25, 480, 1941)
     add_helper_recipe('tungsten', 'gtceu:tungsten_dust', 'gtceu:helium 100', 'gtceu:hot_tungsten_ingot', 'hv_ebf_helper', 60.3, 1920, 3600)
+    add_helper_recipe('osmium', 'gtceu:osmium_dust', 'gtceu:argon 50', 'gtceu:hot_osmium_ingot', 'ev_ebf_helper', 33.5, 30720, 4500)
 
     event.recipes.gtceu.electric_blast_furnace("kubejs:aluminum_helper")
         .itemInputs("gtceu:aluminium_dust")

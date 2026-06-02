@@ -33,6 +33,21 @@ StartupEvents.registry('block', event => {
         .tagBlock('mineable/wrench')
     }
 
+    function glassblock(name)
+    {
+        event.create(name)
+        .textureAll(`kubejs:block/${name}`)
+        .hardness(2)
+        .resistance(3)
+        .lightLevel(0)
+        .soundType('glass')
+        .requiresTool(true)
+        .renderType('translucent')
+        .tagBlock('mineable/wrench')
+    }
+
     metalblock('teus_beam_block')
     metalblock('ruined_beam_block')
+
+    glassblock('shock_proof_glass')
 })

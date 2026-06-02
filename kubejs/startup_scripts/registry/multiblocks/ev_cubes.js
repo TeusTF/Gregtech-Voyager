@@ -63,4 +63,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     cubeMulti('electrolyzer', 'firm_ultimet')
     cubeMulti('macerator', 'stout_titanium_carbide')
     cubeMultiCustom('oven', 'radiation_proof_lead')
+    cubeMulti('thermal_centrifuge', 'heat_resistant_refined_fluxed_electrum')
+    cubeMulti('autoclave', 'condensation_resistant_tungsten')
 });

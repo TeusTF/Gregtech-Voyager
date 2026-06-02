@@ -7262,6 +7262,34 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helper_computation_array",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helper_computation_array\\base.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helper_computation_array\\base.png.mcmeta",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helper_computation_array\\color_primary.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helper_computation_array\\color_primary.png.mcmeta",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helper_computation_array\\color_secondary.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\helper_computation_array\\color_secondary.png.mcmeta",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\helpers",
         "isSelected": true
       },
@@ -7622,6 +7650,22 @@
         "isSelected": true
       },
       {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\universal_circuit",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\universal_circuit\\circuit_base.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\universal_circuit\\circuit_overlay.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\universal_circuit\\circuit_overlay.png.mcmeta",
+        "isSelected": true
+      },
+      {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\uranium_cookie_dough.png",
         "isSelected": true
       },
@@ -7647,6 +7691,18 @@
       },
       {
         "path": "kubejs\\assets\\kubejs\\textures\\item\\venus_capsule.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\voucher",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\voucher\\color_primary.png",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\assets\\kubejs\\textures\\item\\voucher\\color_secondary.png",
         "isSelected": true
       },
       {
@@ -8026,10 +8082,6 @@
         "isSelected": true
       },
       {
-        "path": "kubejs\\server_scripts\\recipes\\gt\\assline.js",
-        "isSelected": true
-      },
-      {
         "path": "kubejs\\server_scripts\\recipes\\gt\\casingsandmachines.js",
         "isSelected": true
       },
@@ -8047,6 +8099,18 @@
       },
       {
         "path": "kubejs\\server_scripts\\recipes\\gt\\ebfhelpers.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\server_scripts\\recipes\\gt\\luv",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\server_scripts\\recipes\\gt\\luv\\assline.js",
+        "isSelected": true
+      },
+      {
+        "path": "kubejs\\server_scripts\\recipes\\gt\\luv\\venus_items.js",
         "isSelected": true
       },
       {
@@ -11322,6 +11386,22 @@
         "isSelected": false
       },
       {
+        "path": "logs\\2026-05-17-3.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-25-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-26-1.log.gz",
+        "isSelected": false
+      },
+      {
+        "path": "logs\\2026-05-28-1.log.gz",
+        "isSelected": false
+      },
+      {
         "path": "logs\\kubejs",
         "isSelected": false
       },
@@ -14382,6 +14462,14 @@
         "isSelected": false
       },
       {
+        "path": "saves\\New World (1)\\data\\lootr\\7\\74",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\data\\lootr\\7\\74\\74ed61b3-80f0-463c-b9c5-5ecc1fe48a32.dat",
+        "isSelected": false
+      },
+      {
         "path": "saves\\New World (1)\\data\\lootr\\7\\76",
         "isSelected": false
       },
@@ -14563,6 +14651,10 @@
       },
       {
         "path": "saves\\New World (1)\\data\\lootr\\a\\a3",
+        "isSelected": false
+      },
+      {
+        "path": "saves\\New World (1)\\data\\lootr\\a\\a3\\a364aef5-278d-45b7-9cb2-502a4b3c5a9f.dat",
         "isSelected": false
       },
       {
@@ -26006,18 +26098,6 @@
         "isSelected": false
       },
       {
-        "path": "simplebackups\\New World (1)_2026-05-12_20-37-46.zip",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\New World (1)_2026-05-12_22-37-46.zip",
-        "isSelected": false
-      },
-      {
-        "path": "simplebackups\\New World (1)_2026-05-16_11-41-55.zip",
-        "isSelected": false
-      },
-      {
         "path": "simplebackups\\New World (1)_2026-05-16_13-55-47.zip",
         "isSelected": false
       },
@@ -26043,6 +26123,18 @@
       },
       {
         "path": "simplebackups\\New World (1)_2026-05-17_21-05-33.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\New World (1)_2026-05-25_18-50-57.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\New World (1)_2026-05-26_19-14-13.zip",
+        "isSelected": false
+      },
+      {
+        "path": "simplebackups\\New World (1)_2026-05-28_19-08-23.zip",
         "isSelected": false
       },
       {
